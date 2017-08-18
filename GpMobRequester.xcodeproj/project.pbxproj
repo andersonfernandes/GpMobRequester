@@ -14,6 +14,13 @@
 		07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878F1F47310800E9DA0C /* LaunchScreen.storyboard */; };
 		07C2879C1F47310800E9DA0C /* GpMobRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C2879B1F47310800E9DA0C /* GpMobRequesterTests.swift */; };
 		07C287A71F47310800E9DA0C /* GpMobRequesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287A61F47310800E9DA0C /* GpMobRequesterUITests.swift */; };
+		07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37781F475387009BEB04 /* FichaFuncional.swift */; };
+		07DB377B1F475846009BEB04 /* TipoParentesco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB377A1F475846009BEB04 /* TipoParentesco.swift */; };
+		07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB377C1F47587E009BEB04 /* Dependente.swift */; };
+		07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB377E1F475898009BEB04 /* GrupoTipo.swift */; };
+		07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */; };
+		07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */; };
+		07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37841F4758DC009BEB04 /* Grupo.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
@@ -50,6 +57,13 @@
 		07C287A21F47310800E9DA0C /* GpMobRequesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpMobRequesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C287A61F47310800E9DA0C /* GpMobRequesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpMobRequesterUITests.swift; sourceTree = "<group>"; };
 		07C287A81F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DB37781F475387009BEB04 /* FichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncional.swift; sourceTree = "<group>"; };
+		07DB377A1F475846009BEB04 /* TipoParentesco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoParentesco.swift; sourceTree = "<group>"; };
+		07DB377C1F47587E009BEB04 /* Dependente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependente.swift; sourceTree = "<group>"; };
+		07DB377E1F475898009BEB04 /* GrupoTipo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoTipo.swift; sourceTree = "<group>"; };
+		07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoDadoFichaFuncional.swift; sourceTree = "<group>"; };
+		07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncional.swift; sourceTree = "<group>"; };
+		07DB37841F4758DC009BEB04 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
 		53068DB0D3822C1ACDF361E6 /* Pods-GpMobRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91DDD95CE47F473C7B55E352 /* Pods-GpMobRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 		07C2877A1F47310800E9DA0C = {
 			isa = PBXGroup;
 			children = (
+				07DB37761F4752E7009BEB04 /* Domain */,
 				07C287851F47310800E9DA0C /* GpMobRequester */,
 				07C2879A1F47310800E9DA0C /* GpMobRequesterTests */,
 				07C287A51F47310800E9DA0C /* GpMobRequesterUITests */,
@@ -140,6 +155,28 @@
 				07C287A81F47310800E9DA0C /* Info.plist */,
 			);
 			path = GpMobRequesterUITests;
+			sourceTree = "<group>";
+		};
+		07DB37761F4752E7009BEB04 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37771F47537A009BEB04 /* Entities */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		07DB37771F47537A009BEB04 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37781F475387009BEB04 /* FichaFuncional.swift */,
+				07DB37841F4758DC009BEB04 /* Grupo.swift */,
+				07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */,
+				07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */,
+				07DB377E1F475898009BEB04 /* GrupoTipo.swift */,
+				07DB377C1F47587E009BEB04 /* Dependente.swift */,
+				07DB377A1F475846009BEB04 /* TipoParentesco.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 		8EBFE6EE4972DEF0E7CBAB9A /* Pods */ = {
@@ -465,8 +502,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */,
+				07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */,
+				07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */,
+				07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */,
+				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
+				07DB377B1F475846009BEB04 /* TipoParentesco.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +767,7 @@
 				07C287AD1F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C287AE1F47310800E9DA0C /* Build configuration list for PBXNativeTarget "GpMobRequesterTests" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +776,7 @@
 				07C287B01F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C287B11F47310800E9DA0C /* Build configuration list for PBXNativeTarget "GpMobRequesterUITests" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +785,7 @@
 				07C287B31F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
