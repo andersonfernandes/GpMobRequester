@@ -15,6 +15,9 @@
 		07C2879C1F47310800E9DA0C /* GpMobRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C2879B1F47310800E9DA0C /* GpMobRequesterTests.swift */; };
 		07C287A71F47310800E9DA0C /* GpMobRequesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287A61F47310800E9DA0C /* GpMobRequesterUITests.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
+		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
+		C8E58D6A1F47447000E5F7AE /* AuthorizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationView.xib */; };
+		C8E58D6C1F47448200E5F7AE /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D6B1F47448200E5F7AE /* AuthorizationView.swift */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,9 @@
 		A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequesterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1612EF6EAE85E0DC54EC754 /* Pods-GpMobRequesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		C8E58D691F47447000E5F7AE /* AuthorizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationView.xib; sourceTree = "<group>"; };
+		C8E58D6B1F47448200E5F7AE /* AuthorizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		DBF15156326C710A4D8A754B /* Pods-GpMobRequesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,6 +120,7 @@
 		07C287851F47310800E9DA0C /* GpMobRequester */ = {
 			isa = PBXGroup;
 			children = (
+				C8E58D651F47422000E5F7AE /* Authorization */,
 				07C287861F47310800E9DA0C /* AppDelegate.swift */,
 				07C287881F47310800E9DA0C /* ViewController.swift */,
 				07C2878A1F47310800E9DA0C /* Main.storyboard */,
@@ -163,6 +170,24 @@
 				AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8E58D651F47422000E5F7AE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				C8E58D681F47434400E5F7AE /* View */,
+				C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		C8E58D681F47434400E5F7AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8E58D691F47447000E5F7AE /* AuthorizationView.xib */,
+				C8E58D6B1F47448200E5F7AE /* AuthorizationView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +267,7 @@
 				TargetAttributes = {
 					07C287821F47310800E9DA0C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = Q96RB5NH33;
+						DevelopmentTeam = RKYRJH5UVM;
 						ProvisioningStyle = Automatic;
 					};
 					07C287961F47310800E9DA0C = {
@@ -286,6 +311,7 @@
 			files = (
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
+				C8E58D6A1F47447000E5F7AE /* AuthorizationView.xib in Resources */,
 				07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,7 +491,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
+				C8E58D6C1F47448200E5F7AE /* AuthorizationView.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,7 +647,7 @@
 			baseConfigurationReference = 0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q96RB5NH33;
+				DEVELOPMENT_TEAM = RKYRJH5UVM;
 				INFOPLIST_FILE = GpMobRequester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gov.al.GpMobRequester;
@@ -633,7 +661,7 @@
 			baseConfigurationReference = 96946D7F0F8742B2C8665B35 /* Pods-GpMobRequester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q96RB5NH33;
+				DEVELOPMENT_TEAM = RKYRJH5UVM;
 				INFOPLIST_FILE = GpMobRequester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gov.al.GpMobRequester;
@@ -723,6 +751,7 @@
 				07C287AD1F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C287AE1F47310800E9DA0C /* Build configuration list for PBXNativeTarget "GpMobRequesterTests" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +760,7 @@
 				07C287B01F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C287B11F47310800E9DA0C /* Build configuration list for PBXNativeTarget "GpMobRequesterUITests" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +769,7 @@
 				07C287B31F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
