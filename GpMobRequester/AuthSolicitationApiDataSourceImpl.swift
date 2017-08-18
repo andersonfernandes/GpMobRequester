@@ -9,18 +9,18 @@
 import Foundation
 import Retrofire
 
-class AuthApiDataSourceImpl: RemoteBase, AuthApiDataSource {
-    private static var INSTANCE: AuthApiDataSourceImpl?
+class AuthSolicitationApiDataSourceImpl: RemoteBase, AuthSolicitationApiDataSource {
+    private static var INSTANCE: AuthSolicitationApiDataSourceImpl?
     
-    static func getInstance() -> AuthApiDataSourceImpl {
+    static func getInstance() -> AuthSolicitationApiDataSourceImpl {
         if (INSTANCE == nil) {
-            INSTANCE = AuthApiDataSourceImpl()
+            INSTANCE = AuthSolicitationApiDataSourceImpl()
         }
         
         return INSTANCE!
     }
     
-    func authorize(authRequest: AuthRequest) -> Call<AuthResponse> {
+    func requestAuthorization(authRequest: AuthSolicitationRequest) -> Call<AuthSolicitationResponse> {
         let path = RemoteUtils.buildUrl(path: authorizePath)
         let request = RequestBuilder(path: path)
             .method(.post)

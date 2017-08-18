@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AuthRequest {
+struct AuthSolicitationRequest {
     let login: String
     let nomeDispositivo: String
     let tokenApp: String = "7f091ff91d0d896809ae2ac13632627a7473334a"

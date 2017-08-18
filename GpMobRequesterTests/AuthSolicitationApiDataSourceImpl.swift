@@ -16,7 +16,7 @@ import Retrofire
 /**
  Unit tests for the implementation of {@link AuthApiDataSourceImpl}
  */
-class AuthApiDataSourceImplTest: QuickSpec {
+class AuthSolicitationApiDataSourceImplTest: QuickSpec {
     
     override func spec() {
         
@@ -24,14 +24,14 @@ class AuthApiDataSourceImplTest: QuickSpec {
             
             var login             = "24006664"
             var nomeDispositivo   = "24006664-2"
-            let userApiDataSource = AuthApiDataSourceImpl.getInstance()
-            var authRequest       = AuthRequest(login: login, nomeDispositivo: nomeDispositivo)
+            let userApiDataSource = AuthSolicitationApiDataSourceImpl.getInstance()
+            var authRequest       = AuthSolicitationRequest(login: login, nomeDispositivo: nomeDispositivo)
             
-            context("When authorize success") {
-                var authResponseResult: AuthResponse?
+            context("When request authorization success") {
+                var authResponseResult: AuthSolicitationResponse?
                 
                 it("Should return a valid authResponse") {
-                    userApiDataSource.authorize(authRequest: authRequest)
+                    userApiDataSource.requestAuthorization(authRequest: authRequest)
                         .onSuccess() { response in
                             authResponseResult = response
                         }
@@ -45,19 +45,19 @@ class AuthApiDataSourceImplTest: QuickSpec {
                 }
             }
             
-            context("When authorize failed"){
+            context("When request authorization failed"){
                 
                 beforeEach {
                     login    = "non-existent"
                     nomeDispositivo = "none"
                     
-                    authRequest = AuthRequest(login: login, nomeDispositivo: nomeDispositivo)
+                    authRequest = AuthSolicitationRequest(login: login, nomeDispositivo: nomeDispositivo)
                 }
                 
                 it("Should return an not authorized error") {
                     var errorResponse: ErrorResponse?
                     
-                    userApiDataSource.authorize(authRequest: authRequest)
+                    userApiDataSource.requestAuthorization(authRequest: authRequest)
                         .onFailed() { error in
                             errorResponse = error as? ErrorResponse
                         }

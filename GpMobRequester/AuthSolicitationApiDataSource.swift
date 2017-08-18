@@ -9,12 +9,12 @@
 import Foundation
 import Retrofire
 
-protocol AuthApiDataSource{
+protocol AuthSolicitationApiDataSource{
     var authorizePath: String { get }
     
-    func authorize(authRequest: AuthRequest) -> Call<AuthResponse>
+    func requestAuthorization(authRequest: AuthSolicitationRequest) -> Call<AuthSolicitationResponse>
 }
 
-extension AuthApiDataSource {
+extension AuthSolicitationApiDataSource {
     var authorizePath: String { return "/sfz-habilitacao-aplicativo-api/api/public/autorizacao-aplicativo/solicitar" }
 }

@@ -10,7 +10,7 @@ import Foundation
 import Retrofire
 import SwiftyJSON
 
-struct AuthResponse: Retrofire.Mappable {
+struct AuthSolicitationResponse: Retrofire.Mappable {
     private let idAutorizacao: Int?
     private let urlAutorizacao: String?
     
@@ -26,7 +26,7 @@ struct AuthResponse: Retrofire.Mappable {
         let idAutorizacao = json.dictionary?[APIField.idAutorizacao]?.intValue
         let urlAutorizacao = json.dictionary?[APIField.urlAutorizacao]?.stringValue
         
-        return AuthResponse(idAutorizacao: idAutorizacao,
+        return AuthSolicitationResponse(idAutorizacao: idAutorizacao,
                             urlAutorizacao: urlAutorizacao
         ) as! M
     }
