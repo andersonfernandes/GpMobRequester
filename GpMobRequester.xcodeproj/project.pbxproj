@@ -18,8 +18,7 @@
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
 		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
-		C8E58D6A1F47447000E5F7AE /* AuthorizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationView.xib */; };
-		C8E58D6C1F47448200E5F7AE /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D6B1F47448200E5F7AE /* AuthorizationView.swift */; };
+		C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,8 +64,7 @@
 		AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequesterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1612EF6EAE85E0DC54EC754 /* Pods-GpMobRequesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
-		C8E58D691F47447000E5F7AE /* AuthorizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationView.xib; sourceTree = "<group>"; };
-		C8E58D6B1F47448200E5F7AE /* AuthorizationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
 		DBF15156326C710A4D8A754B /* Pods-GpMobRequesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,6 +122,7 @@
 		07C287851F47310800E9DA0C /* GpMobRequester */ = {
 			isa = PBXGroup;
 			children = (
+				C8E58D6D1F478EF500E5F7AE /* view */,
 				C8E58D651F47422000E5F7AE /* Authorization */,
 				07F0FAD21F47451C002CFC23 /* View */,
 				07C287861F47310800E9DA0C /* AppDelegate.swift */,
@@ -198,10 +197,16 @@
 		C8E58D681F47434400E5F7AE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C8E58D691F47447000E5F7AE /* AuthorizationView.xib */,
-				C8E58D6B1F47448200E5F7AE /* AuthorizationView.swift */,
+				C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C8E58D6D1F478EF500E5F7AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,7 +331,7 @@
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
-				C8E58D6A1F47447000E5F7AE /* AuthorizationView.xib in Resources */,
+				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
 				07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,7 +513,6 @@
 			files = (
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
-				C8E58D6C1F47448200E5F7AE /* AuthorizationView.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
 			);
@@ -606,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -650,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
