@@ -22,13 +22,13 @@ struct FichaFuncional: Retrofire.Mappable {
         var dependentes = [Dependente]()
         
         dependentesJson?.forEach { dependenteJSON in
-//            dependentes.append(Dependente.instanceBy(json: dependenteJSON)
+            dependentes.append(Dependente.instanceBy(json: dependenteJSON))
         }
         
         let gruposJson: [JSON]? = json.dictionary?[APIField.grupos]?.array
         var grupos = [Grupo]()
         gruposJson?.forEach { grupoJSON in
-//            grupos.append(Grupo.instanceBy(json: grupoJSON)
+            grupos.append(Grupo.instanceBy(json: grupoJSON))
         }
         
         return FichaFuncional(nomeFuncionario: nomeFuncionario,

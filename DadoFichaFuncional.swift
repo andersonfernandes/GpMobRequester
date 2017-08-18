@@ -34,7 +34,11 @@ struct DadoFichaFuncional: Retrofire.Mappable {
         let tipo                    = json.dictionary?[APIField.tipo]?.stringValue
         
         let tipoDadoFichaFuncionalJSON: JSON? = json.dictionary?[APIField.tipoDadoFichaFuncional]
-        let tipoDadoFichaFuncional: TipoDadoFichaFuncional? = TipoDadoFichaFuncional.instanceBy(json: tipoDadoFichaFuncionalJSON)
+        var tipoDadoFichaFuncional: TipoDadoFichaFuncional?
+        
+        if let json = tipoDadoFichaFuncionalJSON {
+            tipoDadoFichaFuncional = TipoDadoFichaFuncional.instanceBy(json: json)
+        }
         
         return DadoFichaFuncional(id: id,
                                   numeroPessoaFuncionario: numeroPessoaFuncionario,

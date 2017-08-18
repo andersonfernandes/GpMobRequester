@@ -21,7 +21,7 @@ struct Grupo: Retrofire.Mappable {
         var dados = [DadoFichaFuncional]()
         
         dadosJson?.forEach { dadoJSON in
-            //            dados(DadoFichaFuncional.instanceBy(json: dadoJSON)
+                        dados.append(DadoFichaFuncional.instanceBy(json: dadoJSON))
         }
         
         return Grupo(descricao: descricao,
