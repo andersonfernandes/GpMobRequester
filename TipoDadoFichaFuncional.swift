@@ -7,10 +7,36 @@
 //
 
 import Foundation
+import Retrofire
+import SwiftyJSON
 
-struct TipoDadoFichaFuncional {
+struct TipoDadoFichaFuncional: Retrofire.Mappable {
     private let id: Int?
     private let nome: String?
     private let grupoTipo: GrupoTipo?
     private let numeroPessoaInclusao: Int?
+    
+    public static func instanceBy<M>(json: JSON) -> M {
+        let id                      = json.dictionary?[APIField.id]?.intValue
+        let nome = json.dictionary?[APIField.nome]?.stringValue
+        let numeroPessoaInclusao = json.dictionary?[APIField.numeroPessoaInclusao]?.intValue
+        let tipoStatus              = json.dictionary?[APIField.tipoStatus]?.
+        let tipoDadoFichaFuncional: TipoDadoFichaFuncional?
+        
+        let grupoTipoJSON: JSON? = json.dictionary?[APIField.grupoTipo]
+        let grupoTipo: GrupoTipo? = GrupoTipo.instanceBy(json: grupoTipoJSON)
+        
+        return TipoDadoFichaFuncional(id: id,
+                                      nome: nome,
+                                      grupoTipo: grupoTipo,
+                                      numeroPessoaInclusao: numeroPessoaInclusao
+        ) as! M
+    }
+    
+    private struct APIField {
+        static let id                   = "id"
+        static let nome                 = "nome"
+        static let grupoTipo            = "grupoTipo"
+        static let numeroPessoaInclusao = "numeroPessoaInclusao"
+    }
 }
