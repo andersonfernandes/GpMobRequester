@@ -11,29 +11,20 @@ import Retrofire
 import SwiftyJSON
 
 struct AuthResponse: Retrofire.Mappable {
-    private let codigo: Int?
-    private let mensagem: String?
-    
-    func getCodigo() -> Int? {
-        return codigo
+    private let idToken: String?
+
+    func getIdToken() -> String? {
+        return idToken
     }
-    
-    func getMensagem() -> String? {
-        return mensagem
-    }
-    
+
     public static func instanceBy<M>(json: JSON) -> M {
-        let codigo = json.dictionary?[APIField.codigo]?.intValue
-        let mensagem = json.dictionary?[APIField.mensagem]?.stringValue
-        
-        return AuthResponse(codigo: codigo,
-                            mensagem: mensagem
-            ) as! M
+        let idToken = json.dictionary?[APIField.idToken]?.stringValue
+
+        return AuthResponse(idToken: idToken) as! M
     }
-    
+
     private struct APIField {
-        static let codigo   = "codigo"
-        static let mensagem = "mensagem"
+        static let idToken   = "id_token"
     }
-    
+
 }

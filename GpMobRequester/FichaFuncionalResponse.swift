@@ -1,8 +1,8 @@
 //
-//  FichaFuncional.swift
+//  FichaFuncionalResponse.swift
 //  GpMobRequester
 //
-//  Created by Rachid Calazans on 18/08/17.
+//  Created by Anderson Fernandes on 19/08/17.
 //  Copyright © 2017 Stant. All rights reserved.
 //
 
@@ -10,12 +10,10 @@ import Foundation
 import Retrofire
 import SwiftyJSON
 
-struct FichaFuncional: Retrofire.Mappable {
+struct FichaFuncionalResponse: Retrofire.Mappable {
     private let nomeFuncionario: String?
     private let dependentes: [Dependente]?
     private let grupos: [Grupo]?
-    
-    public static let USER_TOKEN_PREFERENCE: String = "USER_TOKEN"
     
     public static func instanceBy<M>(json: JSON) -> M {
         let nomeFuncionario = json.dictionary?[APIField.nomeFuncionario]?.stringValue
@@ -33,10 +31,22 @@ struct FichaFuncional: Retrofire.Mappable {
             grupos.append(Grupo.instanceBy(json: grupoJSON))
         }
         
-        return FichaFuncional(nomeFuncionario: nomeFuncionario,
-                              dependentes: [Dependente](),
-                              grupos: [Grupo]()
+        return FichaFuncionalResponse(nomeFuncionario: nomeFuncionario,
+                              dependentes: dependentes,
+                              grupos: grupos
             ) as! M
+    }
+    
+    func getNomeFuncionario() -> String? {
+        return nomeFuncionario
+    }
+    
+    func getDependentes() -> [Dependente]? {
+        return dependentes
+    }
+    
+    func getGrupos() -> [Grupo]? {
+        return grupos
     }
     
     private struct APIField {

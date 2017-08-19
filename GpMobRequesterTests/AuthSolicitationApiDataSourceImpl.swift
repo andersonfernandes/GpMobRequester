@@ -35,11 +35,9 @@ class AuthSolicitationApiDataSourceImplTest: QuickSpec {
                         .onSuccess() { response in
                             authResponseResult = response
                         }
-                        .onFailed() { e in
-                        }
                         .call()
                     
-                    expect(authResponseResult?.getIdAutorizacao()).toEventually(equal(83))
+                    expect(authResponseResult?.getIdAutorizacao()).toEventually(equal(136))
                     
                     expect(authResponseResult?.getUrlAutorizacao()).toNotEventually(equal("http://hackathonhabilitacao.sefaz.al.gov.br"))
                 }
