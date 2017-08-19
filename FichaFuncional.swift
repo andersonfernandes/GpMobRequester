@@ -15,6 +15,8 @@ struct FichaFuncional: Retrofire.Mappable {
     private let dependentes: [Dependente]?
     private let grupos: [Grupo]?
     
+    public static let USER_TOKEN_PREFERENCE: String = "USER_TOKEN"
+    
     public static func instanceBy<M>(json: JSON) -> M {
         let nomeFuncionario = json.dictionary?[APIField.nomeFuncionario]?.stringValue
         
