@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 enum Theme {
-    static let primaryColor            =  UIColor(red:0.48, green:0.81, blue:0.98, alpha:1.0)
+    static let primaryColor            =  UIColor(red:0.24, green:0.70, blue:1.00, alpha:1.0)
     static let backgroundColor         =  UIColor(red:0.95, green:0.96, blue:0.99, alpha:1.0)
     
     }

@@ -25,6 +25,12 @@
 		07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
+		2400B3971F481A0C00D2819B /* attachmentModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2400B3961F481A0C00D2819B /* attachmentModalView.swift */; };
+		2400B3991F481A1D00D2819B /* attachmentModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2400B3981F481A1D00D2819B /* attachmentModalView.xib */; };
+		2400B39C1F4834A800D2819B /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2400B39B1F4834A800D2819B /* RequestViewController.xib */; };
+		2400B39E1F4834C600D2819B /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2400B39D1F4834C600D2819B /* RequestViewController.swift */; };
+		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
+		2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421C0721F47FA7E00BC1088 /* registerCell.swift */; };
 		2448496B1F47E229006679C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448496A1F47E229006679C4 /* Theme.swift */; };
 		245B81831F47CBF900210911 /* Asap-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817D1F47CBF900210911 /* Asap-Italic.otf */; };
 		245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817E1F47CBF900210911 /* Asap-Medium.otf */; };
@@ -82,6 +88,12 @@
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
+		2400B3961F481A0C00D2819B /* attachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = attachmentModalView.swift; sourceTree = "<group>"; };
+		2400B3981F481A1D00D2819B /* attachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = attachmentModalView.xib; sourceTree = "<group>"; };
+		2400B39B1F4834A800D2819B /* RequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
+		2400B39D1F4834C600D2819B /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		2421C06E1F47F8A300BC1088 /* registerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = registerCell.xib; sourceTree = "<group>"; };
+		2421C0721F47FA7E00BC1088 /* registerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerCell.swift; sourceTree = "<group>"; };
 		2448496A1F47E229006679C4 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		245B817D1F47CBF900210911 /* Asap-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Italic.otf"; sourceTree = "<group>"; };
 		245B817E1F47CBF900210911 /* Asap-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Medium.otf"; sourceTree = "<group>"; };
@@ -215,6 +227,9 @@
 				07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */,
 				07DB37A01F47DF16009BEB04 /* RegisterTabItem */,
 				07DB37A91F47E1EE009BEB04 /* DependentsTabItem */,
+				2400B39A1F481A2300D2819B /* Attachment */,
+				2400B39B1F4834A800D2819B /* RequestViewController.xib */,
+				2400B39D1F4834C600D2819B /* RequestViewController.swift */,
 			);
 			name = MainTabBar;
 			sourceTree = "<group>";
@@ -230,6 +245,7 @@
 		07DB37A01F47DF16009BEB04 /* RegisterTabItem */ = {
 			isa = PBXGroup;
 			children = (
+				2421C0701F47F8B500BC1088 /* TableView */,
 				07DB37A31F47DF56009BEB04 /* View */,
 				07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */,
 			);
@@ -275,6 +291,32 @@
 				07D138201F478E3B0010642D /* View */,
 			);
 			name = Confirmation;
+			sourceTree = "<group>";
+		};
+		2400B39A1F481A2300D2819B /* Attachment */ = {
+			isa = PBXGroup;
+			children = (
+				2400B3961F481A0C00D2819B /* attachmentModalView.swift */,
+				2400B3981F481A1D00D2819B /* attachmentModalView.xib */,
+			);
+			name = Attachment;
+			sourceTree = "<group>";
+		};
+		2421C0701F47F8B500BC1088 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2421C0711F47F8BF00BC1088 /* View */,
+				2421C0721F47FA7E00BC1088 /* registerCell.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		2421C0711F47F8BF00BC1088 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2421C06E1F47F8A300BC1088 /* registerCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		2448496C1F47E231006679C4 /* Theme */ = {
@@ -470,11 +512,14 @@
 				245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */,
 				07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */,
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
+				2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */,
 				07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
 				245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */,
 				07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
+				2400B39C1F4834A800D2819B /* RequestViewController.xib in Resources */,
+				2400B3991F481A1D00D2819B /* attachmentModalView.xib in Resources */,
 				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
 				245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */,
 				245B81831F47CBF900210911 /* Asap-Italic.otf in Resources */,
@@ -544,7 +589,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8EAF4EE27CDB6ECEC52D3691 /* [CP] Check Pods Manifest.lock */ = {
@@ -562,7 +607,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		92BB7985645831C0DF80BBFF /* [CP] Check Pods Manifest.lock */ = {
@@ -580,7 +625,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AFBA5C2F5C727833250FFFCD /* [CP] Embed Pods Frameworks */ = {
@@ -657,10 +702,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */,
 				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
+				2400B39E1F4834C600D2819B /* RequestViewController.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
+				2400B3971F481A0C00D2819B /* attachmentModalView.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,

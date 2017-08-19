@@ -20,9 +20,9 @@ class ConfimationAuthenticateView: UIViewController {
         autorizedButton.layer.borderWidth  = 1
         autorizedButton.layer.cornerRadius = autorizedButton.frame.height / 2
         
-        goToWebPage.layer.borderColor  = Theme.primaryColor.cgColor
-        goToWebPage.layer.borderWidth  = 1
-        goToWebPage.layer.cornerRadius = goToWebPage.frame.height / 2
+        goToWebPage.layer.borderColor      = Theme.primaryColor.cgColor
+        goToWebPage.layer.borderWidth      = 1
+        goToWebPage.layer.cornerRadius     = goToWebPage.frame.height / 2
         
     }
     
@@ -30,5 +30,12 @@ class ConfimationAuthenticateView: UIViewController {
         return true
     }
 
+    @IBAction func whenAutorized(_ sender: Any) {
+        
+        let rootController = Bundle.main.loadNibNamed("MainTabBarViewController", owner: self, options: nil)?[0] as? MainTabBarViewController
+        
+        self.present(rootController!, animated: true)
+        
+    }
 }
 

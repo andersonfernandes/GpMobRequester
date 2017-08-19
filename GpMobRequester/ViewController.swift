@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     @IBAction func nextScreen(_ sender: Any) {
         
         let rootController = Bundle.main.loadNibNamed("AuthorizationViewController", owner: self, options: nil)?[0] as? AuthorizationViewController
-        
         self.present(rootController!, animated: true)
 
     }
