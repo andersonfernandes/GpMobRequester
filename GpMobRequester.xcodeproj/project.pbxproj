@@ -16,6 +16,13 @@
 		07C287A71F47310800E9DA0C /* GpMobRequesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287A61F47310800E9DA0C /* GpMobRequesterUITests.swift */; };
 		07D138231F478F8B0010642D /* ReturnConfirmationToUser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */; };
 		07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */; };
+		07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */; };
+		07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */; };
+		07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */; };
+		07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */; };
+		07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */; };
+		07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */; };
+		07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
@@ -58,6 +65,13 @@
 		07C287A81F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReturnConfirmationToUser.xib; sourceTree = "<group>"; };
 		07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnConfirmationToUSer.swift; sourceTree = "<group>"; };
+		07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
+		07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemViewController.swift; sourceTree = "<group>"; };
+		07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTabItemViewController.xib; sourceTree = "<group>"; };
+		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
+		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,11 +140,13 @@
 		07C287851F47310800E9DA0C /* GpMobRequester */ = {
 			isa = PBXGroup;
 			children = (
+				07DB37A61F47DFDB009BEB04 /* Common */,
 				C8E58D6D1F478EF500E5F7AE /* view */,
 				C8E58D651F47422000E5F7AE /* Authorization */,
 				07F0FAD21F47451C002CFC23 /* Confirmation */,
 				07C287861F47310800E9DA0C /* AppDelegate.swift */,
 				07C287881F47310800E9DA0C /* ViewController.swift */,
+				07DB379A1F47D9EA009BEB04 /* MainTabBar */,
 				07D138211F478F0C0010642D /* ReturnConfirmationToUser */,
 				07C2878A1F47310800E9DA0C /* Main.storyboard */,
 				07C2878D1F47310800E9DA0C /* Assets.xcassets */,
@@ -174,6 +190,67 @@
 				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
 			);
 			name = ReturnConfirmationToUser;
+			sourceTree = "<group>";
+		};
+		07DB379A1F47D9EA009BEB04 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				07DB379D1F47DA79009BEB04 /* View */,
+				07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */,
+				07DB37A01F47DF16009BEB04 /* RegisterTabItem */,
+				07DB37A91F47E1EE009BEB04 /* DependentsTabItem */,
+			);
+			name = MainTabBar;
+			sourceTree = "<group>";
+		};
+		07DB379D1F47DA79009BEB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07DB37A01F47DF16009BEB04 /* RegisterTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37A31F47DF56009BEB04 /* View */,
+				07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */,
+			);
+			name = RegisterTabItem;
+			sourceTree = "<group>";
+		};
+		07DB37A31F47DF56009BEB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07DB37A61F47DFDB009BEB04 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		07DB37A91F47E1EE009BEB04 /* DependentsTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37AC1F47E226009BEB04 /* View */,
+				07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */,
+			);
+			name = DependentsTabItem;
+			sourceTree = "<group>";
+		};
+		07DB37AC1F47E226009BEB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		07F0FAD21F47451C002CFC23 /* Confirmation */ = {
@@ -351,8 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D138231F478F8B0010642D /* ReturnConfirmationToUser.xib in Resources */,
+				07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */,
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
+				07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
+				07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
 				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
 				07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */,
@@ -534,11 +614,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
+				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,
+				07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
