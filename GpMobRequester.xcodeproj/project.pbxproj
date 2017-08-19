@@ -8,14 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287861F47310800E9DA0C /* AppDelegate.swift */; };
-		07C287891F47310800E9DA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287881F47310800E9DA0C /* ViewController.swift */; };
 		07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878A1F47310800E9DA0C /* Main.storyboard */; };
 		07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878D1F47310800E9DA0C /* Assets.xcassets */; };
 		07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878F1F47310800E9DA0C /* LaunchScreen.storyboard */; };
-		07C2879C1F47310800E9DA0C /* GpMobRequesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C2879B1F47310800E9DA0C /* GpMobRequesterTests.swift */; };
 		07C287A71F47310800E9DA0C /* GpMobRequesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287A61F47310800E9DA0C /* GpMobRequesterUITests.swift */; };
+		07D138231F478F8B0010642D /* ReturnConfirmationToUser.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */; };
+		07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */; };
+		07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37781F475387009BEB04 /* FichaFuncional.swift */; };
+		07DB377B1F475846009BEB04 /* TipoParentesco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB377A1F475846009BEB04 /* TipoParentesco.swift */; };
+		07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB377C1F47587E009BEB04 /* Dependente.swift */; };
+		07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB377E1F475898009BEB04 /* GrupoTipo.swift */; };
+		07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */; };
+		07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */; };
+		07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37841F4758DC009BEB04 /* Grupo.swift */; };
+		07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37891F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift */; };
+		07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378C1F476F3A009BEB04 /* AuthSolicitationRequest.swift */; };
+		07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */; };
+		07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37911F47703B009BEB04 /* RemoteUtils.swift */; };
+		07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
+		07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */; };
+		07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */; };
+		07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */; };
+		07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */; };
+		07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */; };
+		07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */; };
+		07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */; };
+		07DB37B61F486423009BEB04 /* AttachmentModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37B51F486423009BEB04 /* AttachmentModalView.xib */; };
+		07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37B71F486454009BEB04 /* AttachmentModalView.swift */; };
+		07DB37BA1F4876DC009BEB04 /* AttachmentModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */; };
+		07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */; };
+		07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */; };
+		07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */; };
+		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
+		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
+		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
+		2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421C0721F47FA7E00BC1088 /* registerCell.swift */; };
+		2448496B1F47E229006679C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448496A1F47E229006679C4 /* Theme.swift */; };
+		245B81831F47CBF900210911 /* Asap-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817D1F47CBF900210911 /* Asap-Italic.otf */; };
+		245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817E1F47CBF900210911 /* Asap-Medium.otf */; };
+		245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817F1F47CBF900210911 /* Asap-MediumItalic.otf */; };
+		245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81801F47CBF900210911 /* Asap-Bold.otf */; };
+		245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81811F47CBF900210911 /* Asap-BoldItalic.otf */; };
+		245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81821F47CBF900210911 /* Asap-Regular.otf */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
+		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
+		C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
+		DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12446F1F47B28800FF3325 /* AuthRequest.swift */; };
+		DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244721F47B3A900FF3325 /* AuthResponse.swift */; };
+		DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */; };
+		DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */; };
+		DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */; };
+		DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */; };
+		DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */; };
+		DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */; };
+		DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */; };
+		DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
+		DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
+		DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
+		DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,25 +90,85 @@
 /* Begin PBXFileReference section */
 		07C287831F47310800E9DA0C /* GpMobRequester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpMobRequester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C287861F47310800E9DA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C287881F47310800E9DA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07C2878B1F47310800E9DA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C2878D1F47310800E9DA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C287901F47310800E9DA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C287921F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07C287971F47310800E9DA0C /* GpMobRequesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpMobRequesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07C2879B1F47310800E9DA0C /* GpMobRequesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpMobRequesterTests.swift; sourceTree = "<group>"; };
 		07C2879D1F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07C287A21F47310800E9DA0C /* GpMobRequesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GpMobRequesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C287A61F47310800E9DA0C /* GpMobRequesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpMobRequesterUITests.swift; sourceTree = "<group>"; };
 		07C287A81F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReturnConfirmationToUser.xib; sourceTree = "<group>"; };
+		07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnConfirmationToUSer.swift; sourceTree = "<group>"; };
+		07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
+		07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemViewController.swift; sourceTree = "<group>"; };
+		07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTabItemViewController.xib; sourceTree = "<group>"; };
+		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
+		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
+		07DB37B51F486423009BEB04 /* AttachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalView.xib; sourceTree = "<group>"; };
+		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
+		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
+		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
+		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
+		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
+		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
+		07DB37781F475387009BEB04 /* FichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncional.swift; sourceTree = "<group>"; };
+		07DB377A1F475846009BEB04 /* TipoParentesco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoParentesco.swift; sourceTree = "<group>"; };
+		07DB377C1F47587E009BEB04 /* Dependente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependente.swift; sourceTree = "<group>"; };
+		07DB377E1F475898009BEB04 /* GrupoTipo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrupoTipo.swift; sourceTree = "<group>"; };
+		07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoDadoFichaFuncional.swift; sourceTree = "<group>"; };
+		07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncional.swift; sourceTree = "<group>"; };
+		07DB37841F4758DC009BEB04 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
+		07DB37891F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationApiDataSource.swift; sourceTree = "<group>"; };
+		07DB378C1F476F3A009BEB04 /* AuthSolicitationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationRequest.swift; sourceTree = "<group>"; };
+		07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationResponse.swift; sourceTree = "<group>"; };
+		07DB37911F47703B009BEB04 /* RemoteUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteUtils.swift; sourceTree = "<group>"; };
+		07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
+		07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemViewController.swift; sourceTree = "<group>"; };
+		07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTabItemViewController.xib; sourceTree = "<group>"; };
+		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
+		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
+		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
+		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
+		2421C06E1F47F8A300BC1088 /* registerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = registerCell.xib; sourceTree = "<group>"; };
+		2421C0721F47FA7E00BC1088 /* registerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerCell.swift; sourceTree = "<group>"; };
+		2448496A1F47E229006679C4 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		245B817D1F47CBF900210911 /* Asap-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Italic.otf"; sourceTree = "<group>"; };
+		245B817E1F47CBF900210911 /* Asap-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Medium.otf"; sourceTree = "<group>"; };
+		245B817F1F47CBF900210911 /* Asap-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-MediumItalic.otf"; sourceTree = "<group>"; };
+		245B81801F47CBF900210911 /* Asap-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.otf"; sourceTree = "<group>"; };
+		245B81811F47CBF900210911 /* Asap-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-BoldItalic.otf"; sourceTree = "<group>"; };
+		245B81821F47CBF900210911 /* Asap-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.otf"; sourceTree = "<group>"; };
 		53068DB0D3822C1ACDF361E6 /* Pods-GpMobRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91DDD95CE47F473C7B55E352 /* Pods-GpMobRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		96946D7F0F8742B2C8665B35 /* Pods-GpMobRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.release.xcconfig"; sourceTree = "<group>"; };
 		A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequesterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequesterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1612EF6EAE85E0DC54EC754 /* Pods-GpMobRequesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
 		DBF15156326C710A4D8A754B /* Pods-GpMobRequesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE12446F1F47B28800FF3325 /* AuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		DE1244721F47B3A900FF3325 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSource.swift; sourceTree = "<group>"; };
+		DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImplTests.swift; sourceTree = "<group>"; };
+		DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthErrorResponse.swift; sourceTree = "<group>"; };
+		DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
+		DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
+		DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
+		DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalResponse.swift; sourceTree = "<group>"; };
+		DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +203,8 @@
 		07C2877A1F47310800E9DA0C = {
 			isa = PBXGroup;
 			children = (
+				07DB37761F4752E7009BEB04 /* Domain */,
+				07DB37861F476D54009BEB04 /* Infrastructure */,
 				07C287851F47310800E9DA0C /* GpMobRequester */,
 				07C2879A1F47310800E9DA0C /* GpMobRequesterTests */,
 				07C287A51F47310800E9DA0C /* GpMobRequesterUITests */,
@@ -114,9 +227,16 @@
 		07C287851F47310800E9DA0C /* GpMobRequester */ = {
 			isa = PBXGroup;
 			children = (
-				07C287861F47310800E9DA0C /* AppDelegate.swift */,
-				07C287881F47310800E9DA0C /* ViewController.swift */,
+				245B817C1F47CBE000210911 /* Fonts */,
+				07DB37A61F47DFDB009BEB04 /* Common */,
+				C8E58D6D1F478EF500E5F7AE /* view */,
+				C8E58D651F47422000E5F7AE /* Authorization */,
+				07F0FAD21F47451C002CFC23 /* Confirmation */,
+				07DB379A1F47D9EA009BEB04 /* MainTabBar */,
+				07D138211F478F0C0010642D /* RequestSuccess */,
+				2448496C1F47E231006679C4 /* Theme */,
 				07C2878A1F47310800E9DA0C /* Main.storyboard */,
+				07C287861F47310800E9DA0C /* AppDelegate.swift */,
 				07C2878D1F47310800E9DA0C /* Assets.xcassets */,
 				07C2878F1F47310800E9DA0C /* LaunchScreen.storyboard */,
 				07C287921F47310800E9DA0C /* Info.plist */,
@@ -127,7 +247,7 @@
 		07C2879A1F47310800E9DA0C /* GpMobRequesterTests */ = {
 			isa = PBXGroup;
 			children = (
-				07C2879B1F47310800E9DA0C /* GpMobRequesterTests.swift */,
+				07DB37951F477686009BEB04 /* Infrastructure */,
 				07C2879D1F47310800E9DA0C /* Info.plist */,
 			);
 			path = GpMobRequesterTests;
@@ -140,6 +260,259 @@
 				07C287A81F47310800E9DA0C /* Info.plist */,
 			);
 			path = GpMobRequesterUITests;
+			sourceTree = "<group>";
+		};
+		07D138201F478E3B0010642D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */,
+				07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07D138211F478F0C0010642D /* ReturnConfirmationToUser */ = {
+			isa = PBXGroup;
+			children = (
+				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
+				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
+			);
+			name = ReturnConfirmationToUser;
+			sourceTree = "<group>";
+		};
+		07DB37761F4752E7009BEB04 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37771F47537A009BEB04 /* Entities */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		07DB37771F47537A009BEB04 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37781F475387009BEB04 /* FichaFuncional.swift */,
+				07DB37841F4758DC009BEB04 /* Grupo.swift */,
+				07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */,
+				07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */,
+				07DB377E1F475898009BEB04 /* GrupoTipo.swift */,
+				07DB377C1F47587E009BEB04 /* Dependente.swift */,
+				07DB377A1F475846009BEB04 /* TipoParentesco.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		07DB37861F476D54009BEB04 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37901F477031009BEB04 /* Commons */,
+				07DB37871F476EA6009BEB04 /* Repositories */,
+			);
+			name = Infrastructure;
+			path = GpMobRequester;
+			sourceTree = "<group>";
+		};
+		07DB37871F476EA6009BEB04 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DE1244911F48249800FF3325 /* FichaFuncional */,
+				DE1244891F48100E00FF3325 /* Session */,
+				DE12446D1F47B26A00FF3325 /* Auth */,
+				07DB37881F476EE3009BEB04 /* AuthSolicitation */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		07DB37881F476EE3009BEB04 /* AuthSolicitation */ = {
+			isa = PBXGroup;
+			children = (
+				07DB378B1F476F30009BEB04 /* Dto */,
+				07DB37891F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift */,
+				07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */,
+			);
+			name = AuthSolicitation;
+			sourceTree = "<group>";
+		};
+		07DB378B1F476F30009BEB04 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				07DB378C1F476F3A009BEB04 /* AuthSolicitationRequest.swift */,
+				07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */,
+			);
+			name = Dto;
+			sourceTree = "<group>";
+		};
+		07DB37901F477031009BEB04 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37911F47703B009BEB04 /* RemoteUtils.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		07DB37951F477686009BEB04 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37961F477690009BEB04 /* Repositories */,
+			);
+			name = Infrastructure;
+			sourceTree = "<group>";
+		};
+		07DB37961F477690009BEB04 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DE12448C1F48136000FF3325 /* Session */,
+				DE12447F1F47E54300FF3325 /* FichaFuncional */,
+				DE1244741F47B4E800FF3325 /* Auth */,
+				07DB37971F47769E009BEB04 /* AuthSolicitation */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		07DB37971F47769E009BEB04 /* AuthSolicitation */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */,
+			);
+			name = AuthSolicitation;
+			sourceTree = "<group>";
+		};
+		07D138201F478E3B0010642D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */,
+				07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07D138211F478F0C0010642D /* RequestSuccess */ = {
+			isa = PBXGroup;
+			children = (
+				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
+				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
+			);
+			name = RequestSuccess;
+			sourceTree = "<group>";
+		};
+		07DB379A1F47D9EA009BEB04 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				07DB379D1F47DA79009BEB04 /* View */,
+				07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */,
+				07DB37A01F47DF16009BEB04 /* RegisterTabItem */,
+				07DB37A91F47E1EE009BEB04 /* DependentsTabItem */,
+				2400B39A1F481A2300D2819B /* Attachment */,
+			);
+			name = MainTabBar;
+			sourceTree = "<group>";
+		};
+		07DB379D1F47DA79009BEB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07DB37A01F47DF16009BEB04 /* RegisterTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				2421C0701F47F8B500BC1088 /* TableView */,
+				07DB37A31F47DF56009BEB04 /* View */,
+				07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */,
+			);
+			name = RegisterTabItem;
+			sourceTree = "<group>";
+		};
+		07DB37A31F47DF56009BEB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07DB37A61F47DFDB009BEB04 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		07DB37A91F47E1EE009BEB04 /* DependentsTabItem */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37AC1F47E226009BEB04 /* View */,
+				07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */,
+			);
+			name = DependentsTabItem;
+			sourceTree = "<group>";
+		};
+		07DB37AC1F47E226009BEB04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07F0FAD21F47451C002CFC23 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				07D138201F478E3B0010642D /* View */,
+			);
+			name = Confirmation;
+			sourceTree = "<group>";
+		};
+		2400B39A1F481A2300D2819B /* Attachment */ = {
+			isa = PBXGroup;
+			children = (
+				07DB37B51F486423009BEB04 /* AttachmentModalView.xib */,
+				07DB37B71F486454009BEB04 /* AttachmentModalView.swift */,
+				07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */,
+				07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */,
+			);
+			name = Attachment;
+			sourceTree = "<group>";
+		};
+		2421C0701F47F8B500BC1088 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2421C0711F47F8BF00BC1088 /* View */,
+				2421C0721F47FA7E00BC1088 /* registerCell.swift */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		2421C0711F47F8BF00BC1088 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2421C06E1F47F8A300BC1088 /* registerCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2448496C1F47E231006679C4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2448496A1F47E229006679C4 /* Theme.swift */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		245B817C1F47CBE000210911 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				245B817D1F47CBF900210911 /* Asap-Italic.otf */,
+				245B817E1F47CBF900210911 /* Asap-Medium.otf */,
+				245B817F1F47CBF900210911 /* Asap-MediumItalic.otf */,
+				245B81801F47CBF900210911 /* Asap-Bold.otf */,
+				245B81811F47CBF900210911 /* Asap-BoldItalic.otf */,
+				245B81821F47CBF900210911 /* Asap-Regular.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		8EBFE6EE4972DEF0E7CBAB9A /* Pods */ = {
@@ -163,6 +536,102 @@
 				AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8E58D651F47422000E5F7AE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				C8E58D681F47434400E5F7AE /* View */,
+				C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */,
+				07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */,
+				07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		C8E58D681F47434400E5F7AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8E58D6D1F478EF500E5F7AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		DE12446D1F47B26A00FF3325 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DE12446E1F47B27100FF3325 /* Dto */,
+				DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */,
+				DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		DE12446E1F47B27100FF3325 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				DE12446F1F47B28800FF3325 /* AuthRequest.swift */,
+				DE1244721F47B3A900FF3325 /* AuthResponse.swift */,
+				DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */,
+			);
+			name = Dto;
+			sourceTree = "<group>";
+		};
+		DE1244741F47B4E800FF3325 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		DE12447F1F47E54300FF3325 /* FichaFuncional */ = {
+			isa = PBXGroup;
+			children = (
+				DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */,
+			);
+			name = FichaFuncional;
+			sourceTree = "<group>";
+		};
+		DE1244891F48100E00FF3325 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		DE12448C1F48136000FF3325 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		DE1244911F48249800FF3325 /* FichaFuncional */ = {
+			isa = PBXGroup;
+			children = (
+				DE1244921F48250000FF3325 /* Dto */,
+				DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */,
+				DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */,
+			);
+			name = FichaFuncional;
+			sourceTree = "<group>";
+		};
+		DE1244921F48250000FF3325 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */,
+			);
+			name = Dto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +753,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D138231F478F8B0010642D /* ReturnConfirmationToUser.xib in Resources */,
+				07DB37B61F486423009BEB04 /* AttachmentModalView.xib in Resources */,
+				245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */,
+				245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */,
+				245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */,
+				07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */,
+				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
+				2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */,
+				07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */,
+				07DB37BA1F4876DC009BEB04 /* AttachmentModalViewController.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
+				245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */,
+				07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
+				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
+				245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */,
+				245B81831F47CBF900210911 /* Asap-Italic.otf in Resources */,
 				07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,9 +881,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -414,12 +903,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Retrofire/Retrofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Retrofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -465,8 +956,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */,
+				07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */,
+				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
+				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
+				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
+				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
+				DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */,
+				07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */,
+				07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */,
+				DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */,
+				07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
+				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
+				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
+				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
+				07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */,
+				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,
+				07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */,
+				07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */,
+				DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,
+				DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */,
+				07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */,
+				07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */,
+				07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */,
+				07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */,
+				DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
+				DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */,
+				DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */,
+				DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */,
+				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
+				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */,
+				DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */,
+				07DB377B1F475846009BEB04 /* TipoParentesco.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +999,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07C2879C1F47310800E9DA0C /* GpMobRequesterTests.swift in Sources */,
+				DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */,
+				DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */,
+				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +1251,7 @@
 				07C287AD1F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C287AE1F47310800E9DA0C /* Build configuration list for PBXNativeTarget "GpMobRequesterTests" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +1260,7 @@
 				07C287B01F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C287B11F47310800E9DA0C /* Build configuration list for PBXNativeTarget "GpMobRequesterUITests" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +1269,7 @@
 				07C287B31F47310800E9DA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
