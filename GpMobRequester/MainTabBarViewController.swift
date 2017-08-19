@@ -14,7 +14,7 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor          = Theme.backgroundColor
+        self.view.backgroundColor = Theme.backgroundColor
         
     }
     
@@ -43,14 +43,14 @@ class MainTabBarViewController: UITabBarController {
         let nc = UINavigationController(rootViewController: registerTabItemViewController)
         
         let dependentsTabItemViewController: DependentsTabItemViewController = loadNibNamed("DependentsTabItemViewController", owner: self)!
-        let requestTabItemViewController: RequestViewController = loadNibNamed("RequestViewController", owner: self)!
+//        let requestTabItemViewController: RequestViewController = loadNibNamed("RequestViewController", owner: self)!
         
         registerTabItemViewController.tabBarItem   = registerTab
         dependentsTabItemViewController.tabBarItem = dependentsTab
-        requestTabItemViewController.tabBarItem    = dependentsTab
+//        requestTabItemViewController.tabBarItem    = dependentsTab
         
         
-        self.viewControllers = [nc, dependentsTabItemViewController, requestTabItemViewController]
+        self.viewControllers = [nc, dependentsTabItemViewController]
         UIApplication.shared.statusBarStyle = .lightContent
         
         nc.navigationBar.barStyle = UIBarStyle.blackTranslucent
@@ -69,7 +69,6 @@ class MainTabBarViewController: UITabBarController {
         
         
     }
-    
     
 }
 

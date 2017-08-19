@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287861F47310800E9DA0C /* AppDelegate.swift */; };
-		07C287891F47310800E9DA0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C287881F47310800E9DA0C /* ViewController.swift */; };
 		07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878A1F47310800E9DA0C /* Main.storyboard */; };
 		07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878D1F47310800E9DA0C /* Assets.xcassets */; };
 		07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C2878F1F47310800E9DA0C /* LaunchScreen.storyboard */; };
@@ -65,7 +64,6 @@
 /* Begin PBXFileReference section */
 		07C287831F47310800E9DA0C /* GpMobRequester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpMobRequester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C287861F47310800E9DA0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C287881F47310800E9DA0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07C2878B1F47310800E9DA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C2878D1F47310800E9DA0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C287901F47310800E9DA0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -171,12 +169,11 @@
 				C8E58D6D1F478EF500E5F7AE /* view */,
 				C8E58D651F47422000E5F7AE /* Authorization */,
 				07F0FAD21F47451C002CFC23 /* Confirmation */,
-				07C287861F47310800E9DA0C /* AppDelegate.swift */,
-				07C287881F47310800E9DA0C /* ViewController.swift */,
 				07DB379A1F47D9EA009BEB04 /* MainTabBar */,
 				07D138211F478F0C0010642D /* RequestSuccess */,
 				2448496C1F47E231006679C4 /* Theme */,
 				07C2878A1F47310800E9DA0C /* Main.storyboard */,
+				07C287861F47310800E9DA0C /* AppDelegate.swift */,
 				07C2878D1F47310800E9DA0C /* Assets.xcassets */,
 				07C2878F1F47310800E9DA0C /* LaunchScreen.storyboard */,
 				07C287921F47310800E9DA0C /* Info.plist */,
@@ -709,7 +706,6 @@
 				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
-				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,

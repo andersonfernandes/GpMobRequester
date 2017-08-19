@@ -38,7 +38,7 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func logoutTapped(){
-        print("chid please")
+        self.dismiss(animated: true)
         
     }
     
