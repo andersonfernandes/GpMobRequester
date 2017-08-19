@@ -16,12 +16,14 @@ import Retrofire
 /**
  Unit tests for the implementation of {@link FichaFuncionalApiDataSourceImpl}
  */
-//class FichaFuncionalApiDataSourceImpl: QuickSpec {
-//    
-//    override func spec() {
-//        
-//        
-//        
-//    }
-//    
-//}
+class FichaFuncionalApiDataSourceImpl: QuickSpec {
+    
+    override func spec() {
+        
+        describe("") {
+            
+        }
+        
+    }
+    
+}
