@@ -17,7 +17,6 @@ struct registers {
 class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var arrayFront = [registers]()
-    var attachmentModal: attachmentModalView?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -82,6 +81,16 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let attachmentModelViewController: AttachmentModalViewController = loadNibNamed("AttachmentModalViewController", owner: self)!
+        
+        attachmentModelViewController.delegate = self
+        
+        self.present(attachmentModelViewController, animated: true)
+        
+    }
+    
     func addCustomCell() {
         tableView.backgroundColor = UIColor.clear
         tableView.dataSource      = self
@@ -92,3 +101,10 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
     
 }
+
+extension RegisterTabItemViewController: AttachmentModalViewDelegate {
+    func attached(attach: UIImage) {
+        let a  = true
+    }
+}
+
