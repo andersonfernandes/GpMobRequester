@@ -16,12 +16,37 @@ protocol AttachmentModalViewDelegate {
 
 class AttachmentModalViewController: UIViewController {
     
+    @IBOutlet weak var requestButton: UIButton!
+    @IBOutlet weak var resultPhotoTaken: UIImageView!
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var modalViewShadow: UIView!
+    @IBOutlet weak var modalView: UIView!
     var delegate: AttachmentModalViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.modalPresentationStyle = .custom
+        modalViewRadius()
+        modalViewSetShadow()
+        
+        self.view.frame             =  CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        self.modalPresentationStyle = .overFullScreen
+    }
+    
+    func modalViewSetShadow() {
+        
+        modalViewShadow.layer.masksToBounds = false
+        modalViewShadow.layer.borderWidth   = 0
+        modalViewShadow.layer.shadowColor = UIColor.lightGray.cgColor
+        modalViewShadow.layer.shadowOpacity = 1.0
+        modalViewShadow.layer.shadowOffset = CGSize(width: 2.0, height: 4.0)
+        modalViewShadow.layer.shadowRadius = 14
+    
+    }
+    
+    func modalViewRadius() {
+        modalView.layer.cornerRadius = 8
+        modalView.clipsToBounds      = true
     }
     
     func showAttachView() {
@@ -52,12 +77,37 @@ extension AttachmentModalViewController: ImagePickerDelegate {
     }
     
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-        
         delegate?.attached(attach: images[0])
-        
         imagePicker.dismiss(animated: true, completion: nil)
         
-        self.dismiss(animated: true)
+        sucesseAttachMessage()
+        resultPhotoTaken.clipsToBounds = true
+        resultPhotoTaken.layer.cornerRadius = resultPhotoTaken.frame.height / 2
+        resultPhotoTaken.image              = images[0]
         
+    }
+    
+    func requestTutorial() {
+        
+        weak var pvc = self.presentingViewController
+        
+        self.dismiss(animated: true, completion: {
+            let vc : NotificationReminderView = loadNibNamed("NotificationReminderView", owner: NotificationReminderView.self)!
+            pvc?.present(vc, animated: true, completion: nil)
+        })
+    
+    }
+    
+    func sucesseAttachMessage() {
+        mainLabel.text      = "Documento anexado com sucesso"
+        mainLabel.textColor = UIColor.black
+        mainLabel.alpha     = 1.0
+        
+        requestButton.removeTarget(nil, action: nil, for: .allEvents)
+        requestButton.setTitle("Solicitar", for: .normal)
+        requestButton.addTarget(self, action: #selector(AttachmentModalViewController.requestTutorial), for: .touchUpInside)
+        
+        
+    
     }
 }

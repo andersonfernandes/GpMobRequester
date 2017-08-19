@@ -25,6 +25,8 @@ class AuthorizationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        UIApplication.shared.statusBarStyle = .lightContent
         
         setTheme()
         
