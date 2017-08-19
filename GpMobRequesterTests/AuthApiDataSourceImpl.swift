@@ -21,14 +21,14 @@ class AuthApiDataSourceImplTest: QuickSpec {
     override func spec() {
         
         var login               = "24006664"
-        var idAutorizacao       = 83
+        var idAutorizacao       = 134
         let authApiDataSource   = AuthApiDataSourceImpl.getInstance()
         var authRequest         = AuthRequest(login: login, idAutorizacao: idAutorizacao)
-        var authResponseResult: AuthResponse?
         
         describe("Authorizing an user") {
-            
             context("When authorize with success") {
+                var authResponseResult: AuthResponse?
+                
                 it("Should return a valid authResponse") {
                     authApiDataSource.authorize(authRequest: authRequest)
                         .onSuccess() { response in
@@ -36,16 +36,14 @@ class AuthApiDataSourceImplTest: QuickSpec {
                         }
                         .onFailed() { e in }
                         .call()
-                    
-                    expect(authResponseResult?.getCodigo()).toEventually(equal(2))
-                    
-                    expect(authResponseResult?.getMensagem()).toEventually(equal("Autorização do aplicativo não encontrada."))
+                    expect(authResponseResult?.getIdToken()).toEventually(equal("eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNDAwNjY2NCIsImF1dGgiOiJST0xFX0VNSV9FWFRSQVRPLFJPTEVfUkVMX0RFTlVOX0VTUE9OVEFORUEsUk9MRV9FTUlfQ1AsUk9MRV9SRUxfT01JU1NBTyIsImlkQ29uZXhhbyI6IjAzQjU1Mzg3RUM0QzMzNEYyNUI0NTIzREYzQjYyNUZBIiwibnVtUGVzc29hIjoyNjQ4LCJpbmRTdGF0dXMiOiJBIiwiaWRBcGxpY2F0aXZvIjozMCwiaWRBdXRvcml6YWNhbyI6MTM0LCJleHAiOjE1MTg5OTg0MDB9.kX3fVcVvjRRwKimso0pgjYAt1_tsyqEBs9TZAtuWJGX-l-5fOyFtGTq5WODcvkX8kn9e27DApsGV4fYT6patKQ"))
                 }
             }
         
-            context("When authorize failed") {
+            context("When the idAutorizacao is invalid") {
+                var authErrorResponseResult: ErrorResponse?
+                
                 beforeEach {
-                    login    = "non-existent"
                     idAutorizacao = 1111
                     
                     authRequest = AuthRequest(login: login, idAutorizacao: idAutorizacao)
@@ -54,13 +52,16 @@ class AuthApiDataSourceImplTest: QuickSpec {
                 it("Should return an not authorized error") {
                     authApiDataSource.authorize(authRequest: authRequest)
                         .onSuccess() { response in
-                            authResponseResult = response
+                            let a  = true
                         }
-                        .onFailed() { e in }
+                        .onFailed() { e in
+                            authErrorResponseResult = e as! ErrorResponse
+                        }
                         .call()
                     
-                    expect(authResponseResult?.getCodigo()).toEventually(equal(404))
-                    expect(authResponseResult?.getMensagem()).toEventually(equal("{Login não encontrado."))
+                    expect(authErrorResponseResult?.statusCode).toEventually(equal(401))
+                    expect(authErrorResponseResult?.detailMessage).toEventually(equal("{\n    codigo = 2;\n    mensagem = \"Autoriza\\U00e7\\U00e3o do aplicativo n\\U00e3o encontrada.\";\n}"))
+  
                 }
             }
         }

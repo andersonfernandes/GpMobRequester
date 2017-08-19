@@ -33,6 +33,8 @@
 		DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */; };
 		DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */; };
 		DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */; };
+		DE1244811F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
+		DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSource.swift; sourceTree = "<group>"; };
 		DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthErrorResponse.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -257,6 +261,7 @@
 		07DB37961F477690009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE12447F1F47E54300FF3325 /* FichaFuncional */,
 				DE1244741F47B4E800FF3325 /* Auth */,
 				07DB37971F47769E009BEB04 /* AuthSolicitation */,
 			);
@@ -309,6 +314,7 @@
 			children = (
 				DE12446F1F47B28800FF3325 /* AuthRequest.swift */,
 				DE1244721F47B3A900FF3325 /* AuthResponse.swift */,
+				DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */,
 			);
 			name = Dto;
 			sourceTree = "<group>";
@@ -319,6 +325,14 @@
 				DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */,
 			);
 			name = Auth;
+			sourceTree = "<group>";
+		};
+		DE12447F1F47E54300FF3325 /* FichaFuncional */ = {
+			isa = PBXGroup;
+			children = (
+				DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift */,
+			);
+			name = FichaFuncional;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -639,6 +653,7 @@
 				07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */,
 				DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 				DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */,
+				DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */,
 				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
 				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
 				07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */,
@@ -652,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DB37991F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				DE1244811F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,
 				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
