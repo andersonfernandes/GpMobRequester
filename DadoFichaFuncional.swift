@@ -53,6 +53,14 @@ struct DadoFichaFuncional: Retrofire.Mappable {
         ) as! M
     }
     
+    func getTipoDadoFichaFuncional() -> TipoDadoFichaFuncional? {
+        return tipoDadoFichaFuncional
+    }
+    
+    func getDescricao() -> String? {
+        return descricao
+    }
+    
     private struct APIField {
         static let id                      = "id"
         static let numeroPessoaFuncionario = "numeroPessoaFuncionario"

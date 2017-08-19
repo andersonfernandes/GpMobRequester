@@ -29,6 +29,14 @@ struct Grupo: Retrofire.Mappable {
             ) as! M
     }
     
+    func getDescricao() -> String? {
+        return descricao
+    }
+    
+    func getDados() -> [DadoFichaFuncional]? {
+        return dados
+    }
+    
     private struct APIField {
         static let descricao = "descricao"
         static let dados     = "dados"
