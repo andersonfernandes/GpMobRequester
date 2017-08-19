@@ -49,6 +49,9 @@ extension ConfimationAuthenticateView: ConfirmationViewContract {
     }
     
     func showError(message: String) {
+        let alert = UIAlertController(title: "Atenção", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         
+        self.present(alert, animated: true, completion: nil)
     }
 }
