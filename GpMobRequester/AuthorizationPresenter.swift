@@ -17,7 +17,7 @@ class AuthorizationPresenter: AuthorizationPresenterContract {
     }
     
     func requestAuthorization(matricula: String) {
-        
+        view.goToAuthorizationConfirmation()
     }
     
 }
