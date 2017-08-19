@@ -30,8 +30,8 @@
                     <rect key="frame" x="0.0" y="603" width="375" height="64"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3CE4EC3C-399E-4587-8D7A-5868E2ED3D4E" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-Yf-WzH">
-                            <rect key="frame" x="-0.96141479099674143" y="-3.7524115755627463" width="374.99999999999983" height="73.000000000000057"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="footer" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-Yf-WzH">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
@@ -101,11 +101,6 @@
             </connections>
             <point key="canvasLocation" x="35.5" y="53.5"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ic6-6X-rPP">
-            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button"/>
-        </button>
     </objects>
     <resources>
         <image name="3CE4EC3C-399E-4587-8D7A-5868E2ED3D4E" width="1482" height="270">
