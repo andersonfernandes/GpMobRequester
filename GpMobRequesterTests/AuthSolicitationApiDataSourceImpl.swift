@@ -14,13 +14,13 @@ import Retrofire
 @testable import GpMobRequester
 
 /**
- Unit tests for the implementation of {@link AuthApiDataSourceImpl}
+ Unit tests for the implementation of {@link AuthSolicitationApiDataSourceImpl}
  */
 class AuthSolicitationApiDataSourceImplTest: QuickSpec {
     
     override func spec() {
         
-        describe("Authorizing an user") {
+        describe("Requesting user authorization") {
             
             var login             = "24006664"
             var nomeDispositivo   = "24006664-2"

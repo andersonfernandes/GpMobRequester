@@ -9,7 +9,7 @@
 import Foundation
 import Retrofire
 
-protocol AuthSolicitationApiDataSource{
+protocol AuthSolicitationApiDataSource {
     var authorizePath: String { get }
     
     func requestAuthorization(authRequest: AuthSolicitationRequest) -> Call<AuthSolicitationResponse>

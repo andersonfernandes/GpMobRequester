@@ -20,14 +20,19 @@
 		07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */; };
 		07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */; };
 		07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37841F4758DC009BEB04 /* Grupo.swift */; };
-		07DB378A1F476F1E009BEB04 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37891F476F1E009BEB04 /* AuthApiDataSource.swift */; };
-		07DB378D1F476F3A009BEB04 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378C1F476F3A009BEB04 /* AuthRequest.swift */; };
-		07DB378F1F476F55009BEB04 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378E1F476F55009BEB04 /* AuthResponse.swift */; };
+		07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37891F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift */; };
+		07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378C1F476F3A009BEB04 /* AuthSolicitationRequest.swift */; };
+		07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */; };
 		07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37911F47703B009BEB04 /* RemoteUtils.swift */; };
-		07DB37941F47708D009BEB04 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37931F47708D009BEB04 /* AuthApiDataSourceImpl.swift */; };
-		07DB37991F4776B6009BEB04 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthApiDataSourceImpl.swift */; };
+		07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
+		07DB37991F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
+		DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12446F1F47B28800FF3325 /* AuthRequest.swift */; };
+		DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244721F47B3A900FF3325 /* AuthResponse.swift */; };
+		DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */; };
+		DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */; };
+		DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,12 +73,12 @@
 		07DB37801F4758B1009BEB04 /* TipoDadoFichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoDadoFichaFuncional.swift; sourceTree = "<group>"; };
 		07DB37821F4758C8009BEB04 /* DadoFichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncional.swift; sourceTree = "<group>"; };
 		07DB37841F4758DC009BEB04 /* Grupo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grupo.swift; sourceTree = "<group>"; };
-		07DB37891F476F1E009BEB04 /* AuthApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSource.swift; sourceTree = "<group>"; };
-		07DB378C1F476F3A009BEB04 /* AuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
-		07DB378E1F476F55009BEB04 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		07DB37891F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationApiDataSource.swift; sourceTree = "<group>"; };
+		07DB378C1F476F3A009BEB04 /* AuthSolicitationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationRequest.swift; sourceTree = "<group>"; };
+		07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationResponse.swift; sourceTree = "<group>"; };
 		07DB37911F47703B009BEB04 /* RemoteUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteUtils.swift; sourceTree = "<group>"; };
-		07DB37931F47708D009BEB04 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
-		07DB37981F4776B6009BEB04 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSolicitationApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
 		53068DB0D3822C1ACDF361E6 /* Pods-GpMobRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91DDD95CE47F473C7B55E352 /* Pods-GpMobRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +87,11 @@
 		AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequesterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1612EF6EAE85E0DC54EC754 /* Pods-GpMobRequesterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DBF15156326C710A4D8A754B /* Pods-GpMobRequesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE12446F1F47B28800FF3325 /* AuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
+		DE1244721F47B3A900FF3325 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSource.swift; sourceTree = "<group>"; };
+		DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -203,26 +213,27 @@
 		07DB37871F476EA6009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				07DB37881F476EE3009BEB04 /* Auth */,
+				DE12446D1F47B26A00FF3325 /* Auth */,
+				07DB37881F476EE3009BEB04 /* AuthSolicitation */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
 		};
-		07DB37881F476EE3009BEB04 /* Auth */ = {
+		07DB37881F476EE3009BEB04 /* AuthSolicitation */ = {
 			isa = PBXGroup;
 			children = (
 				07DB378B1F476F30009BEB04 /* Dto */,
-				07DB37891F476F1E009BEB04 /* AuthApiDataSource.swift */,
-				07DB37931F47708D009BEB04 /* AuthApiDataSourceImpl.swift */,
+				07DB37891F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift */,
+				07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */,
 			);
-			name = Auth;
+			name = AuthSolicitation;
 			sourceTree = "<group>";
 		};
 		07DB378B1F476F30009BEB04 /* Dto */ = {
 			isa = PBXGroup;
 			children = (
-				07DB378C1F476F3A009BEB04 /* AuthRequest.swift */,
-				07DB378E1F476F55009BEB04 /* AuthResponse.swift */,
+				07DB378C1F476F3A009BEB04 /* AuthSolicitationRequest.swift */,
+				07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */,
 			);
 			name = Dto;
 			sourceTree = "<group>";
@@ -246,17 +257,18 @@
 		07DB37961F477690009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				07DB37971F47769E009BEB04 /* Auth */,
+				DE1244741F47B4E800FF3325 /* Auth */,
+				07DB37971F47769E009BEB04 /* AuthSolicitation */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
 		};
-		07DB37971F47769E009BEB04 /* Auth */ = {
+		07DB37971F47769E009BEB04 /* AuthSolicitation */ = {
 			isa = PBXGroup;
 			children = (
-				07DB37981F4776B6009BEB04 /* AuthApiDataSourceImpl.swift */,
+				07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */,
 			);
-			name = Auth;
+			name = AuthSolicitation;
 			sourceTree = "<group>";
 		};
 		8EBFE6EE4972DEF0E7CBAB9A /* Pods */ = {
@@ -280,6 +292,33 @@
 				AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE12446D1F47B26A00FF3325 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DE12446E1F47B27100FF3325 /* Dto */,
+				DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */,
+				DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		DE12446E1F47B27100FF3325 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				DE12446F1F47B28800FF3325 /* AuthRequest.swift */,
+				DE1244721F47B3A900FF3325 /* AuthResponse.swift */,
+			);
+			name = Dto;
+			sourceTree = "<group>";
+		};
+		DE1244741F47B4E800FF3325 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,18 +627,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */,
-				07DB378D1F476F3A009BEB04 /* AuthRequest.swift in Sources */,
-				07DB378A1F476F1E009BEB04 /* AuthApiDataSource.swift in Sources */,
+				07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */,
+				07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */,
+				DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */,
 				07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */,
 				07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */,
 				07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */,
 				07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */,
+				DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
+				DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */,
 				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
-				07DB37941F47708D009BEB04 /* AuthApiDataSourceImpl.swift in Sources */,
-				07DB378F1F476F55009BEB04 /* AuthResponse.swift in Sources */,
+				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */,
+				DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */,
 				07DB377B1F475846009BEB04 /* TipoParentesco.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,7 +651,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DB37991F4776B6009BEB04 /* AuthApiDataSourceImpl.swift in Sources */,
+				07DB37991F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
