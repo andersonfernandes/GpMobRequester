@@ -58,6 +58,7 @@
 		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
 		C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
+		DE0597631F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0597621F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift */; };
 		DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12446F1F47B28800FF3325 /* AuthRequest.swift */; };
 		DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244721F47B3A900FF3325 /* AuthResponse.swift */; };
 		DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */; };
@@ -67,6 +68,10 @@
 		DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */; };
 		DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */; };
 		DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */; };
+		DE4607C11F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */; };
+		DE4607C31F48F065008AFA36 /* DadoFichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */; };
+		DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */; };
+		DE4607C71F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */; };
 		DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
 		DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
 		DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
@@ -136,12 +141,6 @@
 		07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationContracts.swift; sourceTree = "<group>"; };
 		07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarContracts.swift; sourceTree = "<group>"; };
 		07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabPresenter.swift; sourceTree = "<group>"; };
-		07DB37B51F486423009BEB04 /* AttachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalView.xib; sourceTree = "<group>"; };
-		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
-		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
-		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
-		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
-		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
 		DBF15156326C710A4D8A754B /* Pods-GpMobRequesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0597621F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE12446F1F47B28800FF3325 /* AuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
 		DE1244721F47B3A900FF3325 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
@@ -175,6 +175,10 @@
 		DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
 		DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalResponse.swift; sourceTree = "<group>"; };
 		DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalRequest.swift; sourceTree = "<group>"; };
+		DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalResponse.swift; sourceTree = "<group>"; };
+		DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
+		DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBEBFDE1F48B4DD00333033 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -322,6 +326,7 @@
 		07DB37871F476EA6009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE4607BE1F48EE22008AFA36 /* DadoFichaFuncional */,
 				DE1244911F48249800FF3325 /* FichaFuncional */,
 				DE1244891F48100E00FF3325 /* Session */,
 				DE12446D1F47B26A00FF3325 /* Auth */,
@@ -369,6 +374,7 @@
 		07DB37961F477690009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE0597611F48FDA100654DB4 /* DadoFichaFuncional */,
 				DE12448C1F48136000FF3325 /* Session */,
 				DE12447F1F47E54300FF3325 /* FichaFuncional */,
 				DE1244741F47B4E800FF3325 /* Auth */,
@@ -558,6 +564,14 @@
 			name = view;
 			sourceTree = "<group>";
 		};
+		DE0597611F48FDA100654DB4 /* DadoFichaFuncional */ = {
+			isa = PBXGroup;
+			children = (
+				DE0597621F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift */,
+			);
+			name = DadoFichaFuncional;
+			sourceTree = "<group>";
+		};
 		DE12446D1F47B26A00FF3325 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +638,25 @@
 			isa = PBXGroup;
 			children = (
 				DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */,
+			);
+			name = Dto;
+			sourceTree = "<group>";
+		};
+		DE4607BE1F48EE22008AFA36 /* DadoFichaFuncional */ = {
+			isa = PBXGroup;
+			children = (
+				DE4607BF1F48EE5B008AFA36 /* Dto */,
+				DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */,
+				DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */,
+			);
+			name = DadoFichaFuncional;
+			sourceTree = "<group>";
+		};
+		DE4607BF1F48EE5B008AFA36 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */,
+				DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */,
 			);
 			name = Dto;
 			sourceTree = "<group>";
@@ -961,9 +994,12 @@
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
 				DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */,
 				07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */,
+				DE4607C71F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */,
 				07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */,
 				DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */,
 				07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */,
+				DE4607C31F48F065008AFA36 /* DadoFichaFuncionalResponse.swift in Sources */,
+				DE4607C11F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */,
@@ -986,6 +1022,7 @@
 				DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 				DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */,
 				DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */,
+				DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */,
 				DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */,
 				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
 				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
@@ -1003,6 +1040,7 @@
 				DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */,
 				DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */,
 				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
+				DE0597631F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

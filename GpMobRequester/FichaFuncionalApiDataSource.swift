@@ -13,6 +13,8 @@ protocol FichaFuncionalApiDataSource {
     var authorizePath: String { get }
     
     func get(userToken: String?) -> Call<FichaFuncionalResponse>
+    
+    
 }
 
 extension FichaFuncionalApiDataSource {
