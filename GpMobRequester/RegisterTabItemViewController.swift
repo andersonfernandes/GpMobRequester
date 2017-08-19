@@ -26,6 +26,8 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Asap-Medium", size: 10)!], for: .normal)
         
         addLogout()
+        addChat()
+        
         addCustomCell()
         createData()
     }
@@ -33,13 +35,24 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     func addLogout() {
         let logout = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(logoutTapped))
         logout.image = UIImage(named: "logout")
-        logout.imageInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        logout.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         navigationItem.leftBarButtonItems = [logout]
     }
     
-    func logoutTapped(){
-        self.dismiss(animated: true)
-        
+    func addChat() {
+        let chatBell = UIBarButtonItem(title: "Chat", style: .plain, target: self, action: #selector(chatTapped))
+        chatBell.image = UIImage(named: "bell")
+        chatBell.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        navigationItem.rightBarButtonItems = [chatBell]
+    }
+    
+    func logoutTapped() {
+    }
+    
+    func chatTapped() {
+    }
+    
+    func customNavBar() {
     }
     
     func createData() {
@@ -84,10 +97,9 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let attachmentModelViewController: AttachmentModalViewController = loadNibNamed("AttachmentModalViewController", owner: self)!
-        
         attachmentModelViewController.delegate = self
-        
         self.present(attachmentModelViewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
         
     }
     
