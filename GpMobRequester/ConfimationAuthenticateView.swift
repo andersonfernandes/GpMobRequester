@@ -9,21 +9,25 @@
 import Foundation
 import UIKit
 
-class ConfimationAuthenticateView: UIView {
+class ConfimationAuthenticateView: UIViewController {
+    @IBOutlet weak var autorizedButton: UIButton!
+    @IBOutlet weak var goToWebPage: UIButton!
     
-    @IBOutlet weak var confirmAccess: UIButton!
-    @IBOutlet weak var accessWebPageSefaz: UIButton!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        autorizedButton.layer.borderColor  = Theme.primaryColor.cgColor
+        autorizedButton.layer.borderWidth  = 1
+        autorizedButton.layer.cornerRadius = autorizedButton.frame.height / 2
+        
+        goToWebPage.layer.borderColor  = Theme.primaryColor.cgColor
+        goToWebPage.layer.borderWidth  = 1
+        goToWebPage.layer.cornerRadius = goToWebPage.frame.height / 2
+        
+    }
     
-    override func awakeFromNib() {
-      confirmAccess.layer.cornerRadius = accessWebPageSefaz.frame.height / 2
-        
-      confirmAccess.layer.borderWidth = 1
-      confirmAccess.layer.borderColor = UIColor.blue as! CGColor
-        
-      accessWebPageSefaz.layer.cornerRadius = accessWebPageSefaz.frame.height / 2
-        
-      accessWebPageSefaz.layer.borderWidth = 1
-      accessWebPageSefaz.layer.borderColor = UIColor.blue as! CGColor
+    override var prefersStatusBarHidden : Bool {
+        return true
     }
 
 }
