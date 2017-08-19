@@ -41,6 +41,8 @@
 		07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */; };
 		07DB37C21F48C0F5009BEB04 /* ConfirmationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C11F48C0F5009BEB04 /* ConfirmationPresenter.swift */; };
 		07DB37C41F48C10B009BEB04 /* ConfirmationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */; };
+		07DB37C61F48D7C9009BEB04 /* MainTabBarContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */; };
+		07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
 		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
@@ -131,6 +133,8 @@
 		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		07DB37C11F48C0F5009BEB04 /* ConfirmationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPresenter.swift; sourceTree = "<group>"; };
 		07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationContracts.swift; sourceTree = "<group>"; };
+		07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarContracts.swift; sourceTree = "<group>"; };
+		07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabPresenter.swift; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -377,6 +381,8 @@
 			children = (
 				07DB379D1F47DA79009BEB04 /* View */,
 				07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */,
+				07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */,
+				07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */,
 				07DB37A01F47DF16009BEB04 /* RegisterTabItem */,
 				07DB37A91F47E1EE009BEB04 /* DependentsTabItem */,
 				2400B39A1F481A2300D2819B /* Attachment */,
@@ -949,12 +955,14 @@
 				07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */,
 				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
 				07DB37C41F48C10B009BEB04 /* ConfirmationContracts.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
 				07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */,
 				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,
+				07DB37C61F48D7C9009BEB04 /* MainTabBarContracts.swift in Sources */,
 				07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */,
 				07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */,
 				DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,

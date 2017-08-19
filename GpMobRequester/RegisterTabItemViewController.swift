@@ -20,6 +20,12 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var mainTabBarPresenter: MainTabBarPresenterContract = {
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        
+        return MainTabPresenter(view: self, sessionLocalDataSource: sessionLocalDataSource)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,8 +44,7 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func logoutTapped(){
-        self.dismiss(animated: true)
-        
+        mainTabBarPresenter.logout()
     }
     
     func createData() {
@@ -104,7 +109,13 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
 
 extension RegisterTabItemViewController: AttachmentModalViewDelegate {
     func attached(attach: UIImage) {
-        let a  = true
+    }
+}
+
+extension RegisterTabItemViewController: MainTabBarViewContract {
+    
+    func goToLogin() {
+       self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
     }
 }
 
