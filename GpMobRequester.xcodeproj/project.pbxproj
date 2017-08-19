@@ -26,6 +26,8 @@
 		07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37B71F486454009BEB04 /* AttachmentModalView.swift */; };
 		07DB37BA1F4876DC009BEB04 /* AttachmentModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */; };
 		07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */; };
+		07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */; };
+		07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
 		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
@@ -87,6 +89,8 @@
 		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
 		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
 		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
+		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
+		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 			children = (
 				C8E58D681F47434400E5F7AE /* View */,
 				C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */,
+				07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */,
+				07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */,
 			);
 			name = Authorization;
 			sourceTree = "<group>";
@@ -709,8 +715,10 @@
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
+				07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */,
 				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,
 				07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */,
 			);

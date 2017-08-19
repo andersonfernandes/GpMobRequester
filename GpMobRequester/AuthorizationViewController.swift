@@ -15,11 +15,14 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet weak var loginContainerClippingMask: UIView!
     @IBOutlet weak var loginContainerShadow: UIView!
     
+    lazy var presenter: AuthorizationPresenterContract = {
+        return AuthorizationPresenter(view: self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setTheme()
-        
     }
     
     func setTheme() {
@@ -40,13 +43,26 @@ class AuthorizationViewController: UIViewController {
     }
     
     @IBAction func requestLogin(_ sender: Any) {
-        
+        let matricula = "192831"
+        presenter.requestAuthorization(matricula: matricula)
+    
+    }
+    
+    
+}
+
+extension AuthorizationViewController: AuthorizationViewContract {
+    
+    func goToAuthorizationConfirmation() {
         let rootController = Bundle.main.loadNibNamed("ConfimationAuthenticateView", owner: self, options: nil)?[0] as? ConfimationAuthenticateView
         
         
         self.present(rootController!, animated: true)
+        
     }
     
-    
+    func showError(message: String) {
+        
+    }
 }
 
