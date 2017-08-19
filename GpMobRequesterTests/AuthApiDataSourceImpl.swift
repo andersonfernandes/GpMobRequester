@@ -20,7 +20,7 @@ class AuthApiDataSourceImplTest: QuickSpec {
     
     override func spec() {
         
-        var login               = "24006664"
+        let login               = "24006664"
         var idAutorizacao       = 134
         let authApiDataSource   = AuthApiDataSourceImpl.getInstance()
         var authRequest         = AuthRequest(login: login, idAutorizacao: idAutorizacao)
@@ -51,11 +51,8 @@ class AuthApiDataSourceImplTest: QuickSpec {
                 
                 it("Should return an not authorized error") {
                     authApiDataSource.authorize(authRequest: authRequest)
-                        .onSuccess() { response in
-                            let a  = true
-                        }
                         .onFailed() { e in
-                            authErrorResponseResult = e as! ErrorResponse
+                            authErrorResponseResult = e as? ErrorResponse
                         }
                         .call()
                     

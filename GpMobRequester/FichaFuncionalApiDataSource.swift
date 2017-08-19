@@ -12,7 +12,7 @@ import Retrofire
 protocol FichaFuncionalApiDataSource {
     var authorizePath: String { get }
     
-    func get() -> Call<FichaFuncionalResponse>
+    func get(userToken: String?) -> Call<FichaFuncionalResponse>
 }
 
 extension FichaFuncionalApiDataSource {

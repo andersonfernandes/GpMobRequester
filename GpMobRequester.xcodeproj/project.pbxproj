@@ -27,7 +27,6 @@
 		07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB378E1F476F55009BEB04 /* AuthSolicitationResponse.swift */; };
 		07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37911F47703B009BEB04 /* RemoteUtils.swift */; };
 		07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37931F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
-		07DB37991F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
 		07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */; };
 		07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */; };
 		07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */; };
@@ -53,13 +52,14 @@
 		DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */; };
 		DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */; };
 		DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */; };
-		DE1244811F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
 		DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */; };
 		DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */; };
-		DE1244901F4815BD00FF3325 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
 		DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */; };
 		DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */; };
-		DE12449A1F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
+		DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
+		DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
+		DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
+		DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -139,7 +139,7 @@
 		DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSource.swift; sourceTree = "<group>"; };
 		DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
-		DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImplTests.swift; sourceTree = "<group>"; };
 		DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthErrorResponse.swift; sourceTree = "<group>"; };
 		DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
 		DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
@@ -523,7 +523,7 @@
 		DE12447F1F47E54300FF3325 /* FichaFuncional */ = {
 			isa = PBXGroup;
 			children = (
-				DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift */,
+				DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */,
 			);
 			name = FichaFuncional;
 			sourceTree = "<group>";
@@ -895,6 +895,7 @@
 				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,
 				07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */,
 				07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */,
+				DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,
 				DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */,
 				07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */,
 				07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */,
@@ -916,10 +917,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DB37991F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
-				DE1244901F4815BD00FF3325 /* SessionLocalDataSource.swift in Sources */,
-				DE12449A1F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,
-				DE1244811F47E58700FF3325 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,
+				DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */,
+				DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */,
 				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

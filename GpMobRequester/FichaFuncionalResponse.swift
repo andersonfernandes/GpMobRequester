@@ -32,9 +32,21 @@ struct FichaFuncionalResponse: Retrofire.Mappable {
         }
         
         return FichaFuncionalResponse(nomeFuncionario: nomeFuncionario,
-                              dependentes: [Dependente](),
-                              grupos: [Grupo]()
+                              dependentes: dependentes,
+                              grupos: grupos
             ) as! M
+    }
+    
+    func getNomeFuncionario() -> String? {
+        return nomeFuncionario
+    }
+    
+    func getDependentes() -> [Dependente]? {
+        return dependentes
+    }
+    
+    func getGrupos() -> [Grupo]? {
+        return grupos
     }
     
     private struct APIField {

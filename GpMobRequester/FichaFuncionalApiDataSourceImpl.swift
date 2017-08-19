@@ -11,7 +11,6 @@ import Retrofire
 
 class FichaFuncionalApiDataSourceImpl: RemoteBase, FichaFuncionalApiDataSource {
     private static var INSTANCE: FichaFuncionalApiDataSourceImpl?
-    private let sessionLocalDataSource: SessionLocalDataSource = SessionLocalDataSource.getInstance()
     
     static func getInstance() -> FichaFuncionalApiDataSourceImpl {
         if (INSTANCE == nil) {
@@ -21,13 +20,12 @@ class FichaFuncionalApiDataSourceImpl: RemoteBase, FichaFuncionalApiDataSource {
         return INSTANCE!
     }
     
-    func get() -> Call<FichaFuncionalResponse> {
+    func get(userToken: String?) -> Call<FichaFuncionalResponse> {
         let path = RemoteUtils.buildUrl(path: authorizePath)
-        let header = ["Authorization": "Bearer " + sessionLocalDataSource.getUserToken()]
+        let header = ["Authorization": "Bearer " + (userToken ?? "")]
         
         let request = RequestBuilder(path: path)
-            .headers(headers: headers)
-            .bodyParameters(authRequest.asBodyParameters())
+            .headers(header)
             .build()
         
         return self.callSingle(request: request)

@@ -24,7 +24,7 @@ class SessionLocalDataSourceTests: QuickSpec {
             let userToken = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNDAwNjY2NCIsImF1dGgiOiJST0xFX0VNSV9FWFRSQVRPLFJPTEVfUkVMX0RFTlVOX0VTUE9OVEFORUEsUk9MRV9FTUlfQ1AsUk9MRV9SRUxfT01JU1NBTyIsImlkQ29uZXhhbyI6IjBDODIyN0M4QzJFNzlGMTJGMkIzMkU2QURENDEzREI1IiwibnVtUGVzc29hIjoyNjQ4LCJpbmRTdGF0dXMiOiJBIiwiaWRBcGxpY2F0aXZvIjozMCwiaWRBdXRvcml6YWNhbyI6MTM0LCJleHAiOjE1MTg5OTg0MDB9.4RurHdYiCdJuYrvxA-ZEKEAsEPWwi5GDN-Gh05BTwfo-4vYEHmBGNEoo2uacqXHf1Aj08r2Zdz5hHDQAw3rlcw"
             
             context("Save with a valid token") {
-                let saveUserTokenResult = sessionLocalDataSource.saveUsetToken(userToken: userToken)
+                let saveUserTokenResult = sessionLocalDataSource.saveUserToken(userToken: userToken)
                 
                 it("Should return the token") {
                     expect(saveUserTokenResult).to(equal(userToken))
@@ -32,7 +32,7 @@ class SessionLocalDataSourceTests: QuickSpec {
             }
             
             context("Save with an invalid token") {
-                let saveUserTokenResult = sessionLocalDataSource.saveUsetToken(userToken: "")
+                let saveUserTokenResult = sessionLocalDataSource.saveUserToken(userToken: "")
                 
                 it("Should return nil") {
                     expect(saveUserTokenResult).to(beNil())

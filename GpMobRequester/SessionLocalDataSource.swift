@@ -26,7 +26,7 @@ public class SessionLocalDataSource {
         return INSTANCE!
     }
     
-    public func saveUsetToken(userToken: String?) -> String? {
+    public func saveUserToken(userToken: String?) -> String? {
         if (userToken == nil || (userToken?.isEmpty)!){
             return nil
         }

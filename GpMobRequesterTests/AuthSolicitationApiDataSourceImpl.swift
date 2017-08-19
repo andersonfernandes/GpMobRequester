@@ -35,9 +35,6 @@ class AuthSolicitationApiDataSourceImplTest: QuickSpec {
                         .onSuccess() { response in
                             authResponseResult = response
                         }
-                        .onFailed() { e in
-                            var a = 1
-                        }
                         .call()
                     
                     expect(authResponseResult?.getIdAutorizacao()).toEventually(equal(136))
