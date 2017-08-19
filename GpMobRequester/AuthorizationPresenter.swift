@@ -11,13 +11,40 @@ import Foundation
 class AuthorizationPresenter: AuthorizationPresenterContract {
     
     let view: AuthorizationViewContract
+    let authApiDataSource: AuthSolicitationApiDataSource
+    let sessionLocalDataSource: SessionLocalDataSource
     
-    init(view: AuthorizationViewContract) {
-        self.view = view
+    init(view: AuthorizationViewContract,
+         authApiDataSource: AuthSolicitationApiDataSource,
+         sessionLocalDataSource: SessionLocalDataSource
+        ) {
+        self.view                   = view
+        self.authApiDataSource      = authApiDataSource
+        self.sessionLocalDataSource = sessionLocalDataSource 
+    }
+    
+    func hasUserToken() -> Bool {
+        let userToken = sessionLocalDataSource.getUserToken()
+        return userToken != nil && userToken != ""
+    }
+    
+    func hasIdAuthorizationPending() -> Bool {
+        let id = sessionLocalDataSource.getIdAuthorizationPending()
+        return  id != nil && id != 0
     }
     
     func requestAuthorization(matricula: String) {
-        view.goToAuthorizationConfirmation()
+        let authRequest = AuthSolicitationRequest(login: matricula, nomeDispositivo: "\(matricula)-\(Date())")
+        authApiDataSource.requestAuthorization(authRequest: authRequest)
+            .onSuccess { authResponse in
+                self.sessionLocalDataSource.saveIdAuthorizationPending(authResponse?.getIdAutorizacao())
+                self.sessionLocalDataSource.saveMatricula(matricula)
+                self.view.goToAuthorizationConfirmation()
+            }
+            .onFailed { _ in
+                self.view.showError(message: "Verifique se sua matrícula está correta")
+            }
+            .call()
     }
     
 }

@@ -9,10 +9,13 @@
 import Foundation
 
 protocol AuthorizationViewContract {
+    func goToMainTabBar() -> Void
     func goToAuthorizationConfirmation() -> Void
     func showError(message: String) -> Void
 }
 
 protocol AuthorizationPresenterContract {
+    func hasUserToken() -> Bool
+    func hasIdAuthorizationPending() -> Bool
     func requestAuthorization(matricula: String) -> Void
 }

@@ -13,6 +13,12 @@ class ConfimationAuthenticateView: UIViewController {
     @IBOutlet weak var autorizedButton: UIButton!
     @IBOutlet weak var goToWebPage: UIButton!
     
+    lazy var presenter: ConfirmationPresenterContract = {
+        let authApi = AuthApiDataSourceImpl.getInstance()
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        return ConfirmationPresenter(view: self, authApiDataSource: authApi, sessionLocalDataSource: sessionLocalDataSource)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,11 +37,18 @@ class ConfimationAuthenticateView: UIViewController {
     }
 
     @IBAction func whenAutorized(_ sender: Any) {
-        
-        let rootController = Bundle.main.loadNibNamed("MainTabBarViewController", owner: self, options: nil)?[0] as? MainTabBarViewController
-        
-        self.present(rootController!, animated: true)
-        
+        presenter.confirmAuthorization()
     }
 }
 
+extension ConfimationAuthenticateView: ConfirmationViewContract {
+    
+    func goToMainTabBar() {
+        let rootController = Bundle.main.loadNibNamed("MainTabBarViewController", owner: self, options: nil)?[0] as? MainTabBarViewController
+        self.present(rootController!, animated: true)
+    }
+    
+    func showError(message: String) {
+        
+    }
+}
