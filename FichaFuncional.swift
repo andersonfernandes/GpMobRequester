@@ -39,6 +39,14 @@ struct FichaFuncional: Retrofire.Mappable {
             ) as! M
     }
     
+    func getDependentes() -> [Dependente]? {
+        return dependentes
+    }
+    
+    func getGrupos() -> [Grupo]? {
+        return grupos
+    }
+    
     private struct APIField {
         static let nomeFuncionario = "nomeFuncionario"
         static let dependentes     = "dependentes"

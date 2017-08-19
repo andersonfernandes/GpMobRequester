@@ -67,6 +67,8 @@
 		DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
 		DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
 		DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */; };
+		DEBEBFDF1F48B4DD00333033 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEBFDE1F48B4DD00333033 /* Filter.swift */; };
+		DEBEBFE11F48BAE500333033 /* FichaFuncionalDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEBFE01F48BAE500333033 /* FichaFuncionalDto.swift */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,21 +103,6 @@
 		07C287A81F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReturnConfirmationToUser.xib; sourceTree = "<group>"; };
 		07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnConfirmationToUSer.swift; sourceTree = "<group>"; };
-		07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
-		07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemViewController.swift; sourceTree = "<group>"; };
-		07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTabItemViewController.xib; sourceTree = "<group>"; };
-		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
-		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
-		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
-		07DB37B51F486423009BEB04 /* AttachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalView.xib; sourceTree = "<group>"; };
-		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
-		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
-		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
-		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
-		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
-		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
-		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		07DB37781F475387009BEB04 /* FichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncional.swift; sourceTree = "<group>"; };
 		07DB377A1F475846009BEB04 /* TipoParentesco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoParentesco.swift; sourceTree = "<group>"; };
 		07DB377C1F47587E009BEB04 /* Dependente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependente.swift; sourceTree = "<group>"; };
@@ -136,6 +123,12 @@
 		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
 		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
+		07DB37B51F486423009BEB04 /* AttachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalView.xib; sourceTree = "<group>"; };
+		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
+		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
+		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
+		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
+		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +163,8 @@
 		DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalResponse.swift; sourceTree = "<group>"; };
 		DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBEBFDE1F48B4DD00333033 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		DEBEBFE01F48BAE500333033 /* FichaFuncionalDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalDto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,13 +266,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		07D138211F478F0C0010642D /* ReturnConfirmationToUser */ = {
+		07D138211F478F0C0010642D /* RequestSuccess */ = {
 			isa = PBXGroup;
 			children = (
 				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
 				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
 			);
-			name = ReturnConfirmationToUser;
+			name = RequestSuccess;
 			sourceTree = "<group>";
 		};
 		07DB37761F4752E7009BEB04 /* Domain */ = {
@@ -319,6 +314,8 @@
 				DE1244891F48100E00FF3325 /* Session */,
 				DE12446D1F47B26A00FF3325 /* Auth */,
 				07DB37881F476EE3009BEB04 /* AuthSolicitation */,
+				DEBEBFDE1F48B4DD00333033 /* Filter.swift */,
+				DEBEBFE01F48BAE500333033 /* FichaFuncionalDto.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -375,24 +372,6 @@
 				07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */,
 			);
 			name = AuthSolicitation;
-			sourceTree = "<group>";
-		};
-		07D138201F478E3B0010642D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */,
-				07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		07D138211F478F0C0010642D /* RequestSuccess */ = {
-			isa = PBXGroup;
-			children = (
-				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
-				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
-			);
-			name = RequestSuccess;
 			sourceTree = "<group>";
 		};
 		07DB379A1F47D9EA009BEB04 /* MainTabBar */ = {
@@ -967,8 +946,8 @@
 				07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */,
 				DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */,
 				07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */,
-				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
+				DEBEBFE11F48BAE500333033 /* FichaFuncionalDto.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
@@ -982,6 +961,7 @@
 				07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */,
 				07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */,
 				07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */,
+				DEBEBFDF1F48B4DD00333033 /* Filter.swift in Sources */,
 				07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */,
 				DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
 				DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */,
