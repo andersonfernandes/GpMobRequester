@@ -18,6 +18,13 @@
 		07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
+		2448496B1F47E229006679C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448496A1F47E229006679C4 /* Theme.swift */; };
+		245B81831F47CBF900210911 /* Asap-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817D1F47CBF900210911 /* Asap-Italic.otf */; };
+		245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817E1F47CBF900210911 /* Asap-Medium.otf */; };
+		245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B817F1F47CBF900210911 /* Asap-MediumItalic.otf */; };
+		245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81801F47CBF900210911 /* Asap-Bold.otf */; };
+		245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81811F47CBF900210911 /* Asap-BoldItalic.otf */; };
+		245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81821F47CBF900210911 /* Asap-Regular.otf */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
 		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
 		C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */; };
@@ -61,6 +68,13 @@
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
+		2448496A1F47E229006679C4 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		245B817D1F47CBF900210911 /* Asap-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Italic.otf"; sourceTree = "<group>"; };
+		245B817E1F47CBF900210911 /* Asap-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Medium.otf"; sourceTree = "<group>"; };
+		245B817F1F47CBF900210911 /* Asap-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-MediumItalic.otf"; sourceTree = "<group>"; };
+		245B81801F47CBF900210911 /* Asap-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.otf"; sourceTree = "<group>"; };
+		245B81811F47CBF900210911 /* Asap-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-BoldItalic.otf"; sourceTree = "<group>"; };
+		245B81821F47CBF900210911 /* Asap-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.otf"; sourceTree = "<group>"; };
 		53068DB0D3822C1ACDF361E6 /* Pods-GpMobRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91DDD95CE47F473C7B55E352 /* Pods-GpMobRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		96946D7F0F8742B2C8665B35 /* Pods-GpMobRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,12 +140,14 @@
 		07C287851F47310800E9DA0C /* GpMobRequester */ = {
 			isa = PBXGroup;
 			children = (
+				245B817C1F47CBE000210911 /* Fonts */,
 				C8E58D6D1F478EF500E5F7AE /* view */,
 				C8E58D651F47422000E5F7AE /* Authorization */,
 				07F0FAD21F47451C002CFC23 /* Confirmation */,
 				07C287861F47310800E9DA0C /* AppDelegate.swift */,
 				07C287881F47310800E9DA0C /* ViewController.swift */,
 				07D138211F478F0C0010642D /* ReturnConfirmationToUser */,
+				2448496C1F47E231006679C4 /* Theme */,
 				07C2878A1F47310800E9DA0C /* Main.storyboard */,
 				07C2878D1F47310800E9DA0C /* Assets.xcassets */,
 				07C2878F1F47310800E9DA0C /* LaunchScreen.storyboard */,
@@ -161,8 +177,8 @@
 		07D138201F478E3B0010642D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */,
 				07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */,
+				07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +198,27 @@
 				07D138201F478E3B0010642D /* View */,
 			);
 			name = Confirmation;
+			sourceTree = "<group>";
+		};
+		2448496C1F47E231006679C4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2448496A1F47E229006679C4 /* Theme.swift */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		245B817C1F47CBE000210911 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				245B817D1F47CBF900210911 /* Asap-Italic.otf */,
+				245B817E1F47CBF900210911 /* Asap-Medium.otf */,
+				245B817F1F47CBF900210911 /* Asap-MediumItalic.otf */,
+				245B81801F47CBF900210911 /* Asap-Bold.otf */,
+				245B81811F47CBF900210911 /* Asap-BoldItalic.otf */,
+				245B81821F47CBF900210911 /* Asap-Regular.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		8EBFE6EE4972DEF0E7CBAB9A /* Pods */ = {
@@ -308,7 +345,7 @@
 				TargetAttributes = {
 					07C287821F47310800E9DA0C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = RKYRJH5UVM;
+						DevelopmentTeam = Q96RB5NH33;
 						ProvisioningStyle = Automatic;
 					};
 					07C287961F47310800E9DA0C = {
@@ -351,10 +388,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D138231F478F8B0010642D /* ReturnConfirmationToUser.xib in Resources */,
+				245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */,
+				245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */,
+				245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */,
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
+				245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
 				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
+				245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */,
+				245B81831F47CBF900210911 /* Asap-Italic.otf in Resources */,
 				07C2878C1F47310800E9DA0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +464,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8EAF4EE27CDB6ECEC52D3691 /* [CP] Check Pods Manifest.lock */ = {
@@ -439,7 +482,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		92BB7985645831C0DF80BBFF /* [CP] Check Pods Manifest.lock */ = {
@@ -457,7 +500,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AFBA5C2F5C727833250FFFCD /* [CP] Embed Pods Frameworks */ = {
@@ -537,6 +580,7 @@
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
+				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
 			);
@@ -691,7 +735,7 @@
 			baseConfigurationReference = 0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RKYRJH5UVM;
+				DEVELOPMENT_TEAM = Q96RB5NH33;
 				INFOPLIST_FILE = GpMobRequester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gov.al.GpMobRequester;
@@ -705,7 +749,7 @@
 			baseConfigurationReference = 96946D7F0F8742B2C8665B35 /* Pods-GpMobRequester.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RKYRJH5UVM;
+				DEVELOPMENT_TEAM = Q96RB5NH33;
 				INFOPLIST_FILE = GpMobRequester/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gov.al.GpMobRequester;

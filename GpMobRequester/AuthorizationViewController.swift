@@ -11,11 +11,42 @@ import UIKit
 
 class AuthorizationViewController: UIViewController {
     @IBOutlet weak var someOut: UIView!
+    @IBOutlet weak var loginContainer: UIView!
+    @IBOutlet weak var loginContainerClippingMask: UIView!
+    @IBOutlet weak var loginContainerShadow: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
+        
+        setTheme()
+        
     }
     
+    func setTheme() {
+    
+        self.view.backgroundColor = Theme.backgroundColor
+        
+        loginContainer.layer.cornerRadius = 10
+        loginContainer.clipsToBounds      = true
+        
+        loginContainerShadow.clipsToBounds = false
+        loginContainerShadow.layer.shadowColor = UIColor.black.cgColor
+        loginContainerShadow.layer.shadowOpacity = 0.1
+        loginContainerShadow.layer.shadowOffset = CGSize(width: 1, height: 4)
+        loginContainerShadow.layer.shadowRadius = 8
+        
+        loginContainerClippingMask.clipsToBounds = true
+        loginContainerClippingMask.layer.shadowRadius = 10
+    }
+    
+    @IBAction func requestLogin(_ sender: Any) {
+        
+        let rootController = Bundle.main.loadNibNamed("ConfimationAuthenticateView", owner: self, options: nil)?[0] as? ConfimationAuthenticateView
+        
+        
+        self.present(rootController!, animated: true)
+    }
+    
+    
 }
+

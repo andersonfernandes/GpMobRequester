@@ -12,15 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
     }
     
     @IBAction func nextScreen(_ sender: Any) {
-        let rootController = Bundle.main.loadNibNamed("AuthorizationViewController", owner: self, options: nil)?[0] as? AuthorizationViewController
-
-        let nav = UINavigationController(rootViewController: rootController!)
         
-        self.present(nav, animated: true)
+        let rootController = Bundle.main.loadNibNamed("AuthorizationViewController", owner: self, options: nil)?[0] as? AuthorizationViewController
+        
+        self.present(rootController!, animated: true)
+
     }
     
     
