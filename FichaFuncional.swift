@@ -34,8 +34,8 @@ struct FichaFuncional: Retrofire.Mappable {
         }
         
         return FichaFuncional(nomeFuncionario: nomeFuncionario,
-                              dependentes: [Dependente](),
-                              grupos: [Grupo]()
+                              dependentes: dependentes,
+                              grupos: grupos
             ) as! M
     }
     

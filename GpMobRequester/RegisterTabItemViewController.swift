@@ -9,21 +9,24 @@
 import Foundation
 import UIKit
 
-struct registers {
-    var title  : String
-    var result : String
-}
-
 class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrayFront = [registers]()
+    var dadosFichaDto = [DadoFichaDto]()
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var helloLabel: UILabel!
+    
     
     lazy var mainTabBarPresenter: MainTabBarPresenterContract = {
         let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
-
         return MainTabPresenter(view: self, sessionLocalDataSource: sessionLocalDataSource)
+    }()
+    
+    lazy var registerTabItemPresenter: RegisterTabItemPresenterContract = {
+        let apiDataSource: FichaFuncionalApiDataSource = FichaFuncionalApiDataSourceImpl.getInstance()
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        
+        return RegisterTabItemPresenter(view: self, apiDataSource: apiDataSource, sessionLocalDataSource: sessionLocalDataSource)
     }()
 
     override func viewDidLoad() {
@@ -35,7 +38,8 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         addChat()
 
         addCustomCell()
-        createData()
+        
+        registerTabItemPresenter.getDadadosCadastrais()
     }
     
     func addLogout() {
@@ -62,22 +66,6 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     func customNavBar() {
     }
     
-    func createData() {
-        
-        let name        = registers(title: "Nome", result: "Rodrigo Ribeiro")
-        let civilState  = registers(title: "Estado Civil", result: "Solteiro")
-        let telephone   = registers(title: "Telephone", result: "55 (82) 99812.4444")
-        let adress      = registers(title: "Endereço", result: "Av.Júlio Marques Luz")
-        let instruction = registers(title: "Grau de Instrução", result: "Ensino Médio Completo")
-        
-        arrayFront.append(name)
-        arrayFront.append(civilState)
-        arrayFront.append(telephone)
-        arrayFront.append(adress)
-        arrayFront.append(instruction)
-    
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -87,15 +75,22 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayFront.count
+        return dadosFichaDto.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "registerCell") as! registerCell
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
-        cell.titleLabel?.text            = arrayFront[indexPath.row].title
-        cell.resultLabel?.text           = arrayFront[indexPath.row].result
+        
+        let dadoDto = dadosFichaDto[indexPath.row]
+        
+        if dadoDto.nomeTipo == DataTypes.NOME.rawValue {
+            helloLabel.text = "Olá, \(dadoDto.descricao!)"
+        }
+        
+        cell.titleLabel?.text  = dadoDto.nomeTipo
+        cell.resultLabel?.text = dadoDto.descricao
         
         return cell
         
@@ -133,3 +128,10 @@ extension RegisterTabItemViewController: MainTabBarViewContract {
     }
 }
 
+extension RegisterTabItemViewController: RegisterTabItemViewContract {
+    
+    func loadDadosCadastrais(list: [DadoFichaDto]) {
+        dadosFichaDto = list
+        self.tableView.reloadData()
+    }
+}

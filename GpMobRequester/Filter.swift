@@ -19,20 +19,19 @@ enum DataTypes: String {
 struct DadoFichaDto {
     let descricao: String?
     let tipoDadoFichaFuncional: Int?
+    let nomeTipo: String?
 }
 
 func groupByOnCadastro(fichaFuncional: FichaFuncional, list: [String]) -> [DadoFichaDto] {
     
     var result = [DadoFichaDto]()
-    let groups =  fichaFuncional.getGrupos()?.filter { $0.getDescricao() == "" }
+    let groups =  fichaFuncional.getGrupos()?.filter { $0.getDescricao() == "Cadastro" }
     
-    groups?.forEach { g in
-        let dataList = g.getDados()?.filter { list.contains($0.getTipoDadoFichaFuncional()?.getNome() ?? "") }
-        let data = dataList?.first
-        
-        
-        if data != nil {
-            result.append(DadoFichaDto(descricao: data?.getDescricao(), tipoDadoFichaFuncional: data?.getTipoDadoFichaFuncional()?.getId()))
+    let dadosGrupo = groups?.filter { $0.getDescricao() == "Cadastro" }.first?.getDados()
+    
+    dadosGrupo?.forEach { d in
+        if list.contains((d.getTipoDadoFichaFuncional()?.getNomeTipo()!)!) {
+            result.append(DadoFichaDto(descricao: d.getDescricao(), tipoDadoFichaFuncional: d.getTipoDadoFichaFuncional()?.getId(), nomeTipo: d.getTipoDadoFichaFuncional()?.getNomeTipo()))
         }
     }
     
