@@ -178,7 +178,7 @@
 				07C287861F47310800E9DA0C /* AppDelegate.swift */,
 				07C287881F47310800E9DA0C /* ViewController.swift */,
 				07DB379A1F47D9EA009BEB04 /* MainTabBar */,
-				07D138211F478F0C0010642D /* ReturnConfirmationToUser */,
+				07D138211F478F0C0010642D /* RequestSuccess */,
 				2448496C1F47E231006679C4 /* Theme */,
 				07C2878A1F47310800E9DA0C /* Main.storyboard */,
 				07C2878D1F47310800E9DA0C /* Assets.xcassets */,
@@ -215,13 +215,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		07D138211F478F0C0010642D /* ReturnConfirmationToUser */ = {
+		07D138211F478F0C0010642D /* RequestSuccess */ = {
 			isa = PBXGroup;
 			children = (
 				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
 				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
 			);
-			name = ReturnConfirmationToUser;
+			name = RequestSuccess;
 			sourceTree = "<group>";
 		};
 		07DB379A1F47D9EA009BEB04 /* MainTabBar */ = {
