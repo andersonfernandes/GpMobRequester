@@ -20,4 +20,4 @@ E após isso rodar o pod install para instalar as devidas dependências com:
 
 Agora você pode importar o projeto no seu xcode e dar **run** no mesmo.
 
-[Histórias](https://github.com/andersonfernandes/GpMobRequester/blob/master/Historia%20do%20Usua%CC%81rio%20GP-MOB.pdf)
+[Histórias do usuário](https://github.com/andersonfernandes/GpMobRequester/blob/master/Historia%20do%20Usua%CC%81rio%20GP-MOB.pdf)
