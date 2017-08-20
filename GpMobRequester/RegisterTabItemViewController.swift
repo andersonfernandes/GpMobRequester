@@ -16,13 +16,9 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var helloLabel: UILabel!
 
+    var mainTabVarView: MainTabBarViewContract?
 
-    lazy var mainTabBarPresenter: MainTabBarPresenterContract = {
-        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
-        return MainTabPresenter(view: self, sessionLocalDataSource: sessionLocalDataSource)
-    }()
-
-    lazy var registerTabItemPresenter: RegisterTabItemPresenterContract = {
+     lazy var registerTabItemPresenter: RegisterTabItemPresenterContract = {
         let apiDataSource: FichaFuncionalApiDataSource = FichaFuncionalApiDataSourceImpl.getInstance()
         let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
 
@@ -34,37 +30,17 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Asap-Medium", size: 10)!], for: .normal)
         
-        addLogout()
-        addChat()
-
         addCustomCell()
 
         registerTabItemPresenter.getDadadosCadastrais()
     }
     
-    func addLogout() {
-        let logout = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(logoutTapped))
-        logout.image = UIImage(named: "logout")
-        logout.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        navigationItem.leftBarButtonItems = [logout]
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        mainTabVarView?.configureHeaderOn(self)
     }
-    
-    func logoutTapped(){
-        mainTabBarPresenter.logout()
-    }
-
-    func addChat() {
-        let chatBell = UIBarButtonItem(title: "Chat", style: .plain, target: self, action: #selector(chatTapped))
-        chatBell.image = UIImage(named: "bell")
-        chatBell.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        navigationItem.rightBarButtonItems = [chatBell]
-    }
-
-    func chatTapped() {
-
-        let chatView: ChatViewController = loadNibNamed("ChatViewController", owner: self)!
-        self.navigationController?.pushViewController(chatView, animated: true)
-    }
+  
 
     func customNavBar() {
     }
@@ -120,13 +96,6 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
 
 extension RegisterTabItemViewController: AttachmentModalViewDelegate {
     func attached(attach: UIImage) {
-    }
-}
-
-extension RegisterTabItemViewController: MainTabBarViewContract {
-
-    func goToLogin() {
-       self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
     }
 }
 

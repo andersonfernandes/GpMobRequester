@@ -11,6 +11,13 @@ import UIKit
 
 class MainTabBarViewController: UITabBarController {
     
+    var viewControllerToConfig: UIViewController?
+    
+    lazy var mainTabBarPresenter: MainTabBarPresenterContract = {
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        return MainTabPresenter(view: self, sessionLocalDataSource: sessionLocalDataSource)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,7 +32,6 @@ class MainTabBarViewController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
         tabBar.tintColor = Theme.primaryColor
         
         let registerTab = UITabBarItem(title: "Cadastro", image: #imageLiteral(resourceName: "briefcase"), selectedImage: #imageLiteral(resourceName: "briefcase"))
@@ -34,14 +40,17 @@ class MainTabBarViewController: UITabBarController {
         
         //register tab
         let registerTabItemViewController: RegisterTabItemViewController = loadNibNamed("RegisterTabItemViewController", owner: self)!
+        registerTabItemViewController.mainTabVarView = self
         let registerNc = UINavigationController(rootViewController: registerTabItemViewController)
         
         //dependents tab
         let dependentsTabItemViewController: DependentsTabItemViewController = loadNibNamed("DependentsTabItemViewController", owner: self)!
+        dependentsTabItemViewController.mainTabVarView = self
         let dependentNc = UINavigationController(rootViewController: dependentsTabItemViewController)
         
         //request tab
         let requestTabItemViewController: RequestViewController = loadNibNamed("RequestViewController", owner: self)!
+        requestTabItemViewController.mainTabVarView = self
         let requestNc = UINavigationController(rootViewController: requestTabItemViewController)
         
         registerTabItemViewController.tabBarItem   = registerTab
@@ -74,6 +83,43 @@ class MainTabBarViewController: UITabBarController {
 
     }
     
+    
+    func addLogout() {
+        let logout = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(logoutTapped))
+        logout.image = UIImage(named: "logout")
+        logout.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.viewControllerToConfig?.navigationItem.leftBarButtonItems = [logout]
+    }
+    
+    func logoutTapped(){
+        mainTabBarPresenter.logout()
+    }
+    
+    func addChat() {
+        let chatBell = UIBarButtonItem(title: "Chat", style: .plain, target: self, action: #selector(chatTapped))
+        chatBell.image = UIImage(named: "bell")
+        chatBell.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        viewControllerToConfig!.navigationItem.rightBarButtonItems = [chatBell]
+    }
+    
+    func chatTapped() {
+        let chatView: ChatViewController = loadNibNamed("ChatViewController", owner: self)!
+        viewControllerToConfig?.navigationController?.pushViewController(chatView, animated: true)
+    }
+    
+}
+
+extension MainTabBarViewController: MainTabBarViewContract {
+    
+    func configureHeaderOn(_ viewController: UIViewController) {
+        self.viewControllerToConfig = viewController
+        addLogout()
+        addChat()
+    }
+    
+    func goToLogin() {
+        self.view.window!.rootViewController?.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension UIApplication {

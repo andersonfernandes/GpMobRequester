@@ -21,17 +21,21 @@ class RequestViewController: UIViewController, UITableViewDelegate, UITableViewD
     var arrayFront = [registers]()
     var sections   = ["1", "2", "3", "4"]
     
+    var mainTabVarView: MainTabBarViewContract?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addChat()
-        addLogout()
         createData()
         customNavBar()
         customTheme()
         
         addCustomCell()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        mainTabVarView?.configureHeaderOn(self)
     }
     
     func createData() {
@@ -49,27 +53,7 @@ class RequestViewController: UIViewController, UITableViewDelegate, UITableViewD
         arrayFront.append(instruction)
         
     }
-    
-    func addLogout() {
-        let logout = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(logoutTapped))
-        logout.image = UIImage(named: "logout")
-        logout.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        navigationItem.leftBarButtonItems = [logout]
-    }
-    
-    func addChat() {
-        let chatBell = UIBarButtonItem(title: "Chat", style: .plain, target: self, action: #selector(chatTapped))
-        chatBell.image = UIImage(named: "bell")
-        chatBell.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        navigationItem.rightBarButtonItems = [chatBell]
-    }
-    
-    func logoutTapped() {
-    }
-    
-    func chatTapped() {
-    }
-    
+
     func customNavBar() {
     }
     

@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MainTabBarViewContract {
+    func configureHeaderOn(_ viewController: UIViewController) -> Void
     func goToLogin() -> Void
 }
 
