@@ -60,6 +60,10 @@
 		24794C731F48B1AF00849D14 /* NotificationReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C721F48B1AF00849D14 /* NotificationReminderView.swift */; };
 		24794C761F48D31000849D14 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C751F48D31000849D14 /* RequestViewController.swift */; };
 		24794C781F48D31F00849D14 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C771F48D31F00849D14 /* RequestViewController.xib */; };
+		24794C7A1F48FAAC00849D14 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C791F48FAAC00849D14 /* RequestCell.xib */; };
+		24794C7D1F48FB1100849D14 /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C7C1F48FB1100849D14 /* RequestCell.swift */; };
+		24794C801F490A8200849D14 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C7F1F490A8200849D14 /* ChatViewController.xib */; };
+		24794C821F490A8C00849D14 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C811F490A8C00849D14 /* ChatViewController.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
 		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
 		C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */; };
@@ -159,6 +163,10 @@
 		24794C721F48B1AF00849D14 /* NotificationReminderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReminderView.swift; sourceTree = "<group>"; };
 		24794C751F48D31000849D14 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		24794C771F48D31F00849D14 /* RequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
+		24794C791F48FAAC00849D14 /* RequestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
+		24794C7C1F48FB1100849D14 /* RequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
+		24794C7F1F490A8200849D14 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		24794C811F490A8C00849D14 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		53068DB0D3822C1ACDF361E6 /* Pods-GpMobRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91DDD95CE47F473C7B55E352 /* Pods-GpMobRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		96946D7F0F8742B2C8665B35 /* Pods-GpMobRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.release.xcconfig"; sourceTree = "<group>"; };
@@ -392,6 +400,7 @@
 		07DB379A1F47D9EA009BEB04 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				24794C7E1F490A5C00849D14 /* Chat */,
 				07DB379D1F47DA79009BEB04 /* View */,
 				07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */,
 				07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */,
@@ -530,8 +539,35 @@
 			children = (
 				24794C751F48D31000849D14 /* RequestViewController.swift */,
 				24794C771F48D31F00849D14 /* RequestViewController.xib */,
+				24794C7B1F48FAB200849D14 /* cell */,
 			);
 			name = Requests;
+			sourceTree = "<group>";
+		};
+		24794C7B1F48FAB200849D14 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				24794C791F48FAAC00849D14 /* RequestCell.xib */,
+				24794C7C1F48FB1100849D14 /* RequestCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		24794C7E1F490A5C00849D14 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				24794C831F490A8F00849D14 /* View */,
+				24794C811F490A8C00849D14 /* ChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		24794C831F490A8F00849D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24794C7F1F490A8200849D14 /* ChatViewController.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		8EBFE6EE4972DEF0E7CBAB9A /* Pods */ = {
@@ -765,12 +801,14 @@
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
 				2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */,
 				07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */,
+				24794C7A1F48FAAC00849D14 /* RequestCell.xib in Resources */,
 				07DB37BA1F4876DC009BEB04 /* AttachmentModalViewController.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
 				245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */,
 				24794C711F48B15F00849D14 /* NotificationReminderView.xib in Resources */,
 				07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */,
 				24794C781F48D31F00849D14 /* RequestViewController.xib in Resources */,
+				24794C801F490A8200849D14 /* ChatViewController.xib in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
 				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
 				245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */,
@@ -841,7 +879,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8EAF4EE27CDB6ECEC52D3691 /* [CP] Check Pods Manifest.lock */ = {
@@ -859,7 +897,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		92BB7985645831C0DF80BBFF /* [CP] Check Pods Manifest.lock */ = {
@@ -877,7 +915,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AFBA5C2F5C727833250FFFCD /* [CP] Embed Pods Frameworks */ = {
@@ -965,12 +1003,14 @@
 			files = (
 				2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */,
 				07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */,
+				24794C821F490A8C00849D14 /* ChatViewController.swift in Sources */,
 				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
 				07DB37C21F48C0F5009BEB04 /* ConfirmationPresenter.swift in Sources */,
 				24794C761F48D31000849D14 /* RequestViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
+				24794C7D1F48FB1100849D14 /* RequestCell.swift in Sources */,
 				DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */,
 				07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */,
 				07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */,

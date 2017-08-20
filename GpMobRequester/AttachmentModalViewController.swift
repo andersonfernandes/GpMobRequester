@@ -16,6 +16,9 @@ protocol AttachmentModalViewDelegate {
 
 class AttachmentModalViewController: UIViewController {
     
+    @IBOutlet weak var inputToFocus: UITextField!
+    @IBOutlet weak var blackBackground: UIView!
+    @IBOutlet weak var cameraIconContainer: UIView!
     @IBOutlet weak var requestButton: UIButton!
     @IBOutlet weak var resultPhotoTaken: UIImageView!
     @IBOutlet weak var mainLabel: UILabel!
@@ -26,11 +29,26 @@ class AttachmentModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        inputToFocus.becomeFirstResponder()
+        
         modalViewRadius()
         modalViewSetShadow()
         
         self.view.frame             =  CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         self.modalPresentationStyle = .overFullScreen
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        UIView.animate(withDuration: 0.4, delay: 0.8, options: [], animations: {
+                        self.blackBackground.alpha = 0.9
+        }, completion: { (finished: Bool) in
+            print("bg is on")
+        })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+
     }
     
     func modalViewSetShadow() {
@@ -45,8 +63,9 @@ class AttachmentModalViewController: UIViewController {
     }
     
     func modalViewRadius() {
-        modalView.layer.cornerRadius = 8
-        modalView.clipsToBounds      = true
+        modalView.layer.cornerRadius           = 8
+        cameraIconContainer.layer.cornerRadius = cameraIconContainer.frame.height / 2
+        modalView.clipsToBounds                = true
     }
     
     func showAttachView() {
@@ -57,11 +76,20 @@ class AttachmentModalViewController: UIViewController {
     }
     
     @IBAction func attach(_ sender: Any) {
-        showAttachView()
+//        sendRequest here
     }
     
     @IBAction func close(_ sender: Any) {
-        self.dismiss(animated: true)
+        
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
+            self.blackBackground.alpha = 0.0
+        }, completion: { (finished: Bool) in
+            self.dismiss(animated: true)
+        })
+        
+    }
+    @IBAction func attachTapped(_ sender: Any) {
+        showAttachView()
     }
 }
 
@@ -104,7 +132,7 @@ extension AttachmentModalViewController: ImagePickerDelegate {
         mainLabel.alpha     = 1.0
         
         requestButton.removeTarget(nil, action: nil, for: .allEvents)
-        requestButton.setTitle("Solicitar", for: .normal)
+//        requestButton.setTitle("Solicitar", for: .normal)
         requestButton.addTarget(self, action: #selector(AttachmentModalViewController.requestTutorial), for: .touchUpInside)
         
         

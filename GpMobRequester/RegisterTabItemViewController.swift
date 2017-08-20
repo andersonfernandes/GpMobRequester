@@ -15,17 +15,17 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var helloLabel: UILabel!
-    
-    
+
+
     lazy var mainTabBarPresenter: MainTabBarPresenterContract = {
         let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
         return MainTabPresenter(view: self, sessionLocalDataSource: sessionLocalDataSource)
     }()
-    
+
     lazy var registerTabItemPresenter: RegisterTabItemPresenterContract = {
         let apiDataSource: FichaFuncionalApiDataSource = FichaFuncionalApiDataSourceImpl.getInstance()
         let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
-        
+
         return RegisterTabItemPresenter(view: self, apiDataSource: apiDataSource, sessionLocalDataSource: sessionLocalDataSource)
     }()
 
@@ -38,7 +38,7 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         addChat()
 
         addCustomCell()
-        
+
         registerTabItemPresenter.getDadadosCadastrais()
     }
     
@@ -61,11 +61,14 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
 
     func chatTapped() {
+
+        let chatView: ChatViewController = loadNibNamed("ChatViewController", owner: self)!
+        self.navigationController?.pushViewController(chatView, animated: true)
     }
 
     func customNavBar() {
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -82,13 +85,13 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: "registerCell") as! registerCell
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
-        
+
         let dadoDto = dadosFichaDto[indexPath.row]
-        
+
         if dadoDto.nomeTipo == DataTypes.NOME.rawValue {
             helloLabel.text = "Olá, \(dadoDto.descricao!)"
         }
-        
+
         cell.titleLabel?.text  = dadoDto.nomeTipo
         cell.resultLabel?.text = dadoDto.descricao
         
@@ -102,7 +105,6 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         attachmentModelViewController.delegate = self
         self.present(attachmentModelViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
-
     }
     
     func addCustomCell() {
@@ -129,7 +131,7 @@ extension RegisterTabItemViewController: MainTabBarViewContract {
 }
 
 extension RegisterTabItemViewController: RegisterTabItemViewContract {
-    
+
     func loadDadosCadastrais(list: [DadoFichaDto]) {
         dadosFichaDto = list
         self.tableView.reloadData()

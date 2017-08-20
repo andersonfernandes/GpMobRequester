@@ -107,6 +107,9 @@
                                                 <state key="normal" title="Acessar Página">
                                                     <color key="titleColor" red="0.29411764705882354" green="0.72549019607843135" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="goToWebTapped:" destination="D2v-Zy-kE5" eventType="touchUpInside" id="1m6-j5-mmD"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

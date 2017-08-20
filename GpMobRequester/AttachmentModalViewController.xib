@@ -12,6 +12,9 @@
         <array key="Asap-Medium.otf">
             <string>Asap-Medium</string>
         </array>
+        <array key="Asap-Regular.otf">
+            <string>Asap-Regular</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -25,6 +28,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="667" height="667"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
+                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEY-QU-WiT">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.19611286314984711" colorSpace="calibratedWhite"/>
+                    </view>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="crs-lH-SBN">
                         <rect key="frame" x="203.5" y="240.5" width="255" height="192"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,7 +57,7 @@
                                         <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z28-f6-fFy">
-                                        <rect key="frame" x="0.0" y="-151" width="269" height="1"/>
+                                        <rect key="frame" x="0.0" y="-136" width="269" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -57,8 +65,8 @@
                                         <rect key="frame" x="0.0" y="9" width="134" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Asap-Medium" family="Asap" pointSize="15"/>
-                                        <state key="normal" title="Anexar">
-                                            <color key="titleColor" red="0.47843137250000001" green="0.80784313730000001" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Solicitar">
+                                            <color key="titleColor" red="0.29411764709999999" green="0.72549019609999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="attach:" destination="3RN-LT-Efq" eventType="touchUpInside" id="emd-oO-alx"/>
@@ -69,7 +77,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Asap-Medium" family="Asap" pointSize="15"/>
                                         <state key="normal" title="Fechar">
-                                            <color key="titleColor" red="0.95703154802322388" green="0.31918613718009187" blue="0.31637219558406393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="close:" destination="3RN-LT-Efq" eventType="touchUpInside" id="jgy-Zw-6fX"/>
@@ -78,44 +86,58 @@
                                 </subviews>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Toque aqui para inserir documento que comprova mudança" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER2-OY-UzM">
-                                <rect key="frame" x="25.5" y="147" width="217" height="50"/>
+                                <rect key="frame" x="25.5" y="155" width="217" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Asap-Medium" family="Asap" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.34999999403953552" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paper-clip" translatesAutoresizingMaskIntoConstraints="NO" id="8SW-k2-qqn">
-                                <rect key="frame" x="119.5" y="105.5" width="30" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoJ-ZU-A3e">
+                                <rect key="frame" x="110" y="100" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="8SW-k2-qqn">
+                                <rect key="frame" x="119" y="110" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vLM-mh-fDu">
-                                <rect key="frame" x="102" y="81" width="65" height="65"/>
+                                <rect key="frame" x="102" y="92" width="65" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0j-Vy-kgm">
-                                <rect key="frame" x="2" y="0.0" width="50" height="29"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Rodrigo Pereira Ribeiro" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZVT-sk-ah2">
+                                <rect key="frame" x="9" y="33" width="253" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Asap-Medium" family="Asap" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Asap-Regular" family="Asap" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alteração Nome" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0j-Vy-kgm">
+                                <rect key="frame" x="9" y="6" width="125" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Asap-Medium" family="Asap" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rodrigo Pereira Ribeiro" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsi-Rb-zrd">
-                                <rect key="frame" x="9" y="24" width="135" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5u5-aT-7yJ">
+                                <rect key="frame" x="103" y="92" width="64" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Asap-Medium" family="Asap" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <connections>
+                                    <action selector="attachTapped:" destination="3RN-LT-Efq" eventType="touchUpInside" id="HMB-H5-ajM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <value key="contentSizeForViewInPopover" type="size" width="300" height="320"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <size key="freeformSize" width="667" height="667"/>
             <connections>
+                <outlet property="blackBackground" destination="TEY-QU-WiT" id="Unr-D9-z2N"/>
+                <outlet property="cameraIconContainer" destination="KoJ-ZU-A3e" id="l0e-8r-yD2"/>
+                <outlet property="inputToFocus" destination="ZVT-sk-ah2" id="7tW-QQ-0LK"/>
                 <outlet property="mainLabel" destination="ER2-OY-UzM" id="3Cu-CH-bsq"/>
                 <outlet property="modalView" destination="tug-fI-F1G" id="j9P-IQ-lAf"/>
                 <outlet property="modalViewShadow" destination="crs-lH-SBN" id="VWq-GV-YDd"/>
@@ -126,6 +148,6 @@
         </viewController>
     </objects>
     <resources>
-        <image name="paper-clip" width="512" height="512"/>
+        <image name="photo-camera" width="512" height="512"/>
     </resources>
 </document>

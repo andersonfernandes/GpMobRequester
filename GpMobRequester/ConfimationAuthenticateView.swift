@@ -39,6 +39,16 @@ class ConfimationAuthenticateView: UIViewController {
     @IBAction func whenAutorized(_ sender: Any) {
         presenter.confirmAuthorization()
     }
+    
+    @IBAction func goToWebTapped(_ sender: Any) {
+        let url = URL(string: "http://hackathonhabilitacao.sefaz.al.gov.br/")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
+    }
 }
 
 extension ConfimationAuthenticateView: ConfirmationViewContract {
