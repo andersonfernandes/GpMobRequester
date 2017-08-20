@@ -17,30 +17,32 @@ struct pendency {
 class DependentsTabItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    var arrayFront = [pendency]()
+    
+    var dependents = [Dependente]()
     
     var mainTabVarView: MainTabBarViewContract?
+    
+    
+    lazy var dependentsTabItemPresenter: DependentsTabItemPresenterContract = {
+        let apiDataSource: FichaFuncionalApiDataSource = FichaFuncionalApiDataSourceImpl.getInstance()
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        
+        return DependentsTabItemPresenter(view: self, apiDataSource: apiDataSource, sessionLocalDataSource: sessionLocalDataSource)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = Theme.backgroundColor
         addCustomCell()
-        createData()
         
+        dependentsTabItemPresenter.getDependents()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         mainTabVarView?.configureHeaderOn(self)
-    }
-    
-    func createData() {
-        
-        let name        = pendency(title: "Filho", result: "Jose Vieira Filho")
-       
-        arrayFront.append(name)
     }
     
     func customNavBar() {
@@ -68,15 +70,17 @@ extension DependentsTabItemViewController {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayFront.count
+        return dependents.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "registerCell") as! registerCell
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
-        cell.resultLabel.text      = arrayFront[indexPath.row].result
-        cell.titleLabel.text       = arrayFront[indexPath.row].title
+        
+        let dependent = dependents[indexPath.row]
+        cell.titleLabel.text  = dependent.getNome()
+        cell.resultLabel.text = dependent.getParentesco()
         
         return cell
         
@@ -90,4 +94,13 @@ extension DependentsTabItemViewController {
 //        tableView.deselectRow(at: indexPath, animated: true)
     }
 
+}
+
+
+extension DependentsTabItemViewController: DependentsTabItemViewContract {
+    
+    func loadDependentes(list: [Dependente]) {
+        dependents = list
+        self.tableView.reloadData()
+    }
 }

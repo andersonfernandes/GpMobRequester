@@ -47,6 +47,8 @@
 		07DB37CC1F48F410009BEB04 /* RegisterTabItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37CB1F48F410009BEB04 /* RegisterTabItemPresenter.swift */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
+		07F1D79A1F49BEBC00FEF1EA /* DependentsTabItemContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */; };
+		07F1D79C1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */; };
 		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
 		2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421C0721F47FA7E00BC1088 /* registerCell.swift */; };
 		2448496B1F47E229006679C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448496A1F47E229006679C4 /* Theme.swift */; };
@@ -154,6 +156,8 @@
 		07DB37CB1F48F410009BEB04 /* RegisterTabItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemPresenter.swift; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
+		07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemContracts.swift; sourceTree = "<group>"; };
+		07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemPresenter.swift; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
 		2421C06E1F47F8A300BC1088 /* registerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = registerCell.xib; sourceTree = "<group>"; };
 		2421C0721F47FA7E00BC1088 /* registerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerCell.swift; sourceTree = "<group>"; };
@@ -466,6 +470,8 @@
 			children = (
 				07DB37AC1F47E226009BEB04 /* View */,
 				07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */,
+				07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */,
+				07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */,
 			);
 			name = DependentsTabItem;
 			sourceTree = "<group>";
@@ -1060,10 +1066,12 @@
 				DE4607C11F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07F1D79A1F49BEBC00FEF1EA /* DependentsTabItemContracts.swift in Sources */,
 				07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */,
 				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
 				07DB37C41F48C10B009BEB04 /* ConfirmationContracts.swift in Sources */,
+				07F1D79C1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
 				07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */,
 				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,

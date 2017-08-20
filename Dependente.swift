@@ -12,7 +12,7 @@ import SwiftyJSON
 
 struct Dependente: Retrofire.Mappable {
     private let id: Int?
-    private let idDependenteOrigem: Int? // Doc está como String, mas dev disso q era Int
+    private let idDependenteOrigem: Int?
     private let numeroPessoaFuncionario: Int?
     private let tipoStatus: String?
     private let numeroPessoaInclusao: Int?
@@ -21,6 +21,14 @@ struct Dependente: Retrofire.Mappable {
     private let dataAlteracao: Int?
     private let nome: String?
     private let tipoParentesco: TipoParentesco?
+    
+    func getNome() -> String? {
+        return nome
+    }
+    
+    func getParentesco() -> String? {
+        return tipoParentesco?.getNome()
+    }
     
     public static func instanceBy<M>(json: JSON) -> M {
         let id                              = json.dictionary?[APIField.id]?.intValue

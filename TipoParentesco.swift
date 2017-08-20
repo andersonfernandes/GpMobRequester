@@ -14,6 +14,10 @@ struct TipoParentesco: Retrofire.Mappable {
     private let codigo: Int?
     private let nome: String?
     
+    func getNome() -> String? {
+        return nome
+    }
+    
     public static func instanceBy<M>(json: JSON) -> M {
         let codigo  = json.dictionary?[APIField.codigo]?.intValue
         let nome    = json.dictionary?[APIField.nome]?.stringValue

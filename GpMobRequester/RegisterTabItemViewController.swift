@@ -67,7 +67,7 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         if dadoDto.nomeTipo == DataTypes.NOME.rawValue {
             helloLabel.text = "Olá, \(dadoDto.descricao!)"
         }
-
+        
         cell.resultLabel?.text = dadoDto.descricao
         
         if dadoDto.requested {

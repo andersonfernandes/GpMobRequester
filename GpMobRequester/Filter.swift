@@ -14,6 +14,8 @@ enum DataTypes: String {
     case TELEFONE           = "Telefone"
     case ENDERECO           = "Endereço"
     case GRAU_DE_INSTRUCAO  = "Grau de Instrução"
+    case IDENTIDADE         = "Identidade"
+    case CPF                = "CPF"
 }
 
 struct DadoFichaDto {
