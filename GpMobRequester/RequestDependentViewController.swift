@@ -17,6 +17,8 @@ class RequestDependentViewController: UIViewController, UITableViewDelegate, UIT
     
     var mainTabVarView: MainTabBarViewContract?
     
+    let sessionLocalDataSource: SessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,19 +67,34 @@ extension RequestDependentViewController {
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
         
+        var tipoDadoFichaFuncional: Int?
+        var nomeTipo: String?
+        
         if indexPath.row == 0 {
-            cell.titleLabel.text  = "Nome"
+            nomeTipo  = "Nome"
             cell.resultLabel.text = dependent?.getNome()
+            tipoDadoFichaFuncional = 111111
         }
         
         if indexPath.row == 1 {
-            cell.titleLabel.text  = "CPF"
+            nomeTipo  = "CPF"
             cell.resultLabel.text = dependent?.getCpf()
+            tipoDadoFichaFuncional = 222222
         }
         
         if indexPath.row == 2 {
-            cell.titleLabel.text  = "Rg"
+            nomeTipo  = "Rg"
             cell.resultLabel.text = dependent?.getRg()
+            tipoDadoFichaFuncional = 333333
+        }
+        
+        if hasSolicitacao(tipoDadoFichaFuncional) {
+            cell.cellBackground.backgroundColor = UIColor.clear
+            cell.titleLabel?.text = "\(nomeTipo!) Solicitado"
+            cell.titleLabel?.textColor = UIColor(red:0.29, green:0.73, blue:1.00, alpha:1.0)
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
+        } else {
+            cell.titleLabel.text  = nomeTipo
         }
         
         return cell
@@ -85,11 +102,49 @@ extension RequestDependentViewController {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let attachmentModelViewController: AttachmentModalViewController = loadNibNamed("AttachmentModalViewController", owner: self)!
         
-//        let requestDependent: RequestDependentViewController = loadNibNamed("RequestDependentViewController", owner: self)!
-//        //        attachmentModelViewController.delegate = self
-//        self.navigationController?.pushViewController(requestDependent, animated: true)
-//        //        tableView.deselectRow(at: indexPath, animated: true)
+        var descricao: String?
+        var nomeTipo: String?
+        var tipoDadoFichaFuncional: Int?
+        
+        if indexPath.row == 0 {
+            descricao = dependent?.getNome()
+            nomeTipo  = "Nome"
+            tipoDadoFichaFuncional = 111111
+        }
+        
+        if indexPath.row == 1 {
+            descricao = dependent?.getCpf()
+            nomeTipo  = "CPF"
+            tipoDadoFichaFuncional = 222222
+        }
+        
+        if indexPath.row == 2 {
+            descricao = dependent?.getRg()
+            nomeTipo  = "Rg"
+            tipoDadoFichaFuncional = 333333
+        }
+        
+        attachmentModelViewController.dadoFichaDto = DadoFichaDto(descricao: descricao, tipoDadoFichaFuncional: tipoDadoFichaFuncional, nomeTipo: nomeTipo, requested: false)
+        
+        attachmentModelViewController.delegate = self
+        
+        self.present(attachmentModelViewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
+    func hasSolicitacao(_ tipoDadoFuncional: Int?) -> Bool {
+        let tipo = sessionLocalDataSource.getSolicitacao(tipoDadoFuncional)
+        return tipo != nil && tipo != 0
+    }
+    
+}
+
+
+extension RequestDependentViewController: AttachmentModalViewDelegate {
+    func attached(requestDto: RequestDto) {
+        sessionLocalDataSource.saveSolicitacao(requestDto.tipoDadoFichaFuncional)
+    }
 }
