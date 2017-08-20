@@ -81,6 +81,8 @@
 		DE4607C31F48F065008AFA36 /* DadoFichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */; };
 		DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */; };
 		DE4607C71F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */; };
+		DE57D8861F4944820013E1BE /* DadoFichaFuncionalAnexoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57D8851F4944820013E1BE /* DadoFichaFuncionalAnexoRequest.swift */; };
+		DE57D88A1F4952510013E1BE /* DadoFichaFuncionalAnexoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE57D8891F4952510013E1BE /* DadoFichaFuncionalAnexoResponse.swift */; };
 		DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
 		DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
 		DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
@@ -197,6 +199,8 @@
 		DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalResponse.swift; sourceTree = "<group>"; };
 		DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
 		DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE57D8851F4944820013E1BE /* DadoFichaFuncionalAnexoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalAnexoRequest.swift; sourceTree = "<group>"; };
+		DE57D8891F4952510013E1BE /* DadoFichaFuncionalAnexoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalAnexoResponse.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBEBFDE1F48B4DD00333033 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -708,6 +712,8 @@
 			children = (
 				DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */,
 				DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */,
+				DE57D8851F4944820013E1BE /* DadoFichaFuncionalAnexoRequest.swift */,
+				DE57D8891F4952510013E1BE /* DadoFichaFuncionalAnexoResponse.swift */,
 			);
 			name = Dto;
 			sourceTree = "<group>";
@@ -1044,6 +1050,7 @@
 				07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */,
 				24794C821F490A8C00849D14 /* ChatViewController.swift in Sources */,
 				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
+				DE57D88A1F4952510013E1BE /* DadoFichaFuncionalAnexoResponse.swift in Sources */,
 				07DB37C21F48C0F5009BEB04 /* ConfirmationPresenter.swift in Sources */,
 				24794C761F48D31000849D14 /* RequestViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
@@ -1085,6 +1092,7 @@
 				DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */,
 				DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */,
 				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
+				DE57D8861F4944820013E1BE /* DadoFichaFuncionalAnexoRequest.swift in Sources */,
 				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
 				07DB378F1F476F55009BEB04 /* AuthSolicitationResponse.swift in Sources */,
 				DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */,

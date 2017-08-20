@@ -13,8 +13,10 @@ protocol DadoFichaFuncionalApiDataSource {
     var authorizePath: String { get }
     
     func insert(userToken: String?, dadoFichaFuncionalRequest: DadoFichaFuncionalRequest) -> Call<DadoFichaFuncionalResponse>
+    
+    func insertAttachment(userToken: String?, dadoFichaFuncionalAnexoRequest: DadoFichaFuncionalAnexoRequest) -> Call<DadoFichaFuncionalAnexoResponse>
 }
 
 extension DadoFichaFuncionalApiDataSource {
-    var authorizePath: String { return "/sfz_ficha_funcional_api/api/public/dadoFichaFuncional" }
+    var authorizePath: String { return "/sfz_ficha_funcional_api/api/public/dadoFichaFuncional/anexo" }
 }

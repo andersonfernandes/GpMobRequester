@@ -60,6 +60,44 @@ class DadoFichaFuncionalApiDataSourceImplTest: QuickSpec {
                 
             }
         }
+        
+        escribe("Sending a Dado Ficha Funcional Anexo request") {
+            let apiDataSource: DadoFichaFuncionalApiDataSourceImpl = DadoFichaFuncionalApiDataSourceImpl.getInstance()
+            let id = 12
+            let anexo = "MiJ9.eyJzdWIiOiJtYXJjZWxvbWFsdGEiLCJhdXRoIjoiUk9MRV9FTUlfRVhUUkFUTyxST0xFX1JFTF9ERU5VTl9FU1BPTlRBTkVBLFJPTEVfRU1JX0NQIiwiaWRDb25leGFvIjoiMjEzQ0I5QzNDNkU0OTkxMUU1MDM3MTk0RUQxOUQxNzMiLCJudW1QZXNzb2EiOjUyOTQ4MywiaW5kU3RhdHVzIjoiQSIsImlkQXBsaWNhdGl2byI6NiwiaWRBdXRvcml6YWNhbyI6Mz"
+            let dadoFichaFuncionalAnexoRequest = DadoFichaFuncionalAnexoRequest(id: id, anexo: anexo)
+            
+            context("With authorization") {
+                var dadoFichaFuncionalAnexoResponse: DadoFichaFuncionalAnexoResponse?
+                let userToken = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJjZWxvbWFsdGEiLCJhdXRoIjoiUk9MRV9FTUlfRVhUUkFUTyxST0xFX1JFTF9ERU5VTl9FU1BPTlRBTkVBLFJPTEVfRU1JX0NQIiwiaWRDb25leGFvIjoiMjEzQ0I5QzNDNkU0OTkxMUU1MDM3MTk0RUQxOUQxNzMiLCJudW1QZXNzb2EiOjUyOTQ4MywiaW5kU3RhdHVzIjoiQSIsImlkQXBsaWNhdGl2byI6NiwiaWRBdXRvcml6YWNhbyI6MzcsImV4cCI6MTUxODgyNTYwMH0.qxmpBK7VNRQNXg97z0qNCTUPIXVf8SzUGsOuFHBC7cs15vzwFfS7AdEKxVIBk2AZirlF1gYW_Phv06bM8YYcVA"
+                
+                apiDataSource.insertAttachment(userToken: userToken, dadoFichaFuncionalAnexoRequest: dadoFichaFuncionalAnexoRequest)
+                    .onSuccess() { response in
+                        dadoFichaFuncionalAnexoResponse = response
+                    }
+                    .call()
+                
+                it("") {
+                    
+                }
+                
+            }
+            
+            context("Without authorization") {
+                var errorResponse: ErrorResponse?
+                
+                apiDataSource.insertAttachment(userToken: nil, dadoFichaFuncionalAnexoRequest: dadoFichaFuncionalAnexoRequest)
+                    .onFailed() { error in
+                        errorResponse = error as? ErrorResponse
+                    }
+                    .call()
+                
+                it("response should have 403 status") {
+                    expect(errorResponse?.statusCode).toEventually(equal(403))
+                }
+                
+            }
+        }
     }
     
 }

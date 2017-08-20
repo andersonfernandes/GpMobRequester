@@ -32,4 +32,16 @@ class DadoFichaFuncionalApiDataSourceImpl: RemoteBase, DadoFichaFuncionalApiData
         return self.callSingle(request: request)
     }
     
+    func insertAttachment(userToken: String?, dadoFichaFuncionalAnexoRequest: DadoFichaFuncionalAnexoRequest) -> Call<DadoFichaFuncionalAnexoResponse> {
+        let path = RemoteUtils.buildUrl(path: authorizePath)
+        let header = ["Authorization": "Bearer " + (userToken ?? "")]
+        
+        let request = RequestBuilder(path: path)
+            .headers(header)
+            .method(.post)
+            .bodyParameters(dadoFichaFuncionalAnexoRequest.asBodyParameters())
+            .build()
+        return self.callSingle(request: request)
+    }
+    
 }
