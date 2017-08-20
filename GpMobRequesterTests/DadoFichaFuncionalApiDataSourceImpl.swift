@@ -61,7 +61,7 @@ class DadoFichaFuncionalApiDataSourceImplTest: QuickSpec {
             }
         }
         
-        escribe("Sending a Dado Ficha Funcional Anexo request") {
+        describe("Sending a Dado Ficha Funcional Anexo request") {
             let apiDataSource: DadoFichaFuncionalApiDataSourceImpl = DadoFichaFuncionalApiDataSourceImpl.getInstance()
             let id = 12
             let anexo = "MiJ9.eyJzdWIiOiJtYXJjZWxvbWFsdGEiLCJhdXRoIjoiUk9MRV9FTUlfRVhUUkFUTyxST0xFX1JFTF9ERU5VTl9FU1BPTlRBTkVBLFJPTEVfRU1JX0NQIiwiaWRDb25leGFvIjoiMjEzQ0I5QzNDNkU0OTkxMUU1MDM3MTk0RUQxOUQxNzMiLCJudW1QZXNzb2EiOjUyOTQ4MywiaW5kU3RhdHVzIjoiQSIsImlkQXBsaWNhdGl2byI6NiwiaWRBdXRvcml6YWNhbyI6Mz"

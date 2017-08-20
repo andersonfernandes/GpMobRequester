@@ -39,6 +39,10 @@ struct FichaFuncional: Retrofire.Mappable {
             ) as! M
     }
     
+    func getNomeFuncionario() -> String? {
+        return nomeFuncionario
+    }
+    
     func getDependentes() -> [Dependente]? {
         return dependentes
     }

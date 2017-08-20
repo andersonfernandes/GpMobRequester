@@ -77,6 +77,11 @@
 		DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */; };
 		DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */; };
 		DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */; };
+		DE1CD4301F49C62F00B80029 /* DependenteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CD42F1F49C62F00B80029 /* DependenteRequest.swift */; };
+		DE1CD4321F49C8D600B80029 /* DependenteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CD4311F49C8D600B80029 /* DependenteResponse.swift */; };
+		DE1CD4341F49CA3700B80029 /* DependenteApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CD4331F49CA3700B80029 /* DependenteApiDataSource.swift */; };
+		DE1CD4361F49CA9F00B80029 /* DependenteApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CD4351F49CA9F00B80029 /* DependenteApiDataSourceImpl.swift */; };
+		DE1CD43F1F49D38C00B80029 /* DependenteApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CD4381F49CC8400B80029 /* DependenteApiDataSourceImpl.swift */; };
 		DE4607C11F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */; };
 		DE4607C31F48F065008AFA36 /* DadoFichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */; };
 		DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */; };
@@ -195,6 +200,11 @@
 		DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
 		DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
 		DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1CD42F1F49C62F00B80029 /* DependenteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenteRequest.swift; sourceTree = "<group>"; };
+		DE1CD4311F49C8D600B80029 /* DependenteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenteResponse.swift; sourceTree = "<group>"; };
+		DE1CD4331F49CA3700B80029 /* DependenteApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenteApiDataSource.swift; sourceTree = "<group>"; };
+		DE1CD4351F49CA9F00B80029 /* DependenteApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenteApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE1CD4381F49CC8400B80029 /* DependenteApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependenteApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalRequest.swift; sourceTree = "<group>"; };
 		DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalResponse.swift; sourceTree = "<group>"; };
 		DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
@@ -348,6 +358,7 @@
 		07DB37871F476EA6009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE1CD42D1F49C5B300B80029 /* Dependente */,
 				DE4607BE1F48EE22008AFA36 /* DadoFichaFuncional */,
 				DE1244911F48249800FF3325 /* FichaFuncional */,
 				DE1244891F48100E00FF3325 /* Session */,
@@ -396,6 +407,7 @@
 		07DB37961F477690009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE1CD4371F49CC6000B80029 /* Dependente */,
 				DE0597611F48FDA100654DB4 /* DadoFichaFuncional */,
 				DE12448C1F48136000FF3325 /* Session */,
 				DE12447F1F47E54300FF3325 /* FichaFuncional */,
@@ -695,6 +707,33 @@
 				DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */,
 			);
 			name = FichaFuncional;
+			sourceTree = "<group>";
+		};
+		DE1CD42D1F49C5B300B80029 /* Dependente */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CD42E1F49C61E00B80029 /* Dto */,
+				DE1CD4331F49CA3700B80029 /* DependenteApiDataSource.swift */,
+				DE1CD4351F49CA9F00B80029 /* DependenteApiDataSourceImpl.swift */,
+			);
+			name = Dependente;
+			sourceTree = "<group>";
+		};
+		DE1CD42E1F49C61E00B80029 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CD42F1F49C62F00B80029 /* DependenteRequest.swift */,
+				DE1CD4311F49C8D600B80029 /* DependenteResponse.swift */,
+			);
+			name = Dto;
+			sourceTree = "<group>";
+		};
+		DE1CD4371F49CC6000B80029 /* Dependente */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CD4381F49CC8400B80029 /* DependenteApiDataSourceImpl.swift */,
+			);
+			name = Dependente;
 			sourceTree = "<group>";
 		};
 		DE4607BE1F48EE22008AFA36 /* DadoFichaFuncional */ = {
@@ -1055,6 +1094,8 @@
 				24794C761F48D31000849D14 /* RequestViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
+				DE1CD4301F49C62F00B80029 /* DependenteRequest.swift in Sources */,
+				DE1CD4361F49CA9F00B80029 /* DependenteApiDataSourceImpl.swift in Sources */,
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
 				24794C7D1F48FB1100849D14 /* RequestCell.swift in Sources */,
 				DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */,
@@ -1068,6 +1109,7 @@
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
 				07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */,
+				DE1CD4321F49C8D600B80029 /* DependenteResponse.swift in Sources */,
 				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
 				07DB37C41F48C10B009BEB04 /* ConfirmationContracts.swift in Sources */,
@@ -1091,6 +1133,7 @@
 				DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */,
 				DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */,
 				DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */,
+				DE1CD4341F49CA3700B80029 /* DependenteApiDataSource.swift in Sources */,
 				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
 				DE57D8861F4944820013E1BE /* DadoFichaFuncionalAnexoRequest.swift in Sources */,
 				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
@@ -1105,6 +1148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
+				DE1CD43F1F49D38C00B80029 /* DependenteApiDataSourceImpl.swift in Sources */,
 				DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */,
 				DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */,
 				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
