@@ -10,8 +10,15 @@ import Foundation
 import UIKit
 import ImagePicker
 
+struct RequestDto {
+    let descricao: String?
+    let tipoDadoFichaFuncional: Int?
+    let nomeTipo: String?
+    let attach: UIImage?
+}
+
 protocol AttachmentModalViewDelegate {
-    func attached(attach: UIImage)
+    func attached(requestDto: RequestDto)
 }
 
 class AttachmentModalViewController: UIViewController {
@@ -24,7 +31,14 @@ class AttachmentModalViewController: UIViewController {
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var modalViewShadow: UIView!
     @IBOutlet weak var modalView: UIView!
+    
+    @IBOutlet weak var headerLb: UILabel!
+    
     var delegate: AttachmentModalViewDelegate?
+    
+    var dadoFichaDto: DadoFichaDto?
+    
+    var attach: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +50,14 @@ class AttachmentModalViewController: UIViewController {
         
         self.view.frame             =  CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         self.modalPresentationStyle = .overFullScreen
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.headerLb.text = "Alteração \(dadoFichaDto!.nomeTipo!)"
+        self.inputToFocus.text = dadoFichaDto!.descricao
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,12 +69,7 @@ class AttachmentModalViewController: UIViewController {
         })
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-
-    }
-    
     func modalViewSetShadow() {
-        
         modalViewShadow.layer.masksToBounds = false
         modalViewShadow.layer.borderWidth   = 0
         modalViewShadow.layer.shadowColor = UIColor.lightGray.cgColor
@@ -80,7 +97,6 @@ class AttachmentModalViewController: UIViewController {
     }
     
     @IBAction func close(_ sender: Any) {
-        
         UIView.animate(withDuration: 0.2, delay: 0.0, options: [], animations: {
             self.blackBackground.alpha = 0.0
         }, completion: { (finished: Bool) in
@@ -93,7 +109,6 @@ class AttachmentModalViewController: UIViewController {
     }
 }
 
-
 extension AttachmentModalViewController: ImagePickerDelegate {
     func cancelButtonDidPress(_ imagePicker: ImagePickerController) {
         imagePicker.dismiss(animated: true, completion: nil)
@@ -101,11 +116,11 @@ extension AttachmentModalViewController: ImagePickerDelegate {
     
     func wrapperDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
         guard images.count > 0 else { return }
-        
     }
     
     func doneButtonDidPress(_ imagePicker: ImagePickerController, images: [UIImage]) {
-        delegate?.attached(attach: images[0])
+        attach = images[0]
+        
         imagePicker.dismiss(animated: true, completion: nil)
         
         sucesseAttachMessage()
@@ -113,15 +128,22 @@ extension AttachmentModalViewController: ImagePickerDelegate {
         resultPhotoTaken.layer.cornerRadius = resultPhotoTaken.frame.height / 2
         resultPhotoTaken.image              = images[0]
         
+        requestButton.alpha = 1
     }
     
     func requestTutorial() {
-        
         weak var pvc = self.presentingViewController
         
         self.dismiss(animated: true, completion: {
             let vc : NotificationReminderView = loadNibNamed("NotificationReminderView", owner: NotificationReminderView.self)!
-            pvc?.present(vc, animated: true, completion: nil)
+            pvc?.present(vc, animated: true, completion: {
+               
+            
+                let requestDto = RequestDto(descricao: self.dadoFichaDto?.descricao, tipoDadoFichaFuncional: self.dadoFichaDto?.tipoDadoFichaFuncional, nomeTipo: self.dadoFichaDto?.nomeTipo, attach: self.attach)
+                self.delegate?.attached(requestDto: requestDto)
+            })
+            
+           
         })
     
     }
@@ -135,7 +157,7 @@ extension AttachmentModalViewController: ImagePickerDelegate {
 //        requestButton.setTitle("Solicitar", for: .normal)
         requestButton.addTarget(self, action: #selector(AttachmentModalViewController.requestTutorial), for: .touchUpInside)
         
-        
+          self.dadoFichaDto = DadoFichaDto(descricao: self.inputToFocus.text, tipoDadoFichaFuncional: self.dadoFichaDto?.tipoDadoFichaFuncional, nomeTipo: self.dadoFichaDto?.nomeTipo, requested: true)
     
     }
 }

@@ -15,6 +15,7 @@ public class SessionLocalDataSource {
     private let defaultsDao: UserDefaults
     private static let ID_AUTHORIZATION_PENDING = "ID_AUTHORIZATION_PENDING "
     private static let MATRICULA = "MATRICULA "
+    private static let SOLICITACAO = "SOLICITACAO_"
     
     private init(defaultsDao: UserDefaults) {
         self.defaultsDao = defaultsDao
@@ -26,6 +27,15 @@ public class SessionLocalDataSource {
         }
         
         return INSTANCE!
+    }
+    
+    func saveSolicitacao(_ tipoDadoFuncional: Int?) {
+        if tipoDadoFuncional == nil || tipoDadoFuncional == 0 {
+            return
+        }
+        let key = "\(SessionLocalDataSource.SOLICITACAO)\(tipoDadoFuncional!)"
+        
+        defaultsDao.set(tipoDadoFuncional, forKey: key)
     }
     
     func saveIdAuthorizationPending(_ id: Int?) {
@@ -73,6 +83,12 @@ public class SessionLocalDataSource {
     
     public func getMatricula() -> String? {
         return defaultsDao.string(forKey: SessionLocalDataSource.MATRICULA)
+    }
+    
+    public func getSolicitacao(_ tipoDadoFuncional: Int?) -> Int? {
+        let key = "\(SessionLocalDataSource.SOLICITACAO)\(tipoDadoFuncional!)"
+        
+        return defaultsDao.integer(forKey: key)
     }
     
     

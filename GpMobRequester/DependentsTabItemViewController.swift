@@ -38,18 +38,9 @@ class DependentsTabItemViewController: UIViewController, UITableViewDelegate, UI
     
     func createData() {
         
-        let name        = pendency(title: "Filho", result: "Rodrigo Ribeiro")
-        let civilState  = pendency(title: "Filho", result: "Rodrigo Ribeiro")
-        let telephone   = pendency(title: "Filho", result: "Rodrigo Ribeiro")
-        let adress      = pendency(title: "Filho", result: "Rodrigo Ribeiro")
-        let instruction = pendency(title: "Filho", result: "Rodrigo Ribeiro")
-        
+        let name        = pendency(title: "Filho", result: "Jose Vieira Filho")
+       
         arrayFront.append(name)
-        arrayFront.append(civilState)
-        arrayFront.append(telephone)
-        arrayFront.append(adress)
-        arrayFront.append(instruction)
-        
     }
     
     func customNavBar() {

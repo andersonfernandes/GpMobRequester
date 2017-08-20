@@ -68,17 +68,33 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
             helloLabel.text = "Olá, \(dadoDto.descricao!)"
         }
 
-        cell.titleLabel?.text  = dadoDto.nomeTipo
         cell.resultLabel?.text = dadoDto.descricao
+        
+        if dadoDto.requested {
+            cell.cellBackground.backgroundColor = UIColor.clear
+            cell.titleLabel?.text = "\(dadoDto.nomeTipo!) Solicitado"
+            cell.titleLabel?.textColor = UIColor(red:0.29, green:0.73, blue:1.00, alpha:1.0)
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
+        } else {
+            cell.titleLabel?.text = "\(dadoDto.nomeTipo!)"
+        }
         
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dado = dadosFichaDto[indexPath.row]
+        
+        if dado.requested {
+            return
+        }
         
         let attachmentModelViewController: AttachmentModalViewController = loadNibNamed("AttachmentModalViewController", owner: self)!
+        attachmentModelViewController.dadoFichaDto = dado
+        
         attachmentModelViewController.delegate = self
+        
         self.present(attachmentModelViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -95,7 +111,8 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
 }
 
 extension RegisterTabItemViewController: AttachmentModalViewDelegate {
-    func attached(attach: UIImage) {
+    func attached(requestDto: RequestDto) {
+        registerTabItemPresenter.saveSolicitacao(requestDto.tipoDadoFichaFuncional)
     }
 }
 

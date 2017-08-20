@@ -40,9 +40,9 @@ class RequestViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func createData() {
         
-        let name        = registers(title: "Nome", result: "Rodrigo Ribeiro")
-        let civilState  = registers(title: "Estado Civil", result: "Solteiro")
-        let telephone   = registers(title: "Telephone", result: "55 (82) 99812.4444")
+        let name        = registers(title: "Nome", result: "MARCELO TENÓRIO")
+        let civilState  = registers(title: "Estado Civil", result: "SOLTEIRO")
+        let telephone   = registers(title: "Telefone", result: "82998124444")
         let adress      = registers(title: "Endereço", result: "Av.Júlio Marques Luz")
         let instruction = registers(title: "Grau de Instrução", result: "Ensino Médio Completo")
         
@@ -51,7 +51,6 @@ class RequestViewController: UIViewController, UITableViewDelegate, UITableViewD
         arrayFront.append(telephone)
         arrayFront.append(adress)
         arrayFront.append(instruction)
-        
     }
 
     func customNavBar() {
@@ -76,7 +75,7 @@ class RequestViewController: UIViewController, UITableViewDelegate, UITableViewD
 extension RequestViewController {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -87,7 +86,7 @@ extension RequestViewController {
         if section == 0 {
             return 2
         } else if section == 1 {
-            return 3
+            return 2
         }
         return 1
     }
@@ -110,18 +109,15 @@ extension RequestViewController {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "19/05/2017"
-        } else if section == 1 {
-            return "21/03/2017"
-        }
-        return "05/01/2017"
+        return "20/08/2017"
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RequestCell") as! RequestCell
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
+        
         cell.titleLabel?.text            = arrayFront[indexPath.row].title
         cell.resultLabel?.text           = arrayFront[indexPath.row].result
         

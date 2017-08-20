@@ -14,4 +14,6 @@ protocol RegisterTabItemViewContract {
 
 protocol RegisterTabItemPresenterContract {
     func getDadadosCadastrais()
+    func saveSolicitacao(_ tipoDadoFuncional: Int?)
+    func hasSolicitacao(_ tipoDadoFuncional: Int?) -> Bool
 }

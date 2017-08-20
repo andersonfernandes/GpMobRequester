@@ -20,9 +20,10 @@ struct DadoFichaDto {
     let descricao: String?
     let tipoDadoFichaFuncional: Int?
     let nomeTipo: String?
+    var requested = false
 }
 
-func groupByOnCadastro(fichaFuncional: FichaFuncional, list: [String]) -> [DadoFichaDto] {
+func groupByOnCadastro(_ presenter: RegisterTabItemPresenterContract, fichaFuncional: FichaFuncional, list: [String]) -> [DadoFichaDto] {
     
     var result = [DadoFichaDto]()
     let groups =  fichaFuncional.getGrupos()?.filter { $0.getDescricao() == "Cadastro" }
@@ -31,7 +32,9 @@ func groupByOnCadastro(fichaFuncional: FichaFuncional, list: [String]) -> [DadoF
     
     dadosGrupo?.forEach { d in
         if list.contains((d.getTipoDadoFichaFuncional()?.getNomeTipo()!)!) {
-            result.append(DadoFichaDto(descricao: d.getDescricao(), tipoDadoFichaFuncional: d.getTipoDadoFichaFuncional()?.getId(), nomeTipo: d.getTipoDadoFichaFuncional()?.getNomeTipo()))
+            let requested = presenter.hasSolicitacao(d.getTipoDadoFichaFuncional()?.getId())
+            
+            result.append(DadoFichaDto(descricao: d.getDescricao(), tipoDadoFichaFuncional: d.getTipoDadoFichaFuncional()?.getId(), nomeTipo: d.getTipoDadoFichaFuncional()?.getNomeTipo(), requested: requested))
         }
     }
     
