@@ -30,7 +30,7 @@ class RegisterTabItemPresenter: RegisterTabItemPresenterContract {
             .onSuccess { fichaFuncional in
                 let list = groupByOnCadastro(self, fichaFuncional: fichaFuncional!, list: [DataTypes.NOME.rawValue, DataTypes.ESTADO_CIVIL.rawValue, DataTypes.TELEFONE.rawValue, DataTypes.ENDERECO.rawValue, DataTypes.GRAU_DE_INSTRUCAO.rawValue, DataTypes.IDENTIDADE.rawValue, DataTypes.CPF.rawValue])
                 
-                self.view.loadDadosCadastrais(list: list)
+                self.view.loadDadosCadastrais(list: list.reversed())
             }
             .onFailed { _ in
             }
