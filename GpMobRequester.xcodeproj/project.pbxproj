@@ -49,6 +49,8 @@
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
 		07F1D79A1F49BEBC00FEF1EA /* DependentsTabItemContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */; };
 		07F1D79C1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */; };
+		07F1D79F1F49C48300FEF1EA /* RequestDependentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D79E1F49C48300FEF1EA /* RequestDependentViewController.swift */; };
+		07F1D7A21F49C4C100FEF1EA /* RequestDependentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F1D7A11F49C4C100FEF1EA /* RequestDependentViewController.xib */; };
 		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
 		2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421C0721F47FA7E00BC1088 /* registerCell.swift */; };
 		2448496B1F47E229006679C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448496A1F47E229006679C4 /* Theme.swift */; };
@@ -158,6 +160,8 @@
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemContracts.swift; sourceTree = "<group>"; };
 		07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemPresenter.swift; sourceTree = "<group>"; };
+		07F1D79E1F49C48300FEF1EA /* RequestDependentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDependentViewController.swift; sourceTree = "<group>"; };
+		07F1D7A11F49C4C100FEF1EA /* RequestDependentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestDependentViewController.xib; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
 		2421C06E1F47F8A300BC1088 /* registerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = registerCell.xib; sourceTree = "<group>"; };
 		2421C0721F47FA7E00BC1088 /* registerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerCell.swift; sourceTree = "<group>"; };
@@ -472,6 +476,7 @@
 				07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */,
 				07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */,
 				07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */,
+				07F1D79D1F49C45700FEF1EA /* RequestDependent */,
 			);
 			name = DependentsTabItem;
 			sourceTree = "<group>";
@@ -492,6 +497,23 @@
 				07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */,
 			);
 			name = Confirmation;
+			sourceTree = "<group>";
+		};
+		07F1D79D1F49C45700FEF1EA /* RequestDependent */ = {
+			isa = PBXGroup;
+			children = (
+				07F1D7A01F49C4A000FEF1EA /* View */,
+				07F1D79E1F49C48300FEF1EA /* RequestDependentViewController.swift */,
+			);
+			name = RequestDependent;
+			sourceTree = "<group>";
+		};
+		07F1D7A01F49C4A000FEF1EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07F1D7A11F49C4C100FEF1EA /* RequestDependentViewController.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		2400B39A1F481A2300D2819B /* Attachment */ = {
@@ -842,6 +864,7 @@
 				245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */,
 				245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */,
 				245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */,
+				07F1D7A21F49C4C100FEF1EA /* RequestDependentViewController.xib in Resources */,
 				07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */,
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
 				2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */,
@@ -1052,6 +1075,7 @@
 				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
 				07DB37C21F48C0F5009BEB04 /* ConfirmationPresenter.swift in Sources */,
 				24794C761F48D31000849D14 /* RequestViewController.swift in Sources */,
+				07F1D79F1F49C48300FEF1EA /* RequestDependentViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,

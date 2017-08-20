@@ -1,41 +1,33 @@
 //
-//  DependentsTabItemViewController.swift
+//  RequestDependentViewController.swift
 //  GpMobRequester
 //
-//  Created by Rachid Calazans on 19/08/17.
+//  Created by Rachid Calazans on 20/08/17.
 //  Copyright © 2017 Stant. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class DependentsTabItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RequestDependentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var dependents = [Dependente]()
+    var dependent: Dependente?
     
     var mainTabVarView: MainTabBarViewContract?
-    
-    
-    lazy var dependentsTabItemPresenter: DependentsTabItemPresenterContract = {
-        let apiDataSource: FichaFuncionalApiDataSource = FichaFuncionalApiDataSourceImpl.getInstance()
-        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
-        
-        return DependentsTabItemPresenter(view: self, apiDataSource: apiDataSource, sessionLocalDataSource: sessionLocalDataSource)
-    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = Theme.backgroundColor
         addCustomCell()
-        
-        dependentsTabItemPresenter.getDependents()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        self.navigationItem.title = dependent?.getNome()
         
         mainTabVarView?.configureHeaderOn(self)
     }
@@ -54,7 +46,7 @@ class DependentsTabItemViewController: UIViewController, UITableViewDelegate, UI
     
 }
 
-extension DependentsTabItemViewController {
+extension RequestDependentViewController {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -65,7 +57,7 @@ extension DependentsTabItemViewController {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dependents.count
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -73,9 +65,20 @@ extension DependentsTabItemViewController {
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
         
-        let dependent = dependents[indexPath.row]
-        cell.titleLabel.text  = dependent.getNome()
-        cell.resultLabel.text = dependent.getParentesco()
+        if indexPath.row == 0 {
+            cell.titleLabel.text  = "Nome"
+            cell.resultLabel.text = dependent?.getNome()
+        }
+        
+        if indexPath.row == 1 {
+            cell.titleLabel.text  = "CPF"
+            cell.resultLabel.text = dependent?.getCpf()
+        }
+        
+        if indexPath.row == 2 {
+            cell.titleLabel.text  = "Rg"
+            cell.resultLabel.text = dependent?.getRg()
+        }
         
         return cell
         
@@ -83,20 +86,10 @@ extension DependentsTabItemViewController {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let requestDependent: RequestDependentViewController = loadNibNamed("RequestDependentViewController", owner: self)!
-        requestDependent.dependent = self.dependents[indexPath.row]
-//        attachmentModelViewController.delegate = self
-        self.navigationController?.pushViewController(requestDependent, animated: true)
-//        tableView.deselectRow(at: indexPath, animated: true)
+//        let requestDependent: RequestDependentViewController = loadNibNamed("RequestDependentViewController", owner: self)!
+//        //        attachmentModelViewController.delegate = self
+//        self.navigationController?.pushViewController(requestDependent, animated: true)
+//        //        tableView.deselectRow(at: indexPath, animated: true)
     }
-
-}
-
-
-extension DependentsTabItemViewController: DependentsTabItemViewContract {
     
-    func loadDependentes(list: [Dependente]) {
-        dependents = list
-        self.tableView.reloadData()
-    }
 }
