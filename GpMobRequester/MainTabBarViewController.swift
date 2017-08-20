@@ -40,7 +40,6 @@ class MainTabBarViewController: UITabBarController {
         let dependentsTabItemViewController: DependentsTabItemViewController = loadNibNamed("DependentsTabItemViewController", owner: self)!
         let dependentNc = UINavigationController(rootViewController: dependentsTabItemViewController)
         
-        
         //request tab
         let requestTabItemViewController: RequestViewController = loadNibNamed("RequestViewController", owner: self)!
         let requestNc = UINavigationController(rootViewController: requestTabItemViewController)
@@ -63,7 +62,7 @@ class MainTabBarViewController: UITabBarController {
         navigationController.navigationBar.layer.masksToBounds = false
         navigationController.navigationBar.layer.borderWidth   = 0
         navigationController.navigationBar.layer.shadowColor = UIColor.lightGray.cgColor
-        navigationController.navigationBar.layer.shadowOpacity = 0.3
+        navigationController.navigationBar.layer.shadowOpacity = 0.4
         navigationController.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         navigationController.navigationBar.layer.shadowRadius = 6
         

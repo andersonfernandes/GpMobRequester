@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-struct registers {
+struct requests {
     var title  : String
     var result : String
 }
 
 class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrayFront = [registers]()
+    var arrayFront = [requests]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -57,6 +57,9 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
 
     func chatTapped() {
+        
+        let chatView: ChatViewController = loadNibNamed("ChatViewController", owner: self)!
+        self.navigationController?.pushViewController(chatView, animated: true)
     }
 
     func customNavBar() {
@@ -64,11 +67,11 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     
     func createData() {
         
-        let name        = registers(title: "Nome", result: "Rodrigo Ribeiro")
-        let civilState  = registers(title: "Estado Civil", result: "Solteiro")
-        let telephone   = registers(title: "Telephone", result: "55 (82) 99812.4444")
-        let adress      = registers(title: "Endereço", result: "Av.Júlio Marques Luz")
-        let instruction = registers(title: "Grau de Instrução", result: "Ensino Médio Completo")
+        let name        = requests(title: "Nome", result: "Rodrigo Ribeiro")
+        let civilState  = requests(title: "Estado Civil", result: "Solteiro")
+        let telephone   = requests(title: "Telephone", result: "55 (82) 99812.4444")
+        let adress      = requests(title: "Endereço", result: "Av.Júlio Marques Luz")
+        let instruction = requests(title: "Grau de Instrução", result: "Ensino Médio Completo")
         
         arrayFront.append(name)
         arrayFront.append(civilState)
@@ -107,7 +110,6 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
         attachmentModelViewController.delegate = self
         self.present(attachmentModelViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
-
     }
     
     func addCustomCell() {
