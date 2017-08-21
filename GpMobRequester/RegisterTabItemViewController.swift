@@ -9,55 +9,42 @@
 import Foundation
 import UIKit
 
-struct registers {
-    var title  : String
-    var result : String
-}
-
 class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrayFront = [registers]()
+    var dadosFichaDto = [DadoFichaDto]()
     
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var helloLabel: UILabel!
+
+    var mainTabVarView: MainTabBarViewContract?
+
+     lazy var registerTabItemPresenter: RegisterTabItemPresenterContract = {
+        let apiDataSource: FichaFuncionalApiDataSource = FichaFuncionalApiDataSourceImpl.getInstance()
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+
+        return RegisterTabItemPresenter(view: self, apiDataSource: apiDataSource, sessionLocalDataSource: sessionLocalDataSource)
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UITabBarItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Asap-Medium", size: 10)!], for: .normal)
         
-        addLogout()
         addCustomCell()
-        createData()
+
+        registerTabItemPresenter.getDadadosCadastrais()
     }
     
-    func addLogout() {
-        let logout = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(logoutTapped))
-        logout.image = UIImage(named: "logout")
-        logout.imageInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        navigationItem.leftBarButtonItems = [logout]
-    }
-    
-    func logoutTapped(){
-        self.dismiss(animated: true)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
+        mainTabVarView?.configureHeaderOn(self)
     }
-    
-    func createData() {
-        
-        let name        = registers(title: "Nome", result: "Rodrigo Ribeiro")
-        let civilState  = registers(title: "Estado Civil", result: "Solteiro")
-        let telephone   = registers(title: "Telephone", result: "55 (82) 99812.4444")
-        let adress      = registers(title: "Endereço", result: "Av.Júlio Marques Luz")
-        let instruction = registers(title: "Grau de Instrução", result: "Ensino Médio Completo")
-        
-        arrayFront.append(name)
-        arrayFront.append(civilState)
-        arrayFront.append(telephone)
-        arrayFront.append(adress)
-        arrayFront.append(instruction)
-    
+  
+
+    func customNavBar() {
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -67,28 +54,49 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayFront.count
+        return dadosFichaDto.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "registerCell") as! registerCell
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
-        cell.titleLabel?.text            = arrayFront[indexPath.row].title
-        cell.resultLabel?.text           = arrayFront[indexPath.row].result
+
+        let dadoDto = dadosFichaDto[indexPath.row]
+
+        if dadoDto.nomeTipo == DataTypes.NOME.rawValue {
+            helloLabel.text = "Olá, \(dadoDto.descricao!)"
+        }
+        
+        cell.resultLabel?.text = dadoDto.descricao
+        
+        if dadoDto.requested {
+            cell.cellBackground.backgroundColor = UIColor.clear
+            cell.titleLabel?.text = "\(dadoDto.nomeTipo!) Solicitado"
+            cell.titleLabel?.textColor = UIColor(red:0.29, green:0.73, blue:1.00, alpha:1.0)
+            cell.selectionStyle = UITableViewCellSelectionStyle.none
+        } else {
+            cell.titleLabel?.text = "\(dadoDto.nomeTipo!)"
+        }
         
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dado = dadosFichaDto[indexPath.row]
+        
+        if dado.requested {
+            return
+        }
         
         let attachmentModelViewController: AttachmentModalViewController = loadNibNamed("AttachmentModalViewController", owner: self)!
+        attachmentModelViewController.dadoFichaDto = dado
         
         attachmentModelViewController.delegate = self
         
         self.present(attachmentModelViewController, animated: true)
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func addCustomCell() {
@@ -103,8 +111,15 @@ class RegisterTabItemViewController: UIViewController, UITableViewDelegate, UITa
 }
 
 extension RegisterTabItemViewController: AttachmentModalViewDelegate {
-    func attached(attach: UIImage) {
-        let a  = true
+    func attached(requestDto: RequestDto) {
+        registerTabItemPresenter.saveSolicitacao(requestDto.tipoDadoFichaFuncional)
     }
 }
 
+extension RegisterTabItemViewController: RegisterTabItemViewContract {
+
+    func loadDadosCadastrais(list: [DadoFichaDto]) {
+        dadosFichaDto = list
+        self.tableView.reloadData()
+    }
+}

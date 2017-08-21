@@ -15,14 +15,35 @@ class AuthorizationViewController: UIViewController {
     @IBOutlet weak var loginContainerClippingMask: UIView!
     @IBOutlet weak var loginContainerShadow: UIView!
     
+    @IBOutlet weak var matriculaInput: UITextField!
+    
     lazy var presenter: AuthorizationPresenterContract = {
-        return AuthorizationPresenter(view: self)
+        let authApi = AuthSolicitationApiDataSourceImpl.getInstance()
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        return AuthorizationPresenter(view: self, authApiDataSource: authApi, sessionLocalDataSource: sessionLocalDataSource)
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        UIApplication.shared.statusBarStyle = .lightContent
         
         setTheme()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if presenter.hasUserToken() {
+            goToMainTabBar()
+            return
+        }
+        
+        if presenter.hasIdAuthorizationPending() {
+            goToAuthorizationConfirmation()
+            return
+        }
     }
     
     func setTheme() {
@@ -43,7 +64,7 @@ class AuthorizationViewController: UIViewController {
     }
     
     @IBAction func requestLogin(_ sender: Any) {
-        let matricula = "192831"
+        let matricula: String = matriculaInput.text!
         presenter.requestAuthorization(matricula: matricula)
     
     }
@@ -53,16 +74,23 @@ class AuthorizationViewController: UIViewController {
 
 extension AuthorizationViewController: AuthorizationViewContract {
     
+    func goToMainTabBar() {
+        let rootController = Bundle.main.loadNibNamed("MainTabBarViewController", owner: self, options: nil)?[0] as? MainTabBarViewController
+        self.present(rootController!, animated: true)
+    }
+    
     func goToAuthorizationConfirmation() {
-        let rootController = Bundle.main.loadNibNamed("ConfimationAuthenticateView", owner: self, options: nil)?[0] as? ConfimationAuthenticateView
-        
+        let rootController = Bundle.main.loadNibNamed("ConfimationAuthenticateView", owner: ConfimationAuthenticateView.self, options: nil)?[0] as? ConfimationAuthenticateView
         
         self.present(rootController!, animated: true)
         
     }
     
     func showError(message: String) {
+        let alert = UIAlertController(title: "Atenção", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

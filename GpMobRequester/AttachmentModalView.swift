@@ -12,10 +12,7 @@ import ImagePicker
 
 class AttachmentModalView: UIView {
     
-    var viewController: RegisterTabItemViewController?
-    
     @IBAction func attachFile(_ sender: Any) {
-//        viewController?.showAttachView()
     }
     
     @IBAction func close(_ sender: Any) {

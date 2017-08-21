@@ -12,7 +12,7 @@ import SwiftyJSON
 
 struct Dependente: Retrofire.Mappable {
     private let id: Int?
-    private let idDependenteOrigem: Int? // Doc está como String, mas dev disso q era Int
+    private let idDependenteOrigem: Int?
     private let numeroPessoaFuncionario: Int?
     private let tipoStatus: String?
     private let numeroPessoaInclusao: Int?
@@ -21,6 +21,24 @@ struct Dependente: Retrofire.Mappable {
     private let dataAlteracao: Int?
     private let nome: String?
     private let tipoParentesco: TipoParentesco?
+    private let cpf: String?
+    private let rg: String?
+    
+    func getNome() -> String? {
+        return nome
+    }
+    
+    func getCpf() -> String? {
+        return cpf
+    }
+    
+    func getRg() -> String? {
+        return rg
+    }
+    
+    func getParentesco() -> String? {
+        return tipoParentesco?.getNome()
+    }
     
     public static func instanceBy<M>(json: JSON) -> M {
         let id                              = json.dictionary?[APIField.id]?.intValue
@@ -32,6 +50,8 @@ struct Dependente: Retrofire.Mappable {
         let dataInclusao                    = json.dictionary?[APIField.dataInclusao]?.intValue
         let dataAlteracao                   = json.dictionary?[APIField.dataAlteracao]?.intValue
         let nome                            = json.dictionary?[APIField.nome]?.stringValue
+        let cpf                            = json.dictionary?[APIField.cpf]?.stringValue
+        let rg                            = json.dictionary?[APIField.rg]?.stringValue
         
         let tipoParentescoJSON: JSON?       = json.dictionary?[APIField.tipoParentesco]
         var tipoParentesco: TipoParentesco?
@@ -49,7 +69,10 @@ struct Dependente: Retrofire.Mappable {
                           dataInclusao: dataInclusao,
                           dataAlteracao: dataAlteracao,
                           nome: nome,
-                          tipoParentesco: tipoParentesco) as! M
+                          tipoParentesco: tipoParentesco,
+                          cpf: cpf,
+                          rg: rg
+                          ) as! M
     }
     
     private struct APIField {
@@ -63,6 +86,8 @@ struct Dependente: Retrofire.Mappable {
         static let dataAlteracao            = "dataAlteracao"
         static let nome                     = "nome"
         static let tipoParentesco           = "tipoParentesco"
+        static let cpf                      = "cpf"
+        static let rg                       = "rg"
     }
     
 }

@@ -13,6 +13,12 @@ class ConfimationAuthenticateView: UIViewController {
     @IBOutlet weak var autorizedButton: UIButton!
     @IBOutlet weak var goToWebPage: UIButton!
     
+    lazy var presenter: ConfirmationPresenterContract = {
+        let authApi = AuthApiDataSourceImpl.getInstance()
+        let sessionLocalDataSource = SessionLocalDataSource.getInstance(defaultsDao: UserDefaults.standard)
+        return ConfirmationPresenter(view: self, authApiDataSource: authApi, sessionLocalDataSource: sessionLocalDataSource)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,11 +37,31 @@ class ConfimationAuthenticateView: UIViewController {
     }
 
     @IBAction func whenAutorized(_ sender: Any) {
-        
-        let rootController = Bundle.main.loadNibNamed("MainTabBarViewController", owner: self, options: nil)?[0] as? MainTabBarViewController
-        
-        self.present(rootController!, animated: true)
+        presenter.confirmAuthorization()
+    }
+    
+    @IBAction func goToWebTapped(_ sender: Any) {
+        let url = URL(string: "http://hackathonhabilitacao.sefaz.al.gov.br/")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
         
     }
 }
 
+extension ConfimationAuthenticateView: ConfirmationViewContract {
+    
+    func goToMainTabBar() {
+        let rootController = Bundle.main.loadNibNamed("MainTabBarViewController", owner: self, options: nil)?[0] as? MainTabBarViewController
+        self.present(rootController!, animated: true)
+    }
+    
+    func showError(message: String) {
+        let alert = UIAlertController(title: "Atenção", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+}

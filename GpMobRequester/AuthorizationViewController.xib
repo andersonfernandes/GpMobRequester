@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -133,6 +133,7 @@
                 <outlet property="loginContainer" destination="CwP-cP-PHa" id="7Ro-vr-BBO"/>
                 <outlet property="loginContainerClippingMask" destination="qQJ-fR-PPk" id="wfd-Ua-z5F"/>
                 <outlet property="loginContainerShadow" destination="SUC-lq-xhd" id="NbY-u9-j3w"/>
+                <outlet property="matriculaInput" destination="saB-Sl-nfQ" id="B2s-yl-Ebj"/>
                 <outlet property="someOut" destination="gUY-Ox-XVg" id="V4R-AO-lp2"/>
             </connections>
             <point key="canvasLocation" x="564.5" y="53.5"/>

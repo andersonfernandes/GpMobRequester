@@ -39,8 +39,18 @@
 		07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */; };
 		07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */; };
 		07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */; };
+		07DB37C21F48C0F5009BEB04 /* ConfirmationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C11F48C0F5009BEB04 /* ConfirmationPresenter.swift */; };
+		07DB37C41F48C10B009BEB04 /* ConfirmationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */; };
+		07DB37C61F48D7C9009BEB04 /* MainTabBarContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */; };
+		07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */; };
+		07DB37CA1F48F361009BEB04 /* RegisterTabItemContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37C91F48F361009BEB04 /* RegisterTabItemContracts.swift */; };
+		07DB37CC1F48F410009BEB04 /* RegisterTabItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37CB1F48F410009BEB04 /* RegisterTabItemPresenter.swift */; };
 		07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */; };
 		07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */; };
+		07F1D79A1F49BEBC00FEF1EA /* DependentsTabItemContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */; };
+		07F1D79C1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */; };
+		07F1D79F1F49C48300FEF1EA /* RequestDependentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F1D79E1F49C48300FEF1EA /* RequestDependentViewController.swift */; };
+		07F1D7A21F49C4C100FEF1EA /* RequestDependentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07F1D7A11F49C4C100FEF1EA /* RequestDependentViewController.xib */; };
 		2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2421C06E1F47F8A300BC1088 /* registerCell.xib */; };
 		2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421C0721F47FA7E00BC1088 /* registerCell.swift */; };
 		2448496B1F47E229006679C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2448496A1F47E229006679C4 /* Theme.swift */; };
@@ -50,10 +60,19 @@
 		245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81801F47CBF900210911 /* Asap-Bold.otf */; };
 		245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81811F47CBF900210911 /* Asap-BoldItalic.otf */; };
 		245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 245B81821F47CBF900210911 /* Asap-Regular.otf */; };
+		24794C711F48B15F00849D14 /* NotificationReminderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C701F48B15F00849D14 /* NotificationReminderView.xib */; };
+		24794C731F48B1AF00849D14 /* NotificationReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C721F48B1AF00849D14 /* NotificationReminderView.swift */; };
+		24794C761F48D31000849D14 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C751F48D31000849D14 /* RequestViewController.swift */; };
+		24794C781F48D31F00849D14 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C771F48D31F00849D14 /* RequestViewController.xib */; };
+		24794C7A1F48FAAC00849D14 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C791F48FAAC00849D14 /* RequestCell.xib */; };
+		24794C7D1F48FB1100849D14 /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C7C1F48FB1100849D14 /* RequestCell.swift */; };
+		24794C801F490A8200849D14 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24794C7F1F490A8200849D14 /* ChatViewController.xib */; };
+		24794C821F490A8C00849D14 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24794C811F490A8C00849D14 /* ChatViewController.swift */; };
 		9BF3A57504BE344FEDA43DD8 /* Pods_GpMobRequester.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */; };
 		C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */; };
 		C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */; };
 		D1673F2113DF40EC3A4BFA64 /* Pods_GpMobRequesterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE01663967CC7DDEF38BF167 /* Pods_GpMobRequesterUITests.framework */; };
+		DE0597631F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0597621F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift */; };
 		DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12446F1F47B28800FF3325 /* AuthRequest.swift */; };
 		DE1244731F47B3A900FF3325 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244721F47B3A900FF3325 /* AuthResponse.swift */; };
 		DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244791F47CDD200FF3325 /* AuthApiDataSource.swift */; };
@@ -61,12 +80,16 @@
 		DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12447D1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift */; };
 		DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244821F47EC9E00FF3325 /* AuthErrorResponse.swift */; };
 		DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */; };
-		DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */; };
 		DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */; };
+		DE4607C11F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */; };
+		DE4607C31F48F065008AFA36 /* DadoFichaFuncionalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */; };
+		DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */; };
+		DE4607C71F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */; };
 		DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */; };
 		DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */; };
 		DEB0E5CE1F48725E005F3D64 /* AuthSolicitationApiDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB37981F4776B6009BEB04 /* AuthSolicitationApiDataSourceImpl.swift */; };
 		DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1244801F47E58700FF3325 /* FichaFuncionalApiDataSourceImplTests.swift */; };
+		DEBEBFDF1F48B4DD00333033 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEBFDE1F48B4DD00333033 /* Filter.swift */; };
 		E97F27F158AD872C2262AE50 /* Pods_GpMobRequesterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D48253B89C8CDBC0C8DBE5 /* Pods_GpMobRequesterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,21 +124,6 @@
 		07C287A81F47310800E9DA0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReturnConfirmationToUser.xib; sourceTree = "<group>"; };
 		07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnConfirmationToUSer.swift; sourceTree = "<group>"; };
-		07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		07DB379E1F47DA8F009BEB04 /* MainTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabBarViewController.xib; sourceTree = "<group>"; };
-		07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemViewController.swift; sourceTree = "<group>"; };
-		07DB37A41F47DF63009BEB04 /* RegisterTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterTabItemViewController.xib; sourceTree = "<group>"; };
-		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
-		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
-		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
-		07DB37B51F486423009BEB04 /* AttachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalView.xib; sourceTree = "<group>"; };
-		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
-		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
-		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
-		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
-		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
-		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
-		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
 		07DB37781F475387009BEB04 /* FichaFuncional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncional.swift; sourceTree = "<group>"; };
 		07DB377A1F475846009BEB04 /* TipoParentesco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoParentesco.swift; sourceTree = "<group>"; };
 		07DB377C1F47587E009BEB04 /* Dependente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependente.swift; sourceTree = "<group>"; };
@@ -136,8 +144,24 @@
 		07DB37A71F47DFEE009BEB04 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemViewController.swift; sourceTree = "<group>"; };
 		07DB37AD1F47E236009BEB04 /* DependentsTabItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentsTabItemViewController.xib; sourceTree = "<group>"; };
+		07DB37B51F486423009BEB04 /* AttachmentModalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalView.xib; sourceTree = "<group>"; };
+		07DB37B71F486454009BEB04 /* AttachmentModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalView.swift; sourceTree = "<group>"; };
+		07DB37B91F4876DC009BEB04 /* AttachmentModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttachmentModalViewController.xib; sourceTree = "<group>"; };
+		07DB37BB1F48774A009BEB04 /* AttachmentModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentModalViewController.swift; sourceTree = "<group>"; };
+		07DB37BD1F488589009BEB04 /* AuthorizationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationContracts.swift; sourceTree = "<group>"; };
+		07DB37BF1F48870F009BEB04 /* AuthorizationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationPresenter.swift; sourceTree = "<group>"; };
+		07DB37C11F48C0F5009BEB04 /* ConfirmationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPresenter.swift; sourceTree = "<group>"; };
+		07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationContracts.swift; sourceTree = "<group>"; };
+		07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarContracts.swift; sourceTree = "<group>"; };
+		07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabPresenter.swift; sourceTree = "<group>"; };
+		07DB37C91F48F361009BEB04 /* RegisterTabItemContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemContracts.swift; sourceTree = "<group>"; };
+		07DB37CB1F48F410009BEB04 /* RegisterTabItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTabItemPresenter.swift; sourceTree = "<group>"; };
 		07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfimationAuthenticateView.xib; sourceTree = "<group>"; };
 		07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfimationAuthenticateView.swift; sourceTree = "<group>"; };
+		07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemContracts.swift; sourceTree = "<group>"; };
+		07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependentsTabItemPresenter.swift; sourceTree = "<group>"; };
+		07F1D79E1F49C48300FEF1EA /* RequestDependentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDependentViewController.swift; sourceTree = "<group>"; };
+		07F1D7A11F49C4C100FEF1EA /* RequestDependentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestDependentViewController.xib; sourceTree = "<group>"; };
 		0E3BC55F076EF69B82DA2E87 /* Pods-GpMobRequester.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.debug.xcconfig"; sourceTree = "<group>"; };
 		2421C06E1F47F8A300BC1088 /* registerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = registerCell.xib; sourceTree = "<group>"; };
 		2421C0721F47FA7E00BC1088 /* registerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerCell.swift; sourceTree = "<group>"; };
@@ -148,6 +172,14 @@
 		245B81801F47CBF900210911 /* Asap-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Bold.otf"; sourceTree = "<group>"; };
 		245B81811F47CBF900210911 /* Asap-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-BoldItalic.otf"; sourceTree = "<group>"; };
 		245B81821F47CBF900210911 /* Asap-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Asap-Regular.otf"; sourceTree = "<group>"; };
+		24794C701F48B15F00849D14 /* NotificationReminderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationReminderView.xib; sourceTree = "<group>"; };
+		24794C721F48B1AF00849D14 /* NotificationReminderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReminderView.swift; sourceTree = "<group>"; };
+		24794C751F48D31000849D14 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		24794C771F48D31F00849D14 /* RequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
+		24794C791F48FAAC00849D14 /* RequestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
+		24794C7C1F48FB1100849D14 /* RequestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
+		24794C7F1F490A8200849D14 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		24794C811F490A8C00849D14 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		53068DB0D3822C1ACDF361E6 /* Pods-GpMobRequesterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91DDD95CE47F473C7B55E352 /* Pods-GpMobRequesterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterTests/Pods-GpMobRequesterTests.release.xcconfig"; sourceTree = "<group>"; };
 		96946D7F0F8742B2C8665B35 /* Pods-GpMobRequester.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequester.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +189,7 @@
 		C8E58D661F47424100E5F7AE /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 		C8E58D691F47447000E5F7AE /* AuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
 		DBF15156326C710A4D8A754B /* Pods-GpMobRequesterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpMobRequesterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpMobRequesterUITests/Pods-GpMobRequesterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0597621F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE12446F1F47B28800FF3325 /* AuthRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRequest.swift; sourceTree = "<group>"; };
 		DE1244721F47B3A900FF3325 /* AuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		DE1244771F47CDBB00FF3325 /* AuthApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthApiDataSourceImpl.swift; sourceTree = "<group>"; };
@@ -167,9 +200,13 @@
 		DE12448A1F48108300FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
 		DE12448F1F4815BD00FF3325 /* SessionLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionLocalDataSource.swift; sourceTree = "<group>"; };
 		DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
-		DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalResponse.swift; sourceTree = "<group>"; };
 		DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
+		DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalRequest.swift; sourceTree = "<group>"; };
+		DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalResponse.swift; sourceTree = "<group>"; };
+		DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSource.swift; sourceTree = "<group>"; };
+		DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DadoFichaFuncionalApiDataSourceImpl.swift; sourceTree = "<group>"; };
 		DE71A361D759FCD07EAC8BC2 /* Pods_GpMobRequester.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GpMobRequester.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBEBFDE1F48B4DD00333033 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +266,7 @@
 			children = (
 				245B817C1F47CBE000210911 /* Fonts */,
 				07DB37A61F47DFDB009BEB04 /* Common */,
-				C8E58D6D1F478EF500E5F7AE /* view */,
+				24794C6F1F48B13400849D14 /* Notification Reminder */,
 				C8E58D651F47422000E5F7AE /* Authorization */,
 				07F0FAD21F47451C002CFC23 /* Confirmation */,
 				07DB379A1F47D9EA009BEB04 /* MainTabBar */,
@@ -271,13 +308,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		07D138211F478F0C0010642D /* ReturnConfirmationToUser */ = {
+		07D138211F478F0C0010642D /* RequestSuccess */ = {
 			isa = PBXGroup;
 			children = (
 				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
 				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
 			);
-			name = ReturnConfirmationToUser;
+			name = RequestSuccess;
 			sourceTree = "<group>";
 		};
 		07DB37761F4752E7009BEB04 /* Domain */ = {
@@ -315,10 +352,12 @@
 		07DB37871F476EA6009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE4607BE1F48EE22008AFA36 /* DadoFichaFuncional */,
 				DE1244911F48249800FF3325 /* FichaFuncional */,
 				DE1244891F48100E00FF3325 /* Session */,
 				DE12446D1F47B26A00FF3325 /* Auth */,
 				07DB37881F476EE3009BEB04 /* AuthSolicitation */,
+				DEBEBFDE1F48B4DD00333033 /* Filter.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -361,6 +400,7 @@
 		07DB37961F477690009BEB04 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				DE0597611F48FDA100654DB4 /* DadoFichaFuncional */,
 				DE12448C1F48136000FF3325 /* Session */,
 				DE12447F1F47E54300FF3325 /* FichaFuncional */,
 				DE1244741F47B4E800FF3325 /* Auth */,
@@ -377,31 +417,17 @@
 			name = AuthSolicitation;
 			sourceTree = "<group>";
 		};
-		07D138201F478E3B0010642D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				07F0FAD51F475303002CFC23 /* ConfimationAuthenticateView.swift */,
-				07F0FAD31F47481A002CFC23 /* ConfimationAuthenticateView.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		07D138211F478F0C0010642D /* RequestSuccess */ = {
-			isa = PBXGroup;
-			children = (
-				07D138221F478F8B0010642D /* ReturnConfirmationToUser.xib */,
-				07D138241F4791ED0010642D /* ReturnConfirmationToUSer.swift */,
-			);
-			name = RequestSuccess;
-			sourceTree = "<group>";
-		};
 		07DB379A1F47D9EA009BEB04 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				24794C7E1F490A5C00849D14 /* Chat */,
 				07DB379D1F47DA79009BEB04 /* View */,
 				07DB379B1F47DA44009BEB04 /* MainTabBarViewController.swift */,
+				07DB37C51F48D7C9009BEB04 /* MainTabBarContracts.swift */,
+				07DB37C71F48D81F009BEB04 /* MainTabPresenter.swift */,
 				07DB37A01F47DF16009BEB04 /* RegisterTabItem */,
 				07DB37A91F47E1EE009BEB04 /* DependentsTabItem */,
+				24794C741F48D2F700849D14 /* Requests */,
 				2400B39A1F481A2300D2819B /* Attachment */,
 			);
 			name = MainTabBar;
@@ -421,6 +447,8 @@
 				2421C0701F47F8B500BC1088 /* TableView */,
 				07DB37A31F47DF56009BEB04 /* View */,
 				07DB37A11F47DF37009BEB04 /* RegisterTabItemViewController.swift */,
+				07DB37C91F48F361009BEB04 /* RegisterTabItemContracts.swift */,
+				07DB37CB1F48F410009BEB04 /* RegisterTabItemPresenter.swift */,
 			);
 			name = RegisterTabItem;
 			sourceTree = "<group>";
@@ -446,6 +474,9 @@
 			children = (
 				07DB37AC1F47E226009BEB04 /* View */,
 				07DB37AA1F47E214009BEB04 /* DependentsTabItemViewController.swift */,
+				07F1D7991F49BEBC00FEF1EA /* DependentsTabItemContracts.swift */,
+				07F1D79B1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift */,
+				07F1D79D1F49C45700FEF1EA /* RequestDependent */,
 			);
 			name = DependentsTabItem;
 			sourceTree = "<group>";
@@ -462,8 +493,27 @@
 			isa = PBXGroup;
 			children = (
 				07D138201F478E3B0010642D /* View */,
+				07DB37C11F48C0F5009BEB04 /* ConfirmationPresenter.swift */,
+				07DB37C31F48C10B009BEB04 /* ConfirmationContracts.swift */,
 			);
 			name = Confirmation;
+			sourceTree = "<group>";
+		};
+		07F1D79D1F49C45700FEF1EA /* RequestDependent */ = {
+			isa = PBXGroup;
+			children = (
+				07F1D7A01F49C4A000FEF1EA /* View */,
+				07F1D79E1F49C48300FEF1EA /* RequestDependentViewController.swift */,
+			);
+			name = RequestDependent;
+			sourceTree = "<group>";
+		};
+		07F1D7A01F49C4A000FEF1EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07F1D7A11F49C4C100FEF1EA /* RequestDependentViewController.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		2400B39A1F481A2300D2819B /* Attachment */ = {
@@ -515,6 +565,51 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		24794C6F1F48B13400849D14 /* Notification Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				24794C701F48B15F00849D14 /* NotificationReminderView.xib */,
+				24794C721F48B1AF00849D14 /* NotificationReminderView.swift */,
+			);
+			name = "Notification Reminder";
+			sourceTree = "<group>";
+		};
+		24794C741F48D2F700849D14 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				24794C751F48D31000849D14 /* RequestViewController.swift */,
+				24794C771F48D31F00849D14 /* RequestViewController.xib */,
+				24794C7B1F48FAB200849D14 /* cell */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		24794C7B1F48FAB200849D14 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				24794C791F48FAAC00849D14 /* RequestCell.xib */,
+				24794C7C1F48FB1100849D14 /* RequestCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		24794C7E1F490A5C00849D14 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				24794C831F490A8F00849D14 /* View */,
+				24794C811F490A8C00849D14 /* ChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		24794C831F490A8F00849D14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24794C7F1F490A8200849D14 /* ChatViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		8EBFE6EE4972DEF0E7CBAB9A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,11 +652,12 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		C8E58D6D1F478EF500E5F7AE /* view */ = {
+		DE0597611F48FDA100654DB4 /* DadoFichaFuncional */ = {
 			isa = PBXGroup;
 			children = (
+				DE0597621F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift */,
 			);
-			name = view;
+			name = DadoFichaFuncional;
 			sourceTree = "<group>";
 		};
 		DE12446D1F47B26A00FF3325 /* Auth */ = {
@@ -619,17 +715,27 @@
 		DE1244911F48249800FF3325 /* FichaFuncional */ = {
 			isa = PBXGroup;
 			children = (
-				DE1244921F48250000FF3325 /* Dto */,
 				DE1244931F48269E00FF3325 /* FichaFuncionalApiDataSource.swift */,
 				DE1244991F48333600FF3325 /* FichaFuncionalApiDataSourceImpl.swift */,
 			);
 			name = FichaFuncional;
 			sourceTree = "<group>";
 		};
-		DE1244921F48250000FF3325 /* Dto */ = {
+		DE4607BE1F48EE22008AFA36 /* DadoFichaFuncional */ = {
 			isa = PBXGroup;
 			children = (
-				DE1244951F482CBB00FF3325 /* FichaFuncionalResponse.swift */,
+				DE4607BF1F48EE5B008AFA36 /* Dto */,
+				DE4607C41F48F474008AFA36 /* DadoFichaFuncionalApiDataSource.swift */,
+				DE4607C61F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift */,
+			);
+			name = DadoFichaFuncional;
+			sourceTree = "<group>";
+		};
+		DE4607BF1F48EE5B008AFA36 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				DE4607C01F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift */,
+				DE4607C21F48F065008AFA36 /* DadoFichaFuncionalResponse.swift */,
 			);
 			name = Dto;
 			sourceTree = "<group>";
@@ -758,14 +864,19 @@
 				245B81871F47CBF900210911 /* Asap-BoldItalic.otf in Resources */,
 				245B81841F47CBF900210911 /* Asap-Medium.otf in Resources */,
 				245B81881F47CBF900210911 /* Asap-Regular.otf in Resources */,
+				07F1D7A21F49C4C100FEF1EA /* RequestDependentViewController.xib in Resources */,
 				07DB37AE1F47E236009BEB04 /* DependentsTabItemViewController.xib in Resources */,
 				07F0FAD41F47481A002CFC23 /* ConfimationAuthenticateView.xib in Resources */,
 				2421C06F1F47F8A300BC1088 /* registerCell.xib in Resources */,
 				07DB379F1F47DA8F009BEB04 /* MainTabBarViewController.xib in Resources */,
+				24794C7A1F48FAAC00849D14 /* RequestCell.xib in Resources */,
 				07DB37BA1F4876DC009BEB04 /* AttachmentModalViewController.xib in Resources */,
 				07C287911F47310800E9DA0C /* LaunchScreen.storyboard in Resources */,
 				245B81851F47CBF900210911 /* Asap-MediumItalic.otf in Resources */,
+				24794C711F48B15F00849D14 /* NotificationReminderView.xib in Resources */,
 				07DB37A51F47DF63009BEB04 /* RegisterTabItemViewController.xib in Resources */,
+				24794C781F48D31F00849D14 /* RequestViewController.xib in Resources */,
+				24794C801F490A8200849D14 /* ChatViewController.xib in Resources */,
 				07C2878E1F47310800E9DA0C /* Assets.xcassets in Resources */,
 				C8E58D6A1F47447000E5F7AE /* AuthorizationViewController.xib in Resources */,
 				245B81861F47CBF900210911 /* Asap-Bold.otf in Resources */,
@@ -903,6 +1014,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GpMobRequester/Pods-GpMobRequester-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Retrofire/Retrofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -910,6 +1022,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Retrofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -958,34 +1071,50 @@
 			files = (
 				2421C0731F47FA7E00BC1088 /* registerCell.swift in Sources */,
 				07DB37BC1F48774A009BEB04 /* AttachmentModalViewController.swift in Sources */,
+				24794C821F490A8C00849D14 /* ChatViewController.swift in Sources */,
 				07DB379C1F47DA44009BEB04 /* MainTabBarViewController.swift in Sources */,
+				07DB37C21F48C0F5009BEB04 /* ConfirmationPresenter.swift in Sources */,
+				24794C761F48D31000849D14 /* RequestViewController.swift in Sources */,
+				07F1D79F1F49C48300FEF1EA /* RequestDependentViewController.swift in Sources */,
 				07D138251F4791ED0010642D /* ReturnConfirmationToUSer.swift in Sources */,
 				C8E58D671F47424100E5F7AE /* AuthorizationViewController.swift in Sources */,
 				07DB37B81F486454009BEB04 /* AttachmentModalView.swift in Sources */,
+				24794C7D1F48FB1100849D14 /* RequestCell.swift in Sources */,
 				DE1244981F4830D300FF3325 /* FichaFuncionalApiDataSource.swift in Sources */,
 				07DB37811F4758B1009BEB04 /* TipoDadoFichaFuncional.swift in Sources */,
+				DE4607C71F48F79F008AFA36 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */,
 				07DB378D1F476F3A009BEB04 /* AuthSolicitationRequest.swift in Sources */,
 				DE12448B1F48108300FF3325 /* SessionLocalDataSource.swift in Sources */,
 				07DB378A1F476F1E009BEB04 /* AuthSolicitationApiDataSource.swift in Sources */,
-				07C287891F47310800E9DA0C /* ViewController.swift in Sources */,
+				DE4607C31F48F065008AFA36 /* DadoFichaFuncionalResponse.swift in Sources */,
+				DE4607C11F48EE7A008AFA36 /* DadoFichaFuncionalRequest.swift in Sources */,
 				2448496B1F47E229006679C4 /* Theme.swift in Sources */,
 				07C287871F47310800E9DA0C /* AppDelegate.swift in Sources */,
+				07F1D79A1F49BEBC00FEF1EA /* DependentsTabItemContracts.swift in Sources */,
+				07DB37C81F48D81F009BEB04 /* MainTabPresenter.swift in Sources */,
 				07DB37C01F48870F009BEB04 /* AuthorizationPresenter.swift in Sources */,
 				07DB37AB1F47E214009BEB04 /* DependentsTabItemViewController.swift in Sources */,
+				07DB37C41F48C10B009BEB04 /* ConfirmationContracts.swift in Sources */,
+				07F1D79C1F49BF0600FEF1EA /* DependentsTabItemPresenter.swift in Sources */,
 				07F0FAD61F475303002CFC23 /* ConfimationAuthenticateView.swift in Sources */,
 				07DB37BE1F488589009BEB04 /* AuthorizationContracts.swift in Sources */,
 				07DB37A81F47DFEE009BEB04 /* ViewUtils.swift in Sources */,
+				07DB37C61F48D7C9009BEB04 /* MainTabBarContracts.swift in Sources */,
 				07DB37A21F47DF37009BEB04 /* RegisterTabItemViewController.swift in Sources */,
 				07DB377D1F47587E009BEB04 /* Dependente.swift in Sources */,
 				DEB0E5C81F48698B005F3D64 /* FichaFuncionalApiDataSourceImpl.swift in Sources */,
 				DE12447B1F47D6CA00FF3325 /* AuthApiDataSource.swift in Sources */,
 				07DB377F1F475898009BEB04 /* GrupoTipo.swift in Sources */,
+				07DB37CC1F48F410009BEB04 /* RegisterTabItemPresenter.swift in Sources */,
 				07DB37921F47703B009BEB04 /* RemoteUtils.swift in Sources */,
 				07DB37831F4758C8009BEB04 /* DadoFichaFuncional.swift in Sources */,
+				07DB37CA1F48F361009BEB04 /* RegisterTabItemContracts.swift in Sources */,
+				DEBEBFDF1F48B4DD00333033 /* Filter.swift in Sources */,
+				24794C731F48B1AF00849D14 /* NotificationReminderView.swift in Sources */,
 				07DB37851F4758DC009BEB04 /* Grupo.swift in Sources */,
 				DE12447C1F47D6DE00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
-				DE1244971F4830C400FF3325 /* FichaFuncionalResponse.swift in Sources */,
 				DE1244701F47B28800FF3325 /* AuthRequest.swift in Sources */,
+				DE4607C51F48F475008AFA36 /* DadoFichaFuncionalApiDataSource.swift in Sources */,
 				DE1244841F47EF7400FF3325 /* AuthErrorResponse.swift in Sources */,
 				07DB37791F475387009BEB04 /* FichaFuncional.swift in Sources */,
 				07DB37941F47708D009BEB04 /* AuthSolicitationApiDataSourceImpl.swift in Sources */,
@@ -1003,6 +1132,7 @@
 				DEB0E5D81F4883A1005F3D64 /* FichaFuncionalApiDataSourceImplTests.swift in Sources */,
 				DEB0E5CA1F486E77005F3D64 /* SessionLocalDataSource.swift in Sources */,
 				DE12447E1F47D97D00FF3325 /* AuthApiDataSourceImpl.swift in Sources */,
+				DE0597631F48FDED00654DB4 /* DadoFichaFuncionalApiDataSourceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
